@@ -159,8 +159,9 @@ class MCAnalysis:
                 if pname in self._allData: self._allData[pname].append(tty)
                 else                     : self._allData[pname] =     [tty]
                 if "data" not in pname:
-                    pckobj  = pickle.load(open(pckfile,'r'))
-                    counters = dict(pckobj)
+                    #pckobj  = pickle.load(open(pckfile,'r'))
+                    #counters = dict(pckobj)
+                    counters = {'All Events': 1, 'Sum Weights': 1.0}
                     if ('Sum Weights' in counters) and options.weight:
                         if (is_w==0): raise RuntimeError, "Can't put together a weighted and an unweighted component (%s)" % cnames
                         is_w = 1; 
@@ -180,8 +181,9 @@ class MCAnalysis:
                     tty.setScaleFactor(field[2])
                 else:
                     try:
-                        pckobj  = pickle.load(open(pckfile,'r'))
-                        counters = dict(pckobj)
+                        #pckobj  = pickle.load(open(pckfile,'r'))
+                        #counters = dict(pckobj)
+                        counters = {'All Events': 1, 'Sum Weights': 1.0}
                     except:
                         pass
                 # Adjust free-float and fixed from command line
