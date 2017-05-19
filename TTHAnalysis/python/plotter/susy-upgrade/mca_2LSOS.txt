@@ -1,0 +1,1 @@
+TChiWZ_300_260_Delphes+   : TChiWZ_300_260_Delphes   : 1./nTot : 1. ; FillColor=ROOT.kMagenta, Label="TChiWZ_300_260"

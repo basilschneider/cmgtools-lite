@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Script to make cutflow
+# This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
+# You need to have symbolic links called "trees" pointing to your trees
+
+lumi=3000.
+
+mca=susy-upgrade/mca_2LSOS.txt
+cuts=susy-upgrade/cuts_2LSOS.txt
+trees=trees/
+
+python mcAnalysis.py \
+    "${mca}" \
+    "${cuts}" \
+    -P "${trees}" \
+    -l "${lumi}" \
+    -j $(nproc) \
+    --tree treeProducerSusyUpgrade \
+    --obj Delphes
