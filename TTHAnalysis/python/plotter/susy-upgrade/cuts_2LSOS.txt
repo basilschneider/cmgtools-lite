@@ -12,3 +12,9 @@ nJet >= 1: nJet >= 1
 
 # No b-jets
 nBJet == 0: nBJet == 0
+
+# Mll cuts
+mll cuts: (mll > 4 && mll < 9) || (mll > 10.5 && mll < 50)
+
+# MET cut
+met > 125: met > 125
