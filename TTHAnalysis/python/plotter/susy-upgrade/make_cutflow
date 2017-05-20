@@ -2,7 +2,7 @@
 
 # Script to make cutflow
 # This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
-# You need to have symbolic links called "trees" pointing to your trees
+# You need to have a symbolic link called "trees" pointing to your trees
 
 lumi=3000.
 

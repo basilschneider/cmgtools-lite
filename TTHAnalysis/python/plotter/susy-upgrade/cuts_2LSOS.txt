@@ -1,11 +1,14 @@
-# Select events with exactly two leptons
+# Exactly two leptons
+2 leptons: nLep == 2
+
+# Exactly two soft leptons
 2 soft leptons: nSoftLep == 2
 
-# Same flavour opposite signe lepton pair
-SFOS: hasSFOS
+# Same flavour opposite sign lepton pair
+SFOS: hasSFOS && hasSoftSFOS
 
-# at least one jet
+# At least one jet
 nJet >= 1: nJet >= 1
 
-# no b-jets
+# No b-jets
 nBJet == 0: nBJet == 0

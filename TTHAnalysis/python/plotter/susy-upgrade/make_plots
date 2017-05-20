@@ -2,63 +2,40 @@
 
 # Script to make plots
 # This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
-# You need to have symbolic links called "trees" and "friends", pointing to your
-# trees and friend trees, resp.
+# You need to have a symbolic link called "trees" pointing to your trees
 
-lumi=36.5
+lumi=3000.
 
-mca=susy-1lep/mca/mca-Summer16_Moriond17.txt
-cuts=susy-1lep/1l_basicCutsFullCutFlow.txt
+mca=susy-upgrade/mca_2LSOS.txt
+cuts=susy-upgrade/cuts_2LSOS.txt
 trees=trees/
-friends=friends/evVarFriend_{cname}.root
+plots=susy-upgrade/plots_2LSOS.txt
 
 # QCD estimation, define QCD as signal
 python mcPlots.py \
     "${mca}" \
     "${cuts}" \
-    susy-1lep/plots/base_plots.txt \
+    "${plots}" \
     -P "${trees}" \
-    -F sf/t "${friends}" \
     -l "${lumi}" \
     -j $(nproc) \
-    --tree treeProducerSusySingleLepton \
-    -G \
     -f \
+    --tree treeProducerSusyUpgrade \
+    --obj Delphes \
     --showRatio \
     --maxRatioRange 0.05 1.95 \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
-    --showIndivSigs \
-    --scaleBkgToData TTsemiLep \
-    --scaleBkgToData TTdiLep \
-    --scaleBkgToData TTV \
-    --scaleBkgToData SingleT \
-    --scaleBkgToData WJets \
-    --scaleBkgToData DY \
-    --scaleBkgToData VV \
-    --scaleBkgToData QCD \
-    --showSF
+    --showIndivSigs
 
-## Fit QCD estimation to data in anti-selected region; this is only useful for
-## plotting; define QCD as background
-#python mcPlots.py \
-#    "${mca}" \
-#    susy-1lep/mca/mycuts.txt \
-#    susy-1lep/mca/myplots.txt \
-#    -P "${trees}" \
-#    -F sf/t "${friends}" \
-#    -l "${lumi}" \
-#    -j $(nproc) \
-#    --tree treeProducerSusySingleLepton \
-#    -G \
-#    -f \
-#    --noStackSig \
-#    --showIndivSigs \
-#    --showRatio \
-#    --maxRatioRange 0.0 2.0 \
-#    --fixRatioRange \
-#    --noErrorBandOnRatio \
+
+#    --scaleBkgToData TTsemiLep \
+#    --scaleBkgToData TTdiLep \
+#    --scaleBkgToData TTV \
+#    --scaleBkgToData SingleT \
+#    --scaleBkgToData WJets \
+#    --scaleBkgToData DY \
+#    --scaleBkgToData VV \
 #    --scaleBkgToData QCD \
 #    --showSF
-
