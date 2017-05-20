@@ -21,3 +21,6 @@ met > 125: met > 125
 
 # MET/HT cut
 met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
+
+# mT cuts
+mTx < 70: mt1 < 70 && mt2 < 70
