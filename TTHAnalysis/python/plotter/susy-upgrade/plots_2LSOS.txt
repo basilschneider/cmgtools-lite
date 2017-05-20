@@ -53,3 +53,9 @@ met_log: met: 20, 0, 400; XTitle="MET", IncludeOverflows=True, Logy
 # mll
 mll: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True
 mll_log: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True, Logy
+
+# mT
+mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET)", IncludeOverflows=True
+mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET)", IncludeOverflows=True
+mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET)", IncludeOverflows=True, Logy
+mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET)", IncludeOverflows=True, Logy
