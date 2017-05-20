@@ -45,3 +45,11 @@ njet_log: nJet: 8, -.5, 7.5; XTitle="n_{jet}", IncludeOverflows=True, Logy
 # nBJet
 nbjet: nBJet: 8, -.5, 7.5; XTitle="n_{b-jet}", IncludeOverflows=True
 nbjet_log: nBJet: 8, -.5, 7.5; XTitle="n_{b-jet}", IncludeOverflows=True, Logy
+
+# MET
+met: met: 20, 0, 400; XTitle="MET", IncludeOverflows=True
+met_log: met: 20, 0, 400; XTitle="MET", IncludeOverflows=True, Logy
+
+# mll
+mll: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True
+mll_log: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True, Logy
