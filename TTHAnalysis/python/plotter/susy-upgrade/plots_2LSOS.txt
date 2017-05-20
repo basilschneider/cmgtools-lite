@@ -1,0 +1,74 @@
+# Lepton pT's
+el1_pt: el1_pt: 30, 0, 30; XTitle="p_{T} (e_{1})", IncludeOverflows=False
+el2_pt: el2_pt: 30, 0, 30; XTitle="p_{T} (e_{2})", IncludeOverflows=False
+mu1_pt: mu1_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu2_pt: mu2_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False
+lep1_pt: lep1_pt: 30, 0, 30; XTitle="p_{T} (l_{1})", IncludeOverflows=False
+lep2_pt: lep2_pt: 30, 0, 30; XTitle="p_{T} (l_{2})", IncludeOverflows=False
+el1_pt_log: el1_pt: 30, 0, 30; XTitle="p_{T} (e_{1})", IncludeOverflows=False, Logy
+el2_pt_log: el2_pt: 30, 0, 30; XTitle="p_{T} (e_{2})", IncludeOverflows=False, Logy
+mu1_pt_log: mu1_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, Logy
+mu2_pt_log: mu2_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, Logy
+lep1_pt_log: lep1_pt: 30, 0, 30; XTitle="p_{T} (l_{1})", IncludeOverflows=False, Logy
+lep2_pt_log: lep2_pt: 30, 0, 30; XTitle="p_{T} (l_{2})", IncludeOverflows=False, Logy
+
+# Lepton eta's
+el1_eta: el1_eta: 30, 0, 5; XTitle="#eta (e_{1})", IncludeOverflows=False
+el2_eta: el2_eta: 30, 0, 5; XTitle="#eta (e_{2})", IncludeOverflows=False
+mu1_eta: mu1_tight_eta: 30, 0, 5; XTitle="#eta (#mu_{1})", IncludeOverflows=False
+mu2_eta: mu2_tight_eta: 30, 0, 5; XTitle="#eta (#mu_{2})", IncludeOverflows=False
+lep1_eta: lep1_eta: 30, 0, 5; XTitle="#eta (l_{1})", IncludeOverflows=False
+lep2_eta: lep2_eta: 30, 0, 5; XTitle="#eta (l_{2})", IncludeOverflows=False
+el1_eta_log: el1_eta: 30, 0, 5; XTitle="#eta (e_{1})", IncludeOverflows=False, Logy
+el2_eta_log: el2_eta: 30, 0, 5; XTitle="#eta (e_{2})", IncludeOverflows=False, Logy
+mu1_eta_log: mu1_tight_eta: 30, 0, 5; XTitle="#eta (#mu_{1})", IncludeOverflows=False, Logy
+mu2_eta_log: mu2_tight_eta: 30, 0, 5; XTitle="#eta (#mu_{2})", IncludeOverflows=False, Logy
+lep1_eta_log: lep1_eta: 30, 0, 5; XTitle="#eta (l_{1})", IncludeOverflows=False, Logy
+lep2_eta_log: lep2_eta: 30, 0, 5; XTitle="#eta (l_{2})", IncludeOverflows=False, Logy
+
+# Jet pt's
+jet1_pt: jet1_puppi_pt: 30, 0, 750; XTitle="p_{T} (jet_{1})", IncludeOverflows=True
+jet1_pt_log: jet1_puppi_pt: 30, 0, 750; XTitle="p_{T} (jet_{1})", IncludeOverflows=True, Logy
+
+# Jet eta's
+jet1_eta: jet1_puppi_eta: 30, 0, 5; XTitle="#eta (jet_{1})", IncludeOverflows=True
+jet1_eta_log: jet1_puppi_eta: 30, 0, 5; XTitle="#eta (jet_{1})", IncludeOverflows=True, Logy
+
+#HT: HT : 30, 0, 3000; XTitle="H_{T} [GeV]"
+#HT_log: HT : 30, 0, 3000; XTitle="H_{T} [GeV]", Logy
+#
+#LT: LT : 20, 0, 2000; XTitle="L_{T} [GeV]"
+#LT_log: LT : 20, 0, 2000; XTitle="L_{T} [GeV]", Logy
+#
+#MET: MET : 15, 0, 1500; XTitle="MET [GeV]"
+#MET_log: MET : 15, 0, 1500; XTitle="MET [GeV]", Logy
+#
+#LepPt: Lep_pt : 32, 0, 800; XTitle="Lep p_{T} [GeV]"
+#LepPt_log: Lep_pt : 32, 0, 800; XTitle="Lep p_{T} [GeV]", Logy
+#
+#dPhi: fabs(dPhi) : 30, 0, 3.142 ; XTitle="#Delta #varphi (lep\,W)", IncludeOverflows=False
+#dPhi_log: fabs(dPhi) : 30, 0, 3.142 ; XTitle="#Delta #varphi (lep\,W)", IncludeOverflows=False, Logy
+#
+#nJet: nJets30Clean : 15, 0, 15 ; XTitle="jet multiplicity"
+#nJet_log: nJets30Clean : 15, 0, 15 ; XTitle="jet multiplicity", Logy
+#
+#nBJet: nBJet : 8, 0, 8 ; XTitle="b-jet multiplicity (Med)"
+#nBJet_log: nBJet : 8, 0, 8 ; XTitle="b-jet multiplicity (Med)", Logy
+#
+#Lp: Lp : 30,-0.5,2.5 ; XTitle="L_{p}", IncludeOverflows=False
+#Lp_log: Lp : 30,-0.5,2.5 ; XTitle="L_{p}", IncludeOverflows=False, Logy
+#
+#jet1_puppipt: jet1_puppi_pt : 40,0,800; XTitle = "Lead Jet pt"
+#jet1_puppipt_log: jet1_puppi_pt : 40,0,800; XTitle = "Lead Jet pt", Logy
+#
+#Jet2pt: Jet2_pt : 40,0,800; XTitle = "2. Lead Jet pt"
+#Jet2pt_log: Jet2_pt : 40,0,800; XTitle = "2. Lead Jet pt", Logy
+#
+#LepEta: Lep_eta : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100
+#LepEta_log: Lep_eta : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100, Logy
+#
+##MuEta: LepGood_eta[tightMuIdx[0]] : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100
+##MuEta_log: LepGood_eta[tightMuIdx[0]] : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100, Logy
+##
+##ElEta: LepGood_eta[tightElIdx[0]] : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100
+##ElEta_log: LepGood_eta[tightElIdx[0]] : 40,-2.4,2.4 ; XTitle="Lep #eta", MoreY=100, Logy
