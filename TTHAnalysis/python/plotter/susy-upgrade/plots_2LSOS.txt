@@ -1,16 +1,16 @@
 # Lepton pT's
-el1_pt: el1_pt: 30, 0, 30; XTitle="p_{T} (e_{1})", IncludeOverflows=False
-el2_pt: el2_pt: 30, 0, 30; XTitle="p_{T} (e_{2})", IncludeOverflows=False
-mu1_pt: mu1_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-mu2_pt: mu2_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False
-lep1_pt: lep1_pt: 30, 0, 30; XTitle="p_{T} (l_{1})", IncludeOverflows=False
-lep2_pt: lep2_pt: 30, 0, 30; XTitle="p_{T} (l_{2})", IncludeOverflows=False
-el1_pt_log: el1_pt: 30, 0, 30; XTitle="p_{T} (e_{1})", IncludeOverflows=False, Logy
-el2_pt_log: el2_pt: 30, 0, 30; XTitle="p_{T} (e_{2})", IncludeOverflows=False, Logy
-mu1_pt_log: mu1_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, Logy
-mu2_pt_log: mu2_tight_pt: 30, 0, 30; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, Logy
-lep1_pt_log: lep1_pt: 30, 0, 30; XTitle="p_{T} (l_{1})", IncludeOverflows=False, Logy
-lep2_pt_log: lep2_pt: 30, 0, 30; XTitle="p_{T} (l_{2})", IncludeOverflows=False, Logy
+el1_pt: el1_pt: 50, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False
+el2_pt: el2_pt: 50, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False
+mu1_pt: mu1_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu2_pt: mu2_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False
+lep1_pt: lep1_pt: 50, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False
+lep2_pt: lep2_pt: 50, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False
+el1_pt_log: el1_pt: 50, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, Logy
+el2_pt_log: el2_pt: 50, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, Logy
+mu1_pt_log: mu1_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, Logy
+mu2_pt_log: mu2_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, Logy
+lep1_pt_log: lep1_pt: 50, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, Logy
+lep2_pt_log: lep2_pt: 50, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, Logy
 
 # Lepton eta's
 el1_eta: el1_eta: 20, -5, 5; XTitle="#eta (e_{1})", IncludeOverflows=False
