@@ -18,3 +18,7 @@ python mcAnalysis.py \
     -j $(nproc) \
     --tree treeProducerSusyUpgrade \
     --obj Delphes
+
+# Useful options:
+# -e: show statistical errors
+# -u: don't use any weights
