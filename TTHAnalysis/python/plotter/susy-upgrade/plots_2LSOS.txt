@@ -1,30 +1,30 @@
 # Lepton pT's
-el1_pt: el1_pt: 50, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False
-el2_pt: el2_pt: 50, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False
-mu1_pt: mu1_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-mu2_pt: mu2_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False
-lep1_pt: lep1_pt: 50, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False
-lep2_pt: lep2_pt: 50, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False
-el1_pt_log: el1_pt: 50, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, Logy
-el2_pt_log: el2_pt: 50, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, Logy
-mu1_pt_log: mu1_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, Logy
-mu2_pt_log: mu2_tight_pt: 50, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, Logy
-lep1_pt_log: lep1_pt: 50, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, Logy
-lep2_pt_log: lep2_pt: 50, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, Logy
+el1_pt: el1_pt: 60, 0, 60; XTitle="p_{T} (e_{1})", IncludeOverflows=False
+el2_pt: el2_pt: 60, 0, 60; XTitle="p_{T} (e_{2})", IncludeOverflows=False
+mu1_pt: mu1_tight_pt: 60, 0, 60; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu2_pt: mu2_tight_pt: 60, 0, 60; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False
+lep1_pt: lep1_pt: 60, 0, 60; XTitle="p_{T} (l_{1})", IncludeOverflows=False
+lep2_pt: lep2_pt: 60, 0, 60; XTitle="p_{T} (l_{2})", IncludeOverflows=False
+el1_pt_log: el1_pt: 60, 0, 60; XTitle="p_{T} (e_{1})", IncludeOverflows=False, Logy
+el2_pt_log: el2_pt: 60, 0, 60; XTitle="p_{T} (e_{2})", IncludeOverflows=False, Logy
+mu1_pt_log: mu1_tight_pt: 60, 0, 60; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, Logy
+mu2_pt_log: mu2_tight_pt: 60, 0, 60; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, Logy
+lep1_pt_log: lep1_pt: 60, 0, 60; XTitle="p_{T} (l_{1})", IncludeOverflows=False, Logy
+lep2_pt_log: lep2_pt: 60, 0, 60; XTitle="p_{T} (l_{2})", IncludeOverflows=False, Logy
 
 # Lepton eta's
-el1_eta: el1_eta: 20, -5, 5; XTitle="#eta (e_{1})", IncludeOverflows=False
-el2_eta: el2_eta: 20, -5, 5; XTitle="#eta (e_{2})", IncludeOverflows=False
-mu1_eta: mu1_tight_eta: 20, -5, 5; XTitle="#eta (#mu_{1})", IncludeOverflows=False
-mu2_eta: mu2_tight_eta: 20, -5, 5; XTitle="#eta (#mu_{2})", IncludeOverflows=False
-lep1_eta: lep1_eta: 20, -5, 5; XTitle="#eta (l_{1})", IncludeOverflows=False
-lep2_eta: lep2_eta: 20, -5, 5; XTitle="#eta (l_{2})", IncludeOverflows=False
-el1_eta_log: el1_eta: 20, -5, 5; XTitle="#eta (e_{1})", IncludeOverflows=False, Logy
-el2_eta_log: el2_eta: 20, -5, 5; XTitle="#eta (e_{2})", IncludeOverflows=False, Logy
-mu1_eta_log: mu1_tight_eta: 20, -5, 5; XTitle="#eta (#mu_{1})", IncludeOverflows=False, Logy
-mu2_eta_log: mu2_tight_eta: 20, -5, 5; XTitle="#eta (#mu_{2})", IncludeOverflows=False, Logy
-lep1_eta_log: lep1_eta: 20, -5, 5; XTitle="#eta (l_{1})", IncludeOverflows=False, Logy
-lep2_eta_log: lep2_eta: 20, -5, 5; XTitle="#eta (l_{2})", IncludeOverflows=False, Logy
+el1_eta: el1_eta: 34, -5, 12; XTitle="#eta (e_{1})", IncludeOverflows=False
+el2_eta: el2_eta: 34, -5, 12; XTitle="#eta (e_{2})", IncludeOverflows=False
+mu1_eta: mu1_tight_eta: 34, -5, 12; XTitle="#eta (#mu_{1})", IncludeOverflows=False
+mu2_eta: mu2_tight_eta: 34, -5, 12; XTitle="#eta (#mu_{2})", IncludeOverflows=False
+lep1_eta: lep1_eta: 34, -5, 12; XTitle="#eta (l_{1})", IncludeOverflows=False
+lep2_eta: lep2_eta: 34, -5, 12; XTitle="#eta (l_{2})", IncludeOverflows=False
+el1_eta_log: el1_eta: 34, -5, 12; XTitle="#eta (e_{1})", IncludeOverflows=False, Logy
+el2_eta_log: el2_eta: 34, -5, 12; XTitle="#eta (e_{2})", IncludeOverflows=False, Logy
+mu1_eta_log: mu1_tight_eta: 34, -5, 12; XTitle="#eta (#mu_{1})", IncludeOverflows=False, Logy
+mu2_eta_log: mu2_tight_eta: 34, -5, 12; XTitle="#eta (#mu_{2})", IncludeOverflows=False, Logy
+lep1_eta_log: lep1_eta: 34, -5, 12; XTitle="#eta (l_{1})", IncludeOverflows=False, Logy
+lep2_eta_log: lep2_eta: 34, -5, 12; XTitle="#eta (l_{2})", IncludeOverflows=False, Logy
 
 # Jet pt's
 jet1_pt: jet1_puppi_pt: 30, 0, 750; XTitle="p_{T} (jet_{1})", IncludeOverflows=True
@@ -39,20 +39,20 @@ ht: ht: 30, 0, 750; XTitle="H_{T}", IncludeOverflows=True
 ht_log: ht: 30, 0, 750; XTitle="H_{T}", IncludeOverflows=True, Logy
 
 # nJet
-njet: nJet: 8, -.5, 7.5; XTitle="n_{jet}", IncludeOverflows=True
-njet_log: nJet: 8, -.5, 7.5; XTitle="n_{jet}", IncludeOverflows=True, Logy
+njet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=True
+njet_log: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=True, Logy
 
 # nBJet
-nbjet: nBJet: 8, -.5, 7.5; XTitle="n_{b-jet}", IncludeOverflows=True
-nbjet_log: nBJet: 8, -.5, 7.5; XTitle="n_{b-jet}", IncludeOverflows=True, Logy
+nbjet: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=True
+nbjet_log: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=True, Logy
 
 # MET
-met: met: 20, 0, 400; XTitle="MET", IncludeOverflows=True
-met_log: met: 20, 0, 400; XTitle="MET", IncludeOverflows=True, Logy
+met: met: 30, 0, 300; XTitle="MET", IncludeOverflows=True
+met_log: met: 30, 0, 300; XTitle="MET", IncludeOverflows=True, Logy
 
 # mll
-mll: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True
-mll_log: mll: 25, 0, 50; XTitle="m_{ll}", IncludeOverflows=True, Logy
+mll: mll: 50, 0, 250; XTitle="m_{ll}", IncludeOverflow=True, IncludeUnderflow=False
+mll_log: mll: 50, 0, 250; XTitle="m_{ll}", IncludeOverflow=True, IncludeUnderflow=False, Logy
 
 # mT
 mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET)", IncludeOverflows=True

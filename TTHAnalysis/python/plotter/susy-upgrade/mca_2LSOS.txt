@@ -18,8 +18,8 @@ Bj                       : Bj_ST3700toInfo    :        27.67/4840718  ; FillColo
 Bjj                      : Bjj_ST0to700       :     86456.04/5746151  ; FillColor=ROOT.kRed-4, Label="Bjj"
 Bjj                      : Bjj_ST700to1400    :      4348.69/7005309  ; FillColor=ROOT.kRed-4, Label="Bjj"
 Bjj                      : Bjj_ST1400to2300   :       324.65/6040315  ; FillColor=ROOT.kRed-4, Label="Bjj"
-#Bjj                      : Bjj_ST2300to3400   :        30.32/5618875 ; FillColor=ROOT.kRed-4, Label="Bjj"
-#Bjj                      : Bjj_ST3400toInf    :         3.13/   auto ; FillColor=ROOT.kRed-4, Label="Bjj"
+#Bjj                      : Bjj_ST2300to3400   :        30.32/5618875  ; FillColor=ROOT.kRed-4, Label="Bjj"
+#Bjj                      : Bjj_ST3400toInf    :         3.13/   auto  ; FillColor=ROOT.kRed-4, Label="Bjj"
 H                        : H_ST0to300         :     21559.90/6532466  ; FillColor=ROOT.kPink-9, Label="H"
 H                        : H_ST300to800       :      1112.82/3788994  ; FillColor=ROOT.kPink-9, Label="H"
 H                        : H_ST800to1500      :        91.88/3064444  ; FillColor=ROOT.kPink-9, Label="H"
@@ -33,7 +33,7 @@ LL                       : LL_ST1400toInf     :        28.91/7013868  ; FillColo
 LLB                      : LLB_ST0to400       :      2973.80/7697802  ; FillColor=ROOT.kBlue-7, Label="LLB"
 LLB                      : LLB_ST400to900     :       228.54/6472608  ; FillColor=ROOT.kBlue-7, Label="LLB"
 LLB                      : LLB_ST900toInf     :        20.80/15966281 ; FillColor=ROOT.kBlue-7, Label="LLB"
-#tB                       : tB_ST0to500        :     63889.23/ 8217905 ; FillColor=ROOT.kAzure+1, Label="tB"
+tB                       : tB_ST0to500        :     63889.23/ 8217905 ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST500to900      :      7121.72/ 6031970 ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST900to1500     :       980.30/ 6030260 ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST1500to2200    :        83.91/ 6140657 ; FillColor=ROOT.kAzure+1, Label="tB"
@@ -54,4 +54,4 @@ ttB                      : ttB_ST1600to2500   :        23.74/ 8929669 ; FillColo
 ttB                      : ttB_ST2500toInf    :         2.09/23821464 ; FillColor=ROOT.kTeal-8, Label="ttB"
 
 # Signal
-#TChiWZ_300_260_Delphes   : TChiWZ_300_260_Delphes   : 1./nTot : 1. ; FillColor=ROOT.kMagenta, Label="TChiWZ_300_260"
+TChiWZ_300_260_Delphes+  : TChiWZ_300_260_Delphes   : .45145/5000 : 1. ; FillColor=ROOT.kMagenta, Label="TChiWZ_300_260"
