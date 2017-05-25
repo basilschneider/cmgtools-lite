@@ -161,7 +161,7 @@ class MCAnalysis:
                 if "data" not in pname:
                     #pckobj  = pickle.load(open(pckfile,'r'))
                     #counters = dict(pckobj)
-                    counters = {'All Events': 1, 'Sum Weights': 1.0}
+                    counters = {'All Events': 1000, 'Sum Weights': 1000.0}
                     if ('Sum Weights' in counters) and options.weight:
                         if (is_w==0): raise RuntimeError, "Can't put together a weighted and an unweighted component (%s)" % cnames
                         is_w = 1; 
@@ -183,7 +183,7 @@ class MCAnalysis:
                     try:
                         #pckobj  = pickle.load(open(pckfile,'r'))
                         #counters = dict(pckobj)
-                        counters = {'All Events': 1, 'Sum Weights': 1.0}
+                        counters = {'All Events': 1000, 'Sum Weights': 1000.0}
                     except:
                         pass
                 # Adjust free-float and fixed from command line
