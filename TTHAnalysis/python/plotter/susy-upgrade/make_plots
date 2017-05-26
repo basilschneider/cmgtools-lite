@@ -19,6 +19,7 @@ python mcPlots.py \
     -P "${trees}" \
     -l "${lumi}" \
     -j $(nproc) \
+    -f \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
     --showRatio \
@@ -26,4 +27,5 @@ python mcPlots.py \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
-    --showIndivSigs
+    --showIndivSigs \
+    --showMCError
