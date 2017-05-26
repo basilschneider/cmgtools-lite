@@ -27,5 +27,6 @@ python mcPlots.py \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
-    --showIndivSigs \
-    --showMCError
+    --showSigShape \
+    --showMCError \
+    --legendFontSize 0.033
