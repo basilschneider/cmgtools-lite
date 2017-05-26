@@ -27,6 +27,8 @@ python mcPlots.py \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
-    --showSigShape \
+    --showIndivSigShape \
     --showMCError \
-    --legendFontSize 0.033
+    --legendFontSize 0.033 \
+    --noCms \
+    --cmsprel Simulation
