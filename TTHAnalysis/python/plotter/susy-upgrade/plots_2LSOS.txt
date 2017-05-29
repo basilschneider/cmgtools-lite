@@ -37,8 +37,8 @@ jet1_eta: jet1_puppi_eta: 20, -5, 5; XTitle="#eta (jet_{1})", IncludeOverflows=F
 jet1_eta_log: jet1_puppi_eta: 20, -5, 5; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # HT
-ht: ht: 30, 0, 750; XTitle="H_{T}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-ht_log: ht: 30, 0, 750; XTitle="H_{T}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+ht: ht: 30, 0, 750; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+ht_log: ht: 30, 0, 750; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # nJet
 jet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
@@ -49,17 +49,17 @@ nbjet: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUn
 nbjet_log: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # MET
-et: met: 30, 0, 300; XTitle="MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-et_log: met: 30, 0, 300; XTitle="MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+met: met: 30, 0, 300; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+met_log: met: 30, 0, 300; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # mll
-mll: mll: 50, 0, 250; XTitle="m_{ll}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
-mll_log: mll: 50, 0, 250; XTitle="m_{ll}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8, LowerSig
-mll_fine: mll: 50, 0, 50; XTitle="m_{ll}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
-mll_fine_log: mll: 50, 0, 50; XTitle="m_{ll}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8, LowerSig
+mll: mll: 50, 0, 250; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
+mll_log: mll: 50, 0, 250; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8, LowerSig
+mll_fine: mll: 50, 0, 50; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
+mll_fine_log: mll: 50, 0, 50; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # mT
-mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET)", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET)", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET)", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET)", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
