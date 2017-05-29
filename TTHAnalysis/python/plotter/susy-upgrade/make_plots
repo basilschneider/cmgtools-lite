@@ -22,7 +22,7 @@ python mcPlots.py \
     -f \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
-    --showSignificance TChiWZ_300_260_Delphes \
+    --showSignificance \
     --maxRatioRange 0.05 1.95 \
     --fixRatioRange \
     --noErrorBandOnRatio \

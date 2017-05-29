@@ -551,30 +551,9 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     return (ratios, unity, unity0, line)
 
 def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Data/pred.",doWide=False,showStatTotLegend=False):
-    numkeys = [ ratioNums ]
-    if "data" not in pmap:
-        if len(pmap) >= 4 and ratioDen in pmap:
-            numkeys = []
-            for p in pmap.iterkeys():
-                for s in ratioNums.split(","):
-                    if re.match(s,p):
-                        numkeys.append(p)
-                        break
-            if len(numkeys) == 0:
-                return (None,None,None,None)
-            # do this first
-            total.GetXaxis().SetLabelOffset(999) ## send them away
-            total.GetXaxis().SetTitleOffset(999) ## in outer space
-            total.GetYaxis().SetTitleSize(0.06)
-            total.GetYaxis().SetTitleOffset(0.75 if doWide else 1.48)
-            total.GetYaxis().SetLabelSize(0.05)
-            total.GetYaxis().SetLabelOffset(0.007)
-            # then we can overwrite total with background
-            numkey = 'signal'
-            total     = pmap[ratioDen]
-            totalSyst = pmap[ratioDen]
-        else:
-            return (None,None,None,None)
+    numkeys = []
+    for sig in [x for x in mca.listSignals() if pmap.has_key(x) and pmap[x].Integral() > 0]:
+        numkeys.append(sig)
     ratios = [] #None
     for numkey in numkeys:
         sig = pmap[numkey].Clone("significance");
@@ -618,9 +597,15 @@ def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,
     else:
         if total != totalSyst and errorsOnRef:
             unity0.Draw("E2 SAME");
-    rfac = ratios[0].GetMaximum()-ratios[0].GetMinimum()
-    rmin = ratios[0].GetMinimum()-rfac/10.
-    rmax = ratios[0].GetMaximum()+rfac/10.
+    tmin = 99999
+    tmax =-99999
+    for ratio in ratios:
+        tmin = min(tmin, ratio.GetMinimum())
+        tmax = max(tmax, ratio.GetMaximum())
+    tfac = tmax - tmin
+    rmin = tmin - tfac/10.
+    rmax = tmax + tfac/10.
+    del tmin, tmax, tfac
     unity.GetYaxis().SetRangeUser(rmin,rmax);
     unity.GetXaxis().SetTitleFont(42)
     unity.GetXaxis().SetTitleSize(0.14)
@@ -978,7 +963,7 @@ class PlotMaker:
                 #
                 if not makeCanvas and not self._options.printPlots: return
                 doRatio = self._options.showRatio and ('data' in pmap or (plotmode != "stack")) and ("TH2" not in total.ClassName())
-                doSignificance = self._options.showSignificance and (self._options.showSignificance in pmap) and not doRatio
+                doSignificance = self._options.showSignificance and ('signal' in pmap) and not doRatio
                 islog = pspec.hasOption('Logy');
                 if doRatio or doSignificance: ROOT.gStyle.SetPaperSize(20.,sf*(plotformat[1]+150))
                 else:       ROOT.gStyle.SetPaperSize(20.,sf*plotformat[1])
@@ -1117,8 +1102,8 @@ class PlotMaker:
                 if doSignificance:
                     p2.cd();
                     rdata,rnorm,rnorm2,rline = doSigHists(pspec,pmap,total,totalSyst, maxRange=options.maxRatioRange, fixRange=options.fixRatioRange,
-                                                            fitRatio=options.fitRatio, errorsOnRef=False,
-                                                            ratioNums=self._options.showSignificance, ratioDen=options.ratioDen, ylabel=options.ratioYLabel, doWide=doWide, showStatTotLegend=True)
+                                                          fitRatio=options.fitRatio, errorsOnRef=False,
+                                                          ratioNums=self._options.showSignificance, ratioDen=options.ratioDen, ylabel=options.ratioYLabel, doWide=doWide, showStatTotLegend=True)
                 if self._options.printPlots:
                     for ext in self._options.printPlots.split(","):
                         fdir = printDir;
@@ -1252,7 +1237,7 @@ def addPlotMakerOptions(parser, addAlsoMCAnalysis=True):
     parser.add_option("--showSFitShape", dest="showSFitShape", action="store_true", default=False, help="Stack a shape of background + scaled signal normalized to total data")
     parser.add_option("--showMCError", dest="showMCError", action="store_true", default=False, help="Show a shaded area for MC uncertainty")
     parser.add_option("--showRatio", dest="showRatio", action="store_true", default=False, help="Add a data/sim ratio plot at the bottom")
-    parser.add_option("--showSignificance", dest="showSignificance", type="string", default=None, help="Add a sim/sig significance plot at the bottom")
+    parser.add_option("--showSignificance", dest="showSignificance", action="store_true", default=False, help="Add a simulation/signal significance plot at the bottom")
     parser.add_option("--ratioDen", dest="ratioDen", type="string", default="background", help="Denominator of the ratio, when comparing MCs")
     parser.add_option("--ratioNums", dest="ratioNums", type="string", default="signal", help="Numerator(s) of the ratio, when comparing MCs (comma separated list of regexps)")
     parser.add_option("--ratioYLabel", dest="ratioYLabel", type="string", default="Data/pred.", help="Y axis label of the ratio histogram.")
