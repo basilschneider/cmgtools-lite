@@ -551,6 +551,8 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     return (ratios, unity, unity0, line)
 
 def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Significance",doWide=False,showStatTotLegend=False):
+    if pspec.hasOption('LowerSig'):
+        ylabel='Lower Sig.'
     numkeys = []
     for sig in [x for x in mca.listSignals() if pmap.has_key(x) and pmap[x].Integral() > 0]:
         numkeys.append(sig)
@@ -558,7 +560,10 @@ def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,
     for numkey in numkeys:
         sig = pmap[numkey].Clone("significance");
         for i in xrange(sig.GetNbinsX()):
-            sig.SetBinContent(i+1, ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(i+1, sig.GetNbinsX()), pmap[ratioDen].Integral(i+1, sig.GetNbinsX()), .3))
+            if pspec.hasOption('LowerSig'):
+                sig.SetBinContent(i+1, ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(0, i+1), pmap[ratioDen].Integral(0, i+1), .3))
+            else:
+                sig.SetBinContent(i+1, ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(i+1, sig.GetNbinsX()), pmap[ratioDen].Integral(i+1, sig.GetNbinsX()), .3))
         ratios.append(sig)
 
     unity  = totalSyst.Clone("sim_div");
