@@ -550,7 +550,7 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     legendratio1_ = leg1
     return (ratios, unity, unity0, line)
 
-def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Data/pred.",doWide=False,showStatTotLegend=False):
+def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Significance",doWide=False,showStatTotLegend=False):
     numkeys = []
     for sig in [x for x in mca.listSignals() if pmap.has_key(x) and pmap[x].Integral() > 0]:
         numkeys.append(sig)
@@ -1103,7 +1103,7 @@ class PlotMaker:
                     p2.cd();
                     rdata,rnorm,rnorm2,rline = doSigHists(pspec,pmap,total,totalSyst, maxRange=options.maxRatioRange, fixRange=options.fixRatioRange,
                                                           fitRatio=options.fitRatio, errorsOnRef=False,
-                                                          ratioNums=self._options.showSignificance, ratioDen=options.ratioDen, ylabel=options.ratioYLabel, doWide=doWide, showStatTotLegend=True)
+                                                          ratioNums=self._options.showSignificance, ratioDen=options.ratioDen, ylabel="Significance", doWide=doWide, showStatTotLegend=True)
                 if self._options.printPlots:
                     for ext in self._options.printPlots.split(","):
                         fdir = printDir;
