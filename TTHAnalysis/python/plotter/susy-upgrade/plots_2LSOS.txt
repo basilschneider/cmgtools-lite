@@ -29,6 +29,8 @@ lep2_eta_log: lep2_eta: 34, -5, 12; XTitle="eta (l_{2})", IncludeOverflows=False
 # Jet pt's
 jet1_pt: jet1_puppi_pt: 30, 0, 750; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
 jet1_pt_log: jet1_puppi_pt: 30, 0, 750; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy
+jet1_pt_fine: jet1_puppi_pt: 40, 0, 200; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+jet1_pt_fine_log: jet1_puppi_pt: 40, 0, 200; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy
 
 # Jet eta's
 jet1_eta: jet1_puppi_eta: 20, -5, 5; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
