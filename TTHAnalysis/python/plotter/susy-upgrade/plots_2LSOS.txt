@@ -41,8 +41,8 @@ ht: ht: 30, 0, 750; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderfl
 ht_log: ht: 30, 0, 750; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # nJet
-jet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-jet_log: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+njet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+njet_log: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 
 # nBJet
 nbjet: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
@@ -63,3 +63,10 @@ mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False
 mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
 mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
 mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+
+# Additional plots
+met_ht: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+met_ht_log: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+met_ht_log_lower: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8, LowerSig
+jet1_met: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
+jet1_met_log: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy
