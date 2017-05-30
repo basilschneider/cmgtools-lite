@@ -17,10 +17,10 @@ nBJet == 0: nBJet == 0
 mll cuts: (mll > 4 && mll < 9) || (mll > 10.5 && mll < 50)
 
 # MET cut
-met > 125: met > 125
+met > 180: met > 180
 
-# MET/HT cut
-met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
-
-# mT cuts
-mTx < 70: mt1 < 70 && mt2 < 70
+## MET/HT cut
+#met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
+#
+## mT cuts
+#mTx < 70: mt1 < 70 && mt2 < 70
