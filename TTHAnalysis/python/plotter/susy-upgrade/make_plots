@@ -31,4 +31,4 @@ python mcPlots.py \
     --showMCError \
     --legendFontSize 0.033 \
     --noCms \
-    --cmsprel Simulation
+    --lspam "#bf{CMS} #it{Simulation}"
