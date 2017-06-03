@@ -926,7 +926,7 @@ class PlotMaker:
                         if self._options.errors and plotmode != "stack":
                             plot.SetMarkerColor(plot.GetFillColor())
                             plot.SetMarkerStyle(21)
-                            plot.SetMarkerSize(1.5)
+                            plot.SetMarkerSize(0.0)
                         else:
                             plot.SetMarkerStyle(0)
 
@@ -1011,7 +1011,7 @@ class PlotMaker:
                 else:
                     if self._options.errors:
                         ROOT.gStyle.SetErrorX(0.5)
-                        stack.Draw("SAME E NOSTACK")
+                        stack.Draw("SAME E HIST NOSTACK")
                     else:
                         stack.Draw("SAME HIST NOSTACK")
                 if pspec.getOption('MoreY',1.0) > 1.0:
