@@ -34,3 +34,13 @@ python mcPlots.py \
     --noCms \
     --lspam "#bf{CMS} #it{Simulation Preliminary}" \
     --rspam "%(lumi) (14 TeV)"
+
+# Useful options:
+# -e: show statistical errors
+# --showIndivSigShapes: Don't normalize signal to cross section
+# --emptyStack: Allow empty histograms
+# --showRatio: Show ratio plot
+# --ratioDen sample1: For --showRatio, use sample 1 in denominator
+# --ratioNums sample2: For --showRatio, use sample 2 in numerator
+# --ratioYLabel: Label for ratio plot
+# --plotmode mode: Use plotting mode, e.g. nostack
