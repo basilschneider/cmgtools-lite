@@ -68,3 +68,4 @@ ttB                      : ttB_ST2500toInf          :      xs/nTot ; FillColor=R
 # Signal
 TChiWZ_300_250_Delphes+  : TChiWZ_300_250_Delphes   :  xs/nTot ; FillColor=ROOT.kMagenta, Label="sig (300/250)"
 TChiWZ_400_375_Delphes+  : TChiWZ_400_375_Delphes   :  xs/nTot ; FillColor=ROOT.kCyan, Label="sig (400/375)"
+TChiWZ_300_293_Delphes+  : TChiWZ_300_293_Delphes   :  xs/nTot ; FillColor=ROOT.kSpring-1, Label="sig (300/292.5)"
