@@ -31,5 +31,5 @@ python mcPlots.py \
     --showMCError \
     --legendFontSize 0.033 \
     --noCms \
-    --lspam "#bf{CMS} #it{Simulation}" \
+    --lspam "#bf{CMS} #it{Simulation Preliminary}" \
     --rspam "%(lumi) (14 TeV)"
