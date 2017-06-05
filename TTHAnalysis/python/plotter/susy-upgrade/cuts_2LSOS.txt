@@ -1,6 +1,3 @@
-# Exactly two leptons
-2 leptons: nLep == 2
-
 # Exactly two soft leptons
 2 soft leptons: nSoftLep == 2
 
