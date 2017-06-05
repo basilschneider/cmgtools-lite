@@ -29,8 +29,8 @@ python mcPlots.py \
     --noStackSig \
     --showIndivSigs \
     --showMCError \
-    --legendFontSize 0.033 \
     --emptyStack \
+    --legendFontSize 0.028 \
     --noCms \
     --lspam "#bf{CMS} #it{Simulation Preliminary}" \
     --rspam "%(lumi) (14 TeV)"
