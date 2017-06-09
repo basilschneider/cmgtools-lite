@@ -1,7 +1,7 @@
 # Background
 
 Bj                       : Bj_ST0to300              :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-#Bj                       : Bj_ST300to600            :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
+Bj                       : Bj_ST300to600            :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
 Bj                       : Bj_ST600to1100           :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
 Bj                       : Bj_ST1100to1800          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
 Bj                       : Bj_ST1800to2700          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
@@ -44,11 +44,11 @@ Bjj                      : Bjj_ST2300to3400         :      xs/nTot ; FillColor=R
 H                        : H_ST0to300               :      xs/nTot ; FillColor=ROOT.kPink-9, Label="H"
 H                        : H_ST300to800             :      xs/nTot ; FillColor=ROOT.kPink-9, Label="H"
 H                        : H_ST800to1500            :      xs/nTot ; FillColor=ROOT.kPink-9, Label="H"
-#H                        : H_ST1500toInf            :      xs/nTot ; FillColor=ROOT.kPink-9, Label="H"
+H                        : H_ST1500toInf            :      xs/nTot ; FillColor=ROOT.kPink-9, Label="H"
 
 tB                       : tB_ST0to500              :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST500to900            :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
-#tB                       : tB_ST900to1500           :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
+tB                       : tB_ST900to1500           :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST1500to2200          :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
 tB                       : tB_ST2200toInf           :      xs/nTot ; FillColor=ROOT.kAzure+1, Label="tB"
 
