@@ -8,7 +8,7 @@
 SFOS: hasSFOS && hasSoftSFOS
 
 # Leptons in acceptance
-lep_eta < 2.8: lep1_eta < 2.8 && lep2_eta < 2.8
+lep_eta < 2.8: fabs(lep1_eta) < 2.8 && fabs(lep2_eta) < 2.8
 
 # At least one jet
 nJet >= 1: nJet >= 1
