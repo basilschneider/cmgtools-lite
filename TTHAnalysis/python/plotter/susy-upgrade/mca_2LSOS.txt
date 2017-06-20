@@ -1,12 +1,20 @@
 # Background
 
-Bj                       : Bj_ST0to300              :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST300to600            :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST600to1100           :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST1100to1800          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST1800to2700          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST2700to3700          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
-Bj                       : Bj_ST3700toInfo          :      xs/nTot ; FillColor=ROOT.kOrange+7, Label="Bj"
+Zj                       : Bj_ST0to300              :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST300to600            :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST600to1100           :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST1100to1800          :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST1800to2700          :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST2700to3700          :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+Zj                       : Bj_ST3700toInfo          :      xs/nTot : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="Zj"
+
+Wj                       : Bj_ST0to300              :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST300to600            :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST600to1100           :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST1100to1800          :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST1800to2700          :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST2700to3700          :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                       : Bj_ST3700toInfo          :      xs/nTot : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
 
 B                        : B_ST0to1                 :      xs/nTot ; FillColor=ROOT.kSpring-5, Label="B"
 
