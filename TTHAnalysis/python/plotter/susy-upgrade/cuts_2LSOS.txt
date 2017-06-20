@@ -7,6 +7,9 @@
 # Same flavour opposite sign lepton pair
 SFOS: hasSFOS && hasSoftSFOS
 
+# Leptons in acceptance
+lep_eta < 2.8: lep1_eta < 2.8 && lep2_eta < 2.8
+
 # At least one jet
 nJet >= 1: nJet >= 1
 
@@ -18,9 +21,15 @@ mll cuts: (mll > 4 && mll < 9) || (mll > 10.5 && mll < 50)
 
 # MET cut
 met > 120: met > 120
+#met in [200, 250]: met > 200 && met < 250
+#met in [125, 200]: met > 125 && met < 200
+met > 200: met > 200
 
-## MET/HT cut
-#met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
-#
-## mT cuts
+# MET/HT cut
+met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
+
+# HT cut
+ht > 100: ht > 100
+
+# mT cuts
 #mTx < 70: mt1 < 70 && mt2 < 70
