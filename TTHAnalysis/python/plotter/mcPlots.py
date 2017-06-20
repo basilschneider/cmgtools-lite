@@ -211,8 +211,10 @@ def doStackSignalNorm(pspec,pmap,individuals,extrascale=1.0,norm=True):
             sig.SetFillStyle(0)
             sig.SetLineColor(sig.GetFillColor())
             sig.SetLineWidth(4)
+            sig.SetMarkerSize(0)
             if norm: sig.Scale(total*extrascale/sig.Integral())
             sig.Draw("HIST SAME")
+            sig.Draw("E SAME")
             sigs.append(sig)
         return sigs
     else:
@@ -224,9 +226,11 @@ def doStackSignalNorm(pspec,pmap,individuals,extrascale=1.0,norm=True):
         sig.SetFillStyle(0)
         sig.SetLineColor(206)
         sig.SetLineWidth(4)
+        sig.SetMarkerSize(0)
         if norm and sig.Integral() > 0:
             sig.Scale(total*extrascale/sig.Integral())
         sig.Draw("HIST SAME")
+        sig.Draw("E SAME")
         return [sig]
 
 def doStackSigScaledNormData(pspec,pmap):
