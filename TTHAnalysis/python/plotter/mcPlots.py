@@ -953,6 +953,10 @@ class PlotMaker:
 
                 stack.Draw("GOFF")
                 ytitle = "Events" if not self._options.printBinning else "Events / %s" %(self._options.printBinning)
+                if self._options.printBinningAuto:
+                    ytitle = "Events / %s GeV" %((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
+                else:
+                    ytitle = "Events"
                 total.GetXaxis().SetTitleFont(42)
                 total.GetXaxis().SetTitleSize(0.05)
                 total.GetXaxis().SetTitleOffset(0.9)
@@ -1285,6 +1289,7 @@ def addPlotMakerOptions(parser, addAlsoMCAnalysis=True):
     parser.add_option("--cmsprel", dest="cmsprel", type="string", default="Preliminary", help="Additional text (Simulation, Preliminary, Internal)")
     parser.add_option("--cmssqrtS", dest="cmssqrtS", type="string", default="13 TeV", help="Sqrt of s to be written in the official CMS text.")
     parser.add_option("--printBin", dest="printBinning", type="string", default=None, help="Write 'Events/xx' instead of 'Events' on the y axis")
+    parser.add_option("--printBinAuto", dest="printBinningAuto", action="store_true", default=False, help="Write 'Events/n GeV' instead of 'Events' on the y axis")
 
 if __name__ == "__main__":
     from optparse import OptionParser
