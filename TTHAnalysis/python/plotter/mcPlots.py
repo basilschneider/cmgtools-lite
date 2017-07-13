@@ -954,7 +954,10 @@ class PlotMaker:
                 stack.Draw("GOFF")
                 ytitle = "Events" if not self._options.printBinning else "Events / %s" %(self._options.printBinning)
                 if self._options.printBinningAuto:
-                    ytitle = "Events / %s GeV" %((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
+                    try:
+                        ytitle = "Events / %s GeV" %((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
+                    except ReferenceError:
+                        ytitle = "Events"
                 else:
                     ytitle = "Events"
                 total.GetXaxis().SetTitleFont(42)
