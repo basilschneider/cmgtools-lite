@@ -37,7 +37,8 @@ python mcPlots.py \
     --rspam "%(lumi) (14 TeV)"
 
 # Useful options:
-# -e: show statistical errors
+# -f: Only make plots for complete set of cuts
+# -e: Show statistical errors
 # --showIndivSigShapes: Don't normalize signal to cross section
 # --emptyStack: Allow empty histograms
 # --showRatio: Show ratio plot
