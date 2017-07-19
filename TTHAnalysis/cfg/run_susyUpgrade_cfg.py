@@ -1,5 +1,5 @@
 ##########################################################
-##       CONFIGURATION FOR SUSY SingleLep TREES       ##
+##       CONFIGURATION FOR SUSY Upgrade TREES       ##
 ## In general all modules that are in CMGTools.TTHAnalysis.analyzers.susyCore_modules_cff
 ## are loaded and executed by default. Settings not overwritten here, will be taken from there.
 ##########################################################
@@ -163,7 +163,6 @@ if sample == "MC":
 
   #pick the file you want to run on
   selectedComponents = [WJetsToLNuHT]
-#  [TTJets_SingleLeptonFromTbar,TTJets_SingleLeptonFromTbar_ext,TTJets_SingleLeptonFromT,TTJets_DiLepton,TTJets_DiLepton_ext,
 
   if test==1:
     # test a single component, using a single thread.
@@ -204,11 +203,12 @@ elif sample == "Signal":
   jetAna.relaxJetId = True
 
   from private_samples import *
-  selectedComponents = [TChiWZ_300_250_miniAOD]
+  #selectedComponents = [TChiWZ_300_250_miniAOD]
+  selectedComponents = [TChiWZ_400_375_FullSim]
 
   if test==1:
     # test a single component, using a single thread.
-    comp = TChiWZ_300_250_miniAOD
+    comp = selectedComponents[0]
     comp.files = comp.files[:1]
     selectedComponents = [comp]
     comp.splitFactor = 1
@@ -283,16 +283,16 @@ elif sample == "data":
 PDFWeights = []
 
 #--------- Tree Producer
-from CMGTools.TTHAnalysis.analyzers.treeProducerSusySingleLepton import *
+from CMGTools.TTHAnalysis.analyzers.treeProducerSusyUpgrade import *
 treeProducer = cfg.Analyzer(
-  AutoFillTreeProducer, name='treeProducerSusySingleLepton',
+  AutoFillTreeProducer, name='treeProducerSusyUpgrade',
   vectorTree = True,
   saveTLorentzVectors = False,  # can set to True to get also the TLorentzVectors, but trees will be bigger
   defaultFloatType = 'F', # use Float_t for floating point
   PDFWeights = PDFWeights,
-  globalVariables = susySingleLepton_globalVariables,
-  globalObjects = susySingleLepton_globalObjects,
-  collections = susySingleLepton_collections,
+  globalVariables = susyUpgrade_globalVariables,
+  globalObjects = susyUpgrade_globalObjects,
+  collections = susyUpgrade_collections,
   )
 
 
@@ -346,7 +346,7 @@ output_service = cfg.Service(
     TFileService,
     'outputfile',
     name="outputfile",
-    fname='treeProducerSusySingleLepton/tree.root',
+    fname='treeProducerSusyUpgrade/tree.root',
     #fname='susyCounter/counts.root',
     option='recreate'
     )

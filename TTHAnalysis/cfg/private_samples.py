@@ -8,3 +8,4 @@ kreator = ComponentCreator()
 
 ## FullSim MiniAOD
 #TChiWZ_300_250_FullSim = kreator.makeMCComponentFromLocal('TChiWZ_300_250_FullSim', 'LOCAL', 'samples2', xSec=1.0)
+TChiWZ_400_375_FullSim = kreator.makeMCComponentFromLocal('TChiWZ_400_375_FullSim', 'LOCAL', '/eos/uscms/store/user/bschneid/analysis/upgrade/TChiWZ_400_375/1983785/', xSec=0.14426)
