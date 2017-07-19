@@ -73,7 +73,8 @@ ttB                      : ttB_ST900to1600          :      xs/nTot ; FillColor=R
 ttB                      : ttB_ST1600to2500         :      xs/nTot ; FillColor=ROOT.kTeal-8, Label="ttB"
 ttB                      : ttB_ST2500toInf          :      xs/nTot ; FillColor=ROOT.kTeal-8, Label="ttB"
 
-# Signal
-TChiWZ_300_250_Delphes+  : TChiWZ_300_250_Delphes   :  100*xs/nTot ; FillColor=ROOT.kMagenta, Label="100 x sig (300/250)"
-TChiWZ_400_375_Delphes+  : TChiWZ_400_375_Delphes   :  100*xs/nTot ; FillColor=ROOT.kCyan, Label="100 x sig (400/375)"
-TChiWZ_300_293_Delphes+  : TChiWZ_300_293_Delphes   :  100*xs/nTot ; FillColor=ROOT.kSpring-1, Label="100 x sig (300/292.5)"
+ Signal
+TChiWZ_300_250_Delphes+  : TChiWZ_300_250_Delphes   :  xs/nTot ; FillColor=ROOT.kMagenta, Label="sig (300/250)"
+TChiWZ_300_250_v342pre03+: TChiWZ_300_250_v342pre03 :  xs/nTot ; FillColor=ROOT.kMagenta+6, Label="sig (300/250) v342"
+TChiWZ_400_375_Delphes+  : TChiWZ_400_375_Delphes   :  xs/nTot ; FillColor=ROOT.kCyan, Label="sig (400/375)"
+TChiWZ_300_293_Delphes+  : TChiWZ_300_293_Delphes   :  xs/nTot ; FillColor=ROOT.kSpring-1, Label="sig (300/292.5)"
