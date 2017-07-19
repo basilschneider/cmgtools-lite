@@ -124,6 +124,8 @@ class MCAnalysis:
                     if cname == ffrom: cname = fto
                 treename = extra["TreeName"] if "TreeName" in extra else options.tree 
                 objname  = extra["ObjName"]  if "ObjName"  in extra else options.obj
+                # Tree from FullSim sample is in subfolder
+                if 'FullSim' in cname: objname = 'ntuple/{}'.format(objname)
 
                 basepath = None
                 for treepath in options.path:
