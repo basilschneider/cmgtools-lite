@@ -15,7 +15,7 @@ python mcAnalysis.py \
     "${cuts}" \
     -P "${trees}" \
     -l "${lumi}" \
-    -j $(nproc) \
+    -j 4 \
     --tree treeProducerSusyUpgrade \
     --obj Delphes
 
