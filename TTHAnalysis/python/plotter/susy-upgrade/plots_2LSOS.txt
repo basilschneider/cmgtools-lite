@@ -1,109 +1,113 @@
 # Lepton pT's
-el1_pt: el1_pt: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el2_pt: el2_pt: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu1_pt: mu1_pt: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu2_pt: mu2_pt: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep1_pt: lep1_pt: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep2_pt: lep2_pt: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el1_pt_log: el1_pt: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-el2_pt_log: el2_pt: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu1_pt_log: mu1_pt: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu2_pt_log: mu2_pt: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep1_pt_log: lep1_pt: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep2_pt_log: lep2_pt: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+el1_pt: el1_pt: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el2_pt: el2_pt: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu1_pt: mu1_pt: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu2_pt: mu2_pt: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep1_pt: lep1_pt: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep2_pt: lep2_pt: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el1_pt_log: el1_pt: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+el2_pt_log: el2_pt: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu1_pt_log: mu1_pt: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu2_pt_log: mu2_pt: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep1_pt_log: lep1_pt: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep2_pt_log: lep2_pt: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # Lepton pT's truth
-el1_pt_truth: el1_pt_truth: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el2_pt_truth: el2_pt_truth: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu1_pt_truth: mu1_pt_truth: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu2_pt_truth: mu2_pt_truth: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep1_pt_truth: lep1_pt_truth: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep2_pt_truth: lep2_pt_truth: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el1_pt_log_truth: el1_pt_truth: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-el2_pt_log_truth: el2_pt_truth: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu1_pt_log_truth: mu1_pt_truth: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu2_pt_log_truth: mu2_pt_truth: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep1_pt_log_truth: lep1_pt_truth: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep2_pt_log_truth: lep2_pt_truth: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-
-# Lepton eta truth
-el1_eta_truth: el1_eta_truth: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el2_eta_truth: el2_eta_truth: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu1_eta_truth: mu1_eta_truth: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu2_eta_truth: mu2_eta_truth: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep1_eta_truth: lep1_eta_truth: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep2_eta_truth: lep2_eta_truth: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el1_eta_log_truth: el1_eta_truth: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-el2_eta_log_truth: el2_eta_truth: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu1_eta_log_truth: mu1_eta_truth: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu2_eta_log_truth: mu2_eta_truth: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep1_eta_log_truth: lep1_eta_truth: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep2_eta_log_truth: lep2_eta_truth: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-
-# Lepton pT's truth matched
-el1_pt_truth_matched: el1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el2_pt_truth_matched: el2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu1_pt_truth_matched: mu1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu2_pt_truth_matched: mu2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep1_pt_truth_matched: lep1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep2_pt_truth_matched: lep2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el1_pt_log_truth_matched: el1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-el2_pt_log_truth_matched: el2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu1_pt_log_truth_matched: mu1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu2_pt_log_truth_matched: mu2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep1_pt_log_truth_matched: lep1_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep2_pt_log_truth_matched: lep2_pt_truth_matched: 24, 0, 120; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+el1_pt_truth: el1_pt_truth: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el2_pt_truth: el2_pt_truth: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu1_pt_truth: mu1_pt_truth: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu2_pt_truth: mu2_pt_truth: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep1_pt_truth: lep1_pt_truth: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep2_pt_truth: lep2_pt_truth: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el1_pt_log_truth: el1_pt_truth: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+el2_pt_log_truth: el2_pt_truth: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu1_pt_log_truth: mu1_pt_truth: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu2_pt_log_truth: mu2_pt_truth: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep1_pt_log_truth: lep1_pt_truth: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep2_pt_log_truth: lep2_pt_truth: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # Lepton eta's
-el1_eta: el1_eta: 26, -4, 9; XTitle="eta (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el2_eta: el2_eta: 26, -4, 9; XTitle="eta (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu1_eta: mu1_eta: 26, -4, 9; XTitle="eta (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mu2_eta: mu2_eta: 26, -4, 9; XTitle="eta (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep1_eta: lep1_eta: 26, -4, 9; XTitle="eta (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-lep2_eta: lep2_eta: 26, -4, 9; XTitle="eta (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-el1_eta_log: el1_eta: 26, -4, 9; XTitle="eta (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-el2_eta_log: el2_eta: 26, -4, 9; XTitle="eta (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu1_eta_log: mu1_eta: 26, -4, 9; XTitle="eta (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mu2_eta_log: mu2_eta: 26, -4, 9; XTitle="eta (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep1_eta_log: lep1_eta: 26, -4, 9; XTitle="eta (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-lep2_eta_log: lep2_eta: 26, -4, 9; XTitle="eta (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+el1_eta: el1_eta: 26, -4, 9; XTitle="eta (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el2_eta: el2_eta: 26, -4, 9; XTitle="eta (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu1_eta: mu1_eta: 26, -4, 9; XTitle="eta (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu2_eta: mu2_eta: 26, -4, 9; XTitle="eta (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep1_eta: lep1_eta: 26, -4, 9; XTitle="eta (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep2_eta: lep2_eta: 26, -4, 9; XTitle="eta (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el1_eta_log: el1_eta: 26, -4, 9; XTitle="eta (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+el2_eta_log: el2_eta: 26, -4, 9; XTitle="eta (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu1_eta_log: mu1_eta: 26, -4, 9; XTitle="eta (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu2_eta_log: mu2_eta: 26, -4, 9; XTitle="eta (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep1_eta_log: lep1_eta: 26, -4, 9; XTitle="eta (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep2_eta_log: lep2_eta: 26, -4, 9; XTitle="eta (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+
+# Lepton eta truth
+el1_eta_truth: el1_eta_truth: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el2_eta_truth: el2_eta_truth: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu1_eta_truth: mu1_eta_truth: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu2_eta_truth: mu2_eta_truth: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep1_eta_truth: lep1_eta_truth: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep2_eta_truth: lep2_eta_truth: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el1_eta_log_truth: el1_eta_truth: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+el2_eta_log_truth: el2_eta_truth: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu1_eta_log_truth: mu1_eta_truth: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu2_eta_log_truth: mu2_eta_truth: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep1_eta_log_truth: lep1_eta_truth: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep2_eta_log_truth: lep2_eta_truth: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+
+# Lepton pT's truth matched
+el1_pt_truth_matched: el1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el2_pt_truth_matched: el2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu1_pt_truth_matched: mu1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mu2_pt_truth_matched: mu2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep1_pt_truth_matched: lep1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+lep2_pt_truth_matched: lep2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+el1_pt_log_truth_matched: el1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (e_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+el2_pt_log_truth_matched: el2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (e_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu1_pt_log_truth_matched: mu1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mu2_pt_log_truth_matched: mu2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (#mu_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep1_pt_log_truth_matched: lep1_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (l_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+lep2_pt_log_truth_matched: lep2_pt_truth_matched: 20, 0, 50; XTitle="p_{T} (l_{2})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # Jet pt's
-jet1_pt: jet1_puppi_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-jet1_pt_log: jet1_puppi_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+jet1_pt: jet1_puppi_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+jet1_pt_log: jet1_puppi_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # Jet eta's
-jet1_eta: jet1_puppi_eta: 26, -4, 9; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-jet1_eta_log: jet1_puppi_eta: 26, -4, 9; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+jet1_eta: jet1_puppi_eta: 26, -4, 9; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+jet1_eta_log: jet1_puppi_eta: 26, -4, 9; XTitle="#eta (jet_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # HT
-ht: ht: 13, 0, 650; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-ht_log: ht: 13, 0, 650; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e9
+ht: ht: 13, 0, 650; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+ht_log: ht: 13, 0, 650; XTitle="H_{T} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e9
 
 # nJet
-jet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-njet_log: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+jet: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+njet_log: nJet: 9, -.5, 8.5; XTitle="n_{jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # nBJet
-bjet: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-nbjet_log: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+bjet: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+nbjet_log: nBJet: 9, -.5, 8.5; XTitle="n_{b-jet}", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # MET
-met: met: 13, 0, 650; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-met_log: met: 13, 0, 650; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+met: met: 13, 0, 650; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+met_log: met: 13, 0, 650; XTitle="MET [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # mll
-mll: mll: 20, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
-mll_log: mll: 20, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8, LowerSig
+mllMin: mllMin: 10, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
+mllMin_log: mllMin: 10, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8, LowerSig
+mllMax: mllMax: 10, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, LowerSig
+mllMax_log: mllMax: 10, 0, 100; XTitle="m_{ll} [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMax=.2, YMax=2e8, LowerSig
 
 # mT
-mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
+mt1: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mt2: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+mt1_log: mt1: 30, 0, 150; XTitle="m_{T} (l_{1}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+mt2_log: mt2: 30, 0, 150; XTitle="m_{T} (l_{2}\, MET) [GeV]", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
 
 # Additional plots
-met_ht: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-met_ht_log: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy, YMin=.2, YMax=2e8
-jet1_met: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True
-jet1_met_log: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=True, Logy
+met_ht: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+met_ht_log: met/ht: 24, 0, 1.2; XTitle="MET/HT", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy, YMin=.2, YMax=2e8
+jet1_met: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
+jet1_met_log: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False, Logy
+
+mu12_pt: mu1_pt\:mu2_pt : 50, 0, 50, 50, 0, 50; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False, IncludeUnderflow=False, IncludeOverflow=False
