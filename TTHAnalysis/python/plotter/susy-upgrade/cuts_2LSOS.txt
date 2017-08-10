@@ -1,11 +1,13 @@
-# Exactly two leptons
+# Skim: Exactly two leptons
 2 leptons: nLep == 2
 
-# Exactly two soft leptons
+# Skim: Exactly two soft leptons
 2 soft leptons: nSoftLep == 2
 
-# Same flavour opposite sign lepton pair
+# Skim: Same flavour opposite sign lepton pair
 SFOS: hasSFOS && hasSoftSFOS
+
+2 mu: nMu == 2 && nSoftMu == 2
 
 # Leptons in acceptance
 lep_eta < 2.8: fabs(lep1_eta) < 2.8 && fabs(lep2_eta) < 2.8
@@ -17,13 +19,13 @@ nJet >= 1: nJet >= 1
 nBJet == 0: nBJet == 0
 
 # Mll cuts
-mll cuts: (mll > 4 && mll < 9) || (mll > 10.5 && mll < 50)
+mllMin cuts: (mllMin > 4 && mllMin < 9) || (mllMin > 10.5 && mllMin < 50)
 
 # MET cut
 met > 120: met > 120
 #met in [200, 250]: met > 200 && met < 250
-#met in [125, 200]: met > 125 && met < 200
-met > 200: met > 200
+met in [125, 200]: met > 125 && met < 200
+#met > 300: met > 300
 
 # MET/HT cut
 met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
@@ -32,4 +34,4 @@ met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
 ht > 100: ht > 100
 
 # mT cuts
-#mTx < 70: mt1 < 70 && mt2 < 70
+mTx < 70: mt1 < 70 && mt2 < 70
