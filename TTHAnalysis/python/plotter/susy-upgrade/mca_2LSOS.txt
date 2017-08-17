@@ -82,4 +82,4 @@ TChiWZ_300_250_FullSim+          : TChiWZ_300_250_FullSim           : 451.45/971
 TChiWZ_300_293_FullSim+          : TChiWZ_300_293_FullSim           : 451.45/97166*.1  ; FillColor=ROOT.kCyan, Label="sig (300/292.5) FullSim"
 TChiWZ_300_293_v333pre15+        : TChiWZ_300_293_v333pre15         : xs/nTot          ; FillColor=ROOT.kSpring+7, Label="sig (300/292.5) Delphes v333pre15"
 TChiWZ_300_293_v342pre05+        : TChiWZ_300_293_v342pre05         : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/292.5) Delphes v342pre05"
-TChiWZ_300_250_Delphes_v05_0PU+  : TChiWZ_300_250_Delphes_v05_0PU   : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/250) Delphes (v05\, 0PU)"
+TChiWZ_300_250_Delphes_v05+      : TChiWZ_300_250_Delphes_v05       : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/250) Delphes (v05)"
