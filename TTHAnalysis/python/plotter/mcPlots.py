@@ -1208,9 +1208,10 @@ class PlotMaker:
                                     plot.SetMarkerSize(pspec.getOption("MarkerSize",1))
                                     if pspec.hasOption('ZMin') and pspec.hasOption('ZMax'):
                                         plot.GetZaxis().SetRangeUser(pspec.getOption('ZMin',1.0), pspec.getOption('ZMax',1.0))
-                                    plot.SetMarkerStyle(mca.getProcessOption(p,'MarkerStyle',1))
-                                    plot.SetMarkerColor(mca.getProcessOption(p,'FillColor',ROOT.kBlack))
-                                    plot.Draw(pspec.getOption("PlotMode","COLZ TEXT45"))
+                                    if not p in ['background', 'signal', 'total']:
+                                        plot.SetMarkerStyle(mca.getProcessOption(p,'MarkerStyle',1))
+                                        plot.SetMarkerColor(mca.getProcessOption(p,'FillColor',ROOT.kBlack))
+                                    plot.Draw(pspec.getOption("PlotMode","COLZ"))
                                     c1.Print("%s/%s_%s.%s" % (fdir, outputName, p, ext))
                                 if "data" in pmap and "TGraph" in pmap["data"].ClassName():
                                     pmap["data"].SetMarkerStyle(mca.getProcessOption('data','MarkerStyle',1))
