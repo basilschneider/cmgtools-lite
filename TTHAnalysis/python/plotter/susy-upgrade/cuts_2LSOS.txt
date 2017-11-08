@@ -1,16 +1,42 @@
-# Skim: Exactly two leptons
-2 leptons: nLep == 2
+#### Barrel TDR Muon Region
+#
+## Exactly two muons
+#2 muons: nLep == 2 && nMu == 2
+#
+## Opposite charge
+#OS: mu1_q*mu2_q < 0
+#
+## Exactly two soft muons
+#2 soft leptons: mu1_pt < 30 && mu2_pt < 30 && mu1_pt > 2 && mu2_pt > 2
+#
+#
+#### Barrel TDR Electron Region
+#
+## Exactly two electrons
+#2 muons: nLep == 2 && nEl == 2
+#
+## Opposite charge
+#OS: el1_q*el2_q < 0
+#
+## Exactly two soft electrons
+#2 soft leptons: el1_pt < 30 && el2_pt < 30 && el1_pt > 2 && el2_pt > 2
 
-# Skim: Exactly two soft leptons
-2 soft leptons: nSoftLep == 2
 
-# Skim: Same flavour opposite sign lepton pair
+### SOS SR Region
+
+# Exactly two leptons
+2 lep: nLep == 2 && nSoftLep == 2
+#2 mu: nMu == 2 && nSoftMu == 2
+#2 el: nEl == 2 && nSoftEl == 2
+#mupts: mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30
+leppts: lep1_pt > 0 && lep2_pt > 0 && lep1_pt < 30 && lep2_pt < 30
+
+# Same flavour opposite sign lepton pair
+#SFOS: mu1_q*mu2_q < 0
 SFOS: hasSFOS && hasSoftSFOS
 
-2 mu: nMu == 2 && nSoftMu == 2
-
 # Leptons in acceptance
-lep_eta < 2.8: fabs(lep1_eta) < 2.8 && fabs(lep2_eta) < 2.8
+lep_eta < 2.4: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 
 # At least one jet
 nJet >= 1: nJet >= 1
@@ -24,8 +50,8 @@ mllMin cuts: (mllMin > 4 && mllMin < 9) || (mllMin > 10.5 && mllMin < 50)
 # MET cut
 met > 120: met > 120
 #met in [200, 250]: met > 200 && met < 250
-met in [125, 200]: met > 125 && met < 200
-#met > 300: met > 300
+#met in [125, 200]: met > 125 && met < 200
+met > 250: met > 250
 
 # MET/HT cut
 met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
