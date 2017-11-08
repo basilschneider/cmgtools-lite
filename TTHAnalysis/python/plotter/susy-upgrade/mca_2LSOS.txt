@@ -74,12 +74,9 @@ ttB                              : ttB_ST1600to2500                 : xs/nTot   
 ttB                              : ttB_ST2500toInf                  : xs/nTot          ; FillColor=ROOT.kTeal-8, Label="ttB"
 
 # Signal
-TChiWZ_300_250_Delphes+          : TChiWZ_300_250_Delphes           : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/250) Delphes"
-TChiWZ_300_250_v342pre03+        : TChiWZ_300_250_v342pre03         : xs/nTot          ; FillColor=ROOT.kMagenta+6, Label="sig (300/250) v342"
-TChiWZ_400_375_Delphes+          : TChiWZ_400_375_Delphes           : xs/nTot          ; FillColor=ROOT.kCyan, Label="sig (400/375)"
-TChiWZ_300_293_Delphes+          : TChiWZ_300_293_Delphes           : xs/nTot          ; FillColor=ROOT.kSpring-1, Label="sig (300/292.5) Delphes"
-TChiWZ_300_250_FullSim+          : TChiWZ_300_250_FullSim           : 451.45/97182*.1  ; FillColor=ROOT.kSpring+7, Label="sig (300/250) FullSim"
-TChiWZ_300_293_FullSim+          : TChiWZ_300_293_FullSim           : 451.45/97166*.1  ; FillColor=ROOT.kCyan, Label="sig (300/292.5) FullSim"
-TChiWZ_300_293_v333pre15+        : TChiWZ_300_293_v333pre15         : xs/nTot          ; FillColor=ROOT.kSpring+7, Label="sig (300/292.5) Delphes v333pre15"
-TChiWZ_300_293_v342pre05+        : TChiWZ_300_293_v342pre05         : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/292.5) Delphes v342pre05"
-TChiWZ_300_250_Delphes_v05+      : TChiWZ_300_250_Delphes_v05       : xs/nTot          ; FillColor=ROOT.kMagenta, Label="sig (300/250) Delphes (v05)"
+TChiWZ_200_160_Delphes_v08+      : TChiWZ_200_160_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kMagenta-7, Label="sig (200/160) Delphes v08"
+TChiWZ_200_180_Delphes_v08+      : TChiWZ_200_180_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kMagenta+1, Label="sig (200/180) Delphes v08"
+TChiWZ_200_195_Delphes_v08+      : TChiWZ_200_195_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kMagenta+3, Label="sig (200/195) Delphes v08"
+TChiWZ_300_260_Delphes_v08+      : TChiWZ_300_260_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kCyan-7, Label="sig (300/260) Delphes v08"
+TChiWZ_300_280_Delphes_v08+      : TChiWZ_300_280_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (300/280) Delphes v08"
+TChiWZ_300_290_Delphes_v08+      : TChiWZ_300_290_Delphes_v08       : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="sig (300/290) Delphes v08"
