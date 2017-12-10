@@ -25,15 +25,16 @@
 ### SOS SR Region
 
 # Exactly two leptons
-2 lep: nLep == 2 && nSoftLep == 2
-#2 mu: nMu == 2 && nSoftMu == 2
+#2 lep: nLep == 2 && nSoftLep == 2
+#2 lep: (nMu == 2 && nSoftMu == 2) || (nEl == 2 && nSoftEl == 2)
+2 mu: nMu == 2 && nSoftMu == 2
 #2 el: nEl == 2 && nSoftEl == 2
-#mupts: mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30
-leppts: lep1_pt > 0 && lep2_pt > 0 && lep1_pt < 30 && lep2_pt < 30
+mupts: mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30
+#leppts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
 
 # Same flavour opposite sign lepton pair
-#SFOS: mu1_q*mu2_q < 0
-SFOS: hasSFOS && hasSoftSFOS
+SFOS: mu1_q*mu2_q < 0
+#SFOS: hasSFOS && hasSoftSFOS
 
 # Leptons in acceptance
 lep_eta < 2.4: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
@@ -48,16 +49,45 @@ nBJet == 0: nBJet == 0
 mllMin cuts: (mllMin > 4 && mllMin < 9) || (mllMin > 10.5 && mllMin < 50)
 
 # MET cut
-met > 120: met > 120
-#met in [200, 250]: met > 200 && met < 250
+met > 100: met > 100
 #met in [125, 200]: met > 125 && met < 200
-met > 250: met > 250
+#met in [200, 250]: met > 200 && met < 250
+#met > 250: met > 250
+met > 350: met > 350
 
 # MET/HT cut
-met/ht in [0.6, 1.4]: met/ht > 0.6 && met/ht < 1.4
+#met/ht in [0.666, 1.4]: met/ht > 0.666 && met/ht < 1.4
 
 # HT cut
-ht > 100: ht > 100
+#ht > 100: ht > 100
 
 # mT cuts
 mTx < 70: mt1 < 70 && mt2 < 70
+
+
+#### SOS Run-2 DY Cutflow Region
+#alwaystrue: 1.
+#met>50: met>50
+#nLep == 2: nLep == 2
+#nMu == 2: nMu == 2
+#nSoftLep == 2: nSoftLep == 2
+#nSoftMu == 2: nSoftMu == 2
+#mu in acc: fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4
+#OS: mu1_q*mu2_q < 0
+#lead lep pT: mu1_pt < 30 && mu1_pt > 5
+#sublead lep pT: mu2_pt < 30 && mu2_pt > 5
+#mllMin == mllMax: mllMin == mllMax
+#mll > 10.5: mllMin > 10.5
+##mll > 50: mllMin > 50
+#
+##pt2l>3: pt2l>3
+##mllMin > 4 && mllMin < 50: mllMin > 4 && mllMin < 50
+##Upsilon veto: mllMin < 9 || mllMin > 10.5
+###mtautau: mtautau < 0 || mtautau > 160
+##nJet >= 1: nJet >= 1
+##HT > 100: ht > 100
+##nBJet == 0: nBJet == 0
+##met > 125: met > 125
+##met < 200: met < 200
+##met/ht: met/ht>(2./3) && met/ht<1.4
+###mtX < 70: mt1 < 70 && mt2 < 70
