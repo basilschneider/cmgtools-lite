@@ -1,98 +1,123 @@
 ### Background Delphes Snowmass
 
-Wj                               : Bj_ST0to300                      : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST300to600                    : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST600to1100                   : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST1100to1800                  : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST1800to2700                  : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST2700to3700                  : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj                               : Bj_ST3700toInfo                  : xs/nTot          : !nZ>=1 ; FillColor=ROOT.kYellow+2, Label="Wj"
-
-DY                                  : Bj_ST0to300                      : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST300to600                    : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST600to1100                   : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST1100to1800                  : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST1800to2700                  : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST2700to3700                  : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-DY                                  : Bj_ST3700toInfo                  : xs/nTot          : nZ>=1 ; FillColor=ROOT.kOrange+7, Label="DY"
-
-#B                                : B_ST0to1                         : xs/nTot          ; FillColor=ROOT.kSpring-5, Label="B"
-
-#tj                               : tj_ST0to500                      : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="tj"
-#tj                               : tj_ST500to1000                   : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="tj"
-#tj                               : tj_ST1000to1600                  : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="tj"
-#tj                               : tj_ST1600to2400                  : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="tj"
-#tj                               : tj_ST2400toInf                   : xs/nTot          ; FillColor=ROOT.kCyan+3, Label="tj"
-
-tt                               : tt_ST0to600                      : xs/nTot          ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST600to1100                   : xs/nTot          ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST1100to1700                  : xs/nTot          ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST1700to2500                  : xs/nTot          ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST2500toInf                   : xs/nTot          ; FillColor=ROOT.kCyan-5, Label="tt"
-
-LL                               : LL_ST0to100                      : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-LL                               : LL_ST100to200                    : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-LL                               : LL_ST200to500                    : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-LL                               : LL_ST500to900                    : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-LL                               : LL_ST900to1400                   : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-LL                               : LL_ST1400toInf                   : xs/nTot          ; FillColor=ROOT.kBlue+2, Label="LL"
-
-BB                               : BB_ST0to300                      : xs/nTot          ; FillColor=ROOT.kGreen-2, Label="BB"
-BB                               : BB_ST300to700                    : xs/nTot          ; FillColor=ROOT.kGreen-2, Label="BB"
-BB                               : BB_ST700to1300                   : xs/nTot          ; FillColor=ROOT.kGreen-2, Label="BB"
-BB                               : BB_ST1300to2100                  : xs/nTot          ; FillColor=ROOT.kGreen-2, Label="BB"
-BB                               : BB_ST2100toInf                   : xs/nTot          ; FillColor=ROOT.kGreen-2, Label="BB"
-
-Bjj                              : Bjj_ST0to700                     : xs/nTot          ; FillColor=ROOT.kRed-4, Label="Bjj"
-Bjj                              : Bjj_ST700to1400                  : xs/nTot          ; FillColor=ROOT.kRed-4, Label="Bjj"
-Bjj                              : Bjj_ST1400to2300                 : xs/nTot          ; FillColor=ROOT.kRed-4, Label="Bjj"
-Bjj                              : Bjj_ST2300to3400                 : xs/nTot          ; FillColor=ROOT.kRed-4, Label="Bjj"
-#Bjj                              : Bjj_ST3400toInf                  : xs/nTot          ; FillColor=ROOT.kRed-4, Label="Bjj"
-
-#H                                : H_ST0to300                       : xs/nTot          ; FillColor=ROOT.kPink-9, Label="H"
-#H                                : H_ST300to800                     : xs/nTot          ; FillColor=ROOT.kPink-9, Label="H"
-#H                                : H_ST800to1500                    : xs/nTot          ; FillColor=ROOT.kPink-9, Label="H"
-#H                                : H_ST1500toInf                    : xs/nTot          ; FillColor=ROOT.kPink-9, Label="H"
+#Wj                               : Bj_ST0to300                      : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST300to600                    : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST600to1100                   : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST1100to1800                  : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST1800to2700                  : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST2700to3700                  : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                               : Bj_ST3700toInfo                  : xs/nTot          : !nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
 #
-#tB                               : tB_ST0to500                      : xs/nTot          ; FillColor=ROOT.kAzure+1, Label="tB"
-#tB                               : tB_ST500to900                    : xs/nTot          ; FillColor=ROOT.kAzure+1, Label="tB"
-#tB                               : tB_ST900to1500                   : xs/nTot          ; FillColor=ROOT.kAzure+1, Label="tB"
-#tB                               : tB_ST1500to2200                  : xs/nTot          ; FillColor=ROOT.kAzure+1, Label="tB"
-#tB                               : tB_ST2200toInf                   : xs/nTot          ; FillColor=ROOT.kAzure+1, Label="tB"
+#DY                                  : Bj_ST0to300                      : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST300to600                    : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST600to1100                   : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST1100to1800                  : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST1800to2700                  : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST2700to3700                  : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                  : Bj_ST3700toInfo                  : xs/nTot          : nZ>=1 : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+
+#B                                : B_ST0to1                         : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kSpring-5, Label="B"
+
+#tj                               : tj_ST0to500                      : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan+3, Label="tj"
+#tj                               : tj_ST500to1000                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan+3, Label="tj"
+#tj                               : tj_ST1000to1600                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan+3, Label="tj"
+#tj                               : tj_ST1600to2400                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan+3, Label="tj"
+#tj                               : tj_ST2400toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan+3, Label="tj"
+
+tt                               : tt_ST0to600                      : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST600to1100                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST1100to1700                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST1700to2500                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST2500toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+
+LL                               : LL_ST0to100                      : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+LL                               : LL_ST100to200                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+LL                               : LL_ST200to500                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+LL                               : LL_ST500to900                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+LL                               : LL_ST900to1400                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+LL                               : LL_ST1400toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue+2, Label="LL"
+
+BB                               : BB_ST0to300                      : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen-2, Label="BB"
+BB                               : BB_ST300to700                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen-2, Label="BB"
+BB                               : BB_ST700to1300                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen-2, Label="BB"
+BB                               : BB_ST1300to2100                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen-2, Label="BB"
+BB                               : BB_ST2100toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen-2, Label="BB"
+
+Bjj                              : Bjj_ST0to700                     : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kRed-4, Label="Bjj"
+Bjj                              : Bjj_ST700to1400                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kRed-4, Label="Bjj"
+Bjj                              : Bjj_ST1400to2300                 : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kRed-4, Label="Bjj"
+Bjj                              : Bjj_ST2300to3400                 : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kRed-4, Label="Bjj"
+#Bjj                              : Bjj_ST3400toInf                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kRed-4, Label="Bjj"
+
+#H                                : H_ST0to300                       : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kPink-9, Label="H"
+#H                                : H_ST300to800                     : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kPink-9, Label="H"
+#H                                : H_ST800to1500                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kPink-9, Label="H"
+#H                                : H_ST1500toInf                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kPink-9, Label="H"
 #
-#BBB                              : BBB_ST0to600                     : xs/nTot          ; FillColor=ROOT.kGreen+4, Label="BBB"
-#BBB                              : BBB_ST600to1300                  : xs/nTot          ; FillColor=ROOT.kGreen+4, Label="BBB"
-#BBB                              : BBB_ST1300toInf                  : xs/nTot          ; FillColor=ROOT.kGreen+4, Label="BBB"
+#tB                               : tB_ST0to500                      : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kAzure+1, Label="tB"
+#tB                               : tB_ST500to900                    : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kAzure+1, Label="tB"
+#tB                               : tB_ST900to1500                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kAzure+1, Label="tB"
+#tB                               : tB_ST1500to2200                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kAzure+1, Label="tB"
+#tB                               : tB_ST2200toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kAzure+1, Label="tB"
 #
-#LLB                              : LLB_ST0to400                     : xs/nTot          ; FillColor=ROOT.kBlue-7, Label="LLB"
-#LLB                              : LLB_ST400to900                   : xs/nTot          ; FillColor=ROOT.kBlue-7, Label="LLB"
-#LLB                              : LLB_ST900toInf                   : xs/nTot          ; FillColor=ROOT.kBlue-7, Label="LLB"
+#BBB                              : BBB_ST0to600                     : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen+4, Label="BBB"
+#BBB                              : BBB_ST600to1300                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen+4, Label="BBB"
+#BBB                              : BBB_ST1300toInf                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kGreen+4, Label="BBB"
 #
-#ttB                              : ttB_ST0to900                     : xs/nTot          ; FillColor=ROOT.kTeal-8, Label="ttB"
-#ttB                              : ttB_ST900to1600                  : xs/nTot          ; FillColor=ROOT.kTeal-8, Label="ttB"
-#ttB                              : ttB_ST1600to2500                 : xs/nTot          ; FillColor=ROOT.kTeal-8, Label="ttB"
-#ttB                              : ttB_ST2500toInf                  : xs/nTot          ; FillColor=ROOT.kTeal-8, Label="ttB"
+#LLB                              : LLB_ST0to400                     : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue-7, Label="LLB"
+#LLB                              : LLB_ST400to900                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue-7, Label="LLB"
+#LLB                              : LLB_ST900toInf                   : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kBlue-7, Label="LLB"
+#
+#ttB                              : ttB_ST0to900                     : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kTeal-8, Label="ttB"
+#ttB                              : ttB_ST900to1600                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kTeal-8, Label="ttB"
+#ttB                              : ttB_ST1600to2500                 : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kTeal-8, Label="ttB"
+#ttB                              : ttB_ST2500toInf                  : xs/nTot          : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kTeal-8, Label="ttB"
 
 
 
 #### Background Delphes HGCal
 #
 ## DY MISSING M10to50
-#DY                                : DYToLL_M_50_0J              :  3668000/nTot         ; FillColor=ROOT.kOrange+7, Label="DY"
-#DY                                : DYToLL_M_50_1J              :  1094000/nTot         ; FillColor=ROOT.kOrange+7, Label="DY"
-#DY                                : DYToLL_M_50_2J              :   369700/nTot         ; FillColor=ROOT.kOrange+7, Label="DY"
-#DY                                : DYToLL_M_50_3J              :   190200/nTot         ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                : DYToLL_M_50_0J              :  3668000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                : DYToLL_M_50_1J              :  1094000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                : DYToLL_M_50_2J              :   369700/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+#DY                                : DYToLL_M_50_3J              :   190200/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
 #
-##TT_Dilept                         : TT_Dilept                   :    90750/nTot         ; FillColor=ROOT.kCyan-5, Label="tt"
-##TTbar                             : TTbar                       :   864400/nTot         ; FillColor=ROOT.kCyan-5, Label="tt"
-#TT                                : TT_Dilept                   :    90750/nTot/2       ; FillColor=ROOT.kCyan-5, Label="tt"
-#TT                                : TTbar                       :   864400/nTot/2       ; FillColor=ROOT.kCyan-5, Label="tt"
+##TT_Dilept                         : TT_Dilept                   :    90750/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+##TTbar                             : TTbar                       :   864400/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+#TT                                : TT_Dilept                   :    90750/nTot/2       : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+#TT                                : TTbar                       :   864400/nTot/2       : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
 #
-#Wj                                : WToLNu_0J                   : 37950000/nTot         ; FillColor=ROOT.kYellow+2, Label="Wj"
-#Wj                                : WToLNu_1J                   : 10400000/nTot         ; FillColor=ROOT.kYellow+2, Label="Wj"
-#Wj                                : WToLNu_2J                   :  3459000/nTot         ; FillColor=ROOT.kYellow+2, Label="Wj"
-#Wj                                : WToLNu_3J                   :  1794000/nTot         ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                                : WToLNu_0J                   : 37950000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                                : WToLNu_1J                   : 10400000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                                : WToLNu_2J                   :  3459000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+#Wj                                : WToLNu_3J                   :  1794000/nTot         : if3(lep2_pt>5 && lep2_pt<10, 1./7, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./4, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
 
+
+
+### Background Run-2
+
+DY                               : DYToLL_M_5to50_HT100to200   : 224200/nTot           : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_5to50_HT200to400   : 37200/nTot            : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_5to50_HT400to600   : 3581/nTot             : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_5to50_HT600toInf   : 1124/nTot             : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT70to100       : 1.23*169900/nTot      : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT100to200      : 1.23*147400/nTot      : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT200to400      : 1.23*40990/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT400to600      : 1.23*5678/nTot        : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT600to800      : 1.23*1367/nTot        : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT800to1200     : 1.23*630.4/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT1200to2500    : 1.23*151.4/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+DY                               : DYToLL_M_50_HT2500toInf     : 1.23*3.565/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./11, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./10, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./6, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kOrange+7, Label="DY"
+
+Wj                               : WJetsToLNu_HT70to100        : 1.21*0/nTot           : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT100to200       : 1.21*1345000/nTot     : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT200to400       : 1.21*359700/nTot      : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT400to600       : 1.21*48910/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT600to800       : 1.21*12050/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT800to1200      : 1.21*5501/nTot        : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT1200to2500     : 1.21*1329/nTot        : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj                               : WJetsToLNu_HT2500toInf      : 1.21*32.16/nTot       : if3(lep2_pt>5 && lep2_pt<10, 1./37, 1.)*if3(lep2_pt>10 && lep2_pt<15, 1./3, 1.)*if3(lep2_pt>15 && lep2_pt<20, 1./3, 1.)*if3(lep2_pt>20 && lep2_pt<30, 1./2, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
 
 
 #### Background FullSim
@@ -109,51 +134,51 @@ Bjj                              : Bjj_ST2300to3400                 : xs/nTot   
 
 ### Signal
 
-TChiWZ_100_60_Delphes_v08+       : TChiWZ_100_60_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/60) Delphes v08", SkipMe=True
-TChiWZ_100_65_Delphes_v08+       : TChiWZ_100_65_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/65) Delphes v08", SkipMe=True
-TChiWZ_100_70_Delphes_v08+       : TChiWZ_100_70_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/70) Delphes v08", SkipMe=True
-TChiWZ_100_75_Delphes_v08+       : TChiWZ_100_75_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/75) Delphes v08", SkipMe=True
-TChiWZ_100_80_Delphes_v08+       : TChiWZ_100_80_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/80) Delphes v08", SkipMe=True
-TChiWZ_100_85_Delphes_v08+       : TChiWZ_100_85_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/85) Delphes v08", SkipMe=True
-TChiWZ_100_90_Delphes_v08+       : TChiWZ_100_90_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/90) Delphes v08", SkipMe=True
-TChiWZ_100_95_Delphes_v08+       : TChiWZ_100_95_Delphes_v08        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/95) Delphes v08", SkipMe=True
-TChiWZ_150_110_Delphes_v08+      : TChiWZ_150_110_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/110) Delphes v08", SkipMe=True
-TChiWZ_150_115_Delphes_v08+      : TChiWZ_150_115_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/115) Delphes v08", SkipMe=True
-TChiWZ_150_120_Delphes_v08+      : TChiWZ_150_120_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/120) Delphes v08", SkipMe=True
-TChiWZ_150_125_Delphes_v08+      : TChiWZ_150_125_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/125) Delphes v08", SkipMe=True
-TChiWZ_150_130_Delphes_v08+      : TChiWZ_150_130_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/130) Delphes v08", SkipMe=True
-TChiWZ_150_135_Delphes_v08+      : TChiWZ_150_135_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/135) Delphes v08", SkipMe=True
-TChiWZ_150_140_Delphes_v08+      : TChiWZ_150_140_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/140) Delphes v08", SkipMe=True
-TChiWZ_150_145_Delphes_v08+      : TChiWZ_150_145_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/145) Delphes v08", SkipMe=True
-TChiWZ_200_160_Delphes_v08+      : TChiWZ_200_160_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/160) Delphes v08", SkipMe=True
-TChiWZ_200_165_Delphes_v08+      : TChiWZ_200_165_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/165) Delphes v08", SkipMe=True
-TChiWZ_200_170_Delphes_v08+      : TChiWZ_200_170_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/170) Delphes v08", SkipMe=True
-TChiWZ_200_175_Delphes_v08+      : TChiWZ_200_175_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/175) Delphes v08", SkipMe=True
-TChiWZ_200_180_Delphes_v08+      : TChiWZ_200_180_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/180) Delphes v08", SkipMe=True
-TChiWZ_200_185_Delphes_v08+      : TChiWZ_200_185_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/185) Delphes v08", SkipMe=True
-TChiWZ_200_190_Delphes_v08+      : TChiWZ_200_190_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/190) Delphes v08", SkipMe=True
-TChiWZ_200_195_Delphes_v08+      : TChiWZ_200_195_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/195) Delphes v08", SkipMe=True
-TChiWZ_250_210_Delphes_v08+      : TChiWZ_250_210_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/210) Delphes v08", SkipMe=True
-TChiWZ_250_215_Delphes_v08+      : TChiWZ_250_215_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/215) Delphes v08", SkipMe=True
-TChiWZ_250_220_Delphes_v08+      : TChiWZ_250_220_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/220) Delphes v08", SkipMe=True
-TChiWZ_250_225_Delphes_v08+      : TChiWZ_250_225_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/225) Delphes v08", SkipMe=True
-TChiWZ_250_230_Delphes_v08+      : TChiWZ_250_230_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/230) Delphes v08", SkipMe=True
-TChiWZ_250_235_Delphes_v08+      : TChiWZ_250_235_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/235) Delphes v08", SkipMe=True
-TChiWZ_250_240_Delphes_v08+      : TChiWZ_250_240_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/240) Delphes v08", SkipMe=True
-TChiWZ_250_245_Delphes_v08+      : TChiWZ_250_245_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/245) Delphes v08", SkipMe=True
-TChiWZ_300_260_Delphes_v08+      : TChiWZ_300_260_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/260) Delphes v08", SkipMe=True
-TChiWZ_300_265_Delphes_v08+      : TChiWZ_300_265_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/265) Delphes v08", SkipMe=True
-TChiWZ_300_270_Delphes_v08+      : TChiWZ_300_270_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/270) Delphes v08", SkipMe=True
-TChiWZ_300_275_Delphes_v08+      : TChiWZ_300_275_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/275) Delphes v08", SkipMe=True
-TChiWZ_300_280_Delphes_v08+      : TChiWZ_300_280_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/280) Delphes v08", SkipMe=True
-TChiWZ_300_285_Delphes_v08+      : TChiWZ_300_285_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/285) Delphes v08", SkipMe=True
-TChiWZ_300_290_Delphes_v08+      : TChiWZ_300_290_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/290) Delphes v08", SkipMe=True
-TChiWZ_300_295_Delphes_v08+      : TChiWZ_300_295_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/295) Delphes v08", SkipMe=True
-TChiWZ_350_310_Delphes_v08+      : TChiWZ_350_310_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/310) Delphes v08", SkipMe=True
-TChiWZ_350_315_Delphes_v08+      : TChiWZ_350_315_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/315) Delphes v08", SkipMe=True
-TChiWZ_350_320_Delphes_v08+      : TChiWZ_350_320_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/320) Delphes v08", SkipMe=True
-TChiWZ_350_325_Delphes_v08+      : TChiWZ_350_325_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/325) Delphes v08", SkipMe=True
-TChiWZ_350_330_Delphes_v08+      : TChiWZ_350_330_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/330) Delphes v08", SkipMe=True
-TChiWZ_350_335_Delphes_v08+      : TChiWZ_350_335_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/335) Delphes v08", SkipMe=True
-TChiWZ_350_340_Delphes_v08+      : TChiWZ_350_340_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/340) Delphes v08", SkipMe=True
-TChiWZ_350_345_Delphes_v08+      : TChiWZ_350_345_Delphes_v08       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/345) Delphes v08", SkipMe=True
+TChiWZ_100_60_Delphes_v09+       : TChiWZ_100_60_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/60) Delphes v09", SkipMe=True
+TChiWZ_100_65_Delphes_v09+       : TChiWZ_100_65_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/65) Delphes v09", SkipMe=True
+TChiWZ_100_70_Delphes_v09+       : TChiWZ_100_70_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/70) Delphes v09", SkipMe=True
+TChiWZ_100_75_Delphes_v09+       : TChiWZ_100_75_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta+4, Label="sig (100/75) Delphes v09", SkipMe=True
+TChiWZ_100_80_Delphes_v09+       : TChiWZ_100_80_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/80) Delphes v09", SkipMe=True
+TChiWZ_100_85_Delphes_v09+       : TChiWZ_100_85_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/85) Delphes v09", SkipMe=True
+TChiWZ_100_90_Delphes_v09+       : TChiWZ_100_90_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/90) Delphes v09", SkipMe=True
+TChiWZ_100_95_Delphes_v09+       : TChiWZ_100_95_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta-4, Label="sig (100/95) Delphes v09", SkipMe=True
+TChiWZ_150_110_Delphes_v09+      : TChiWZ_150_110_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/110) Delphes v09", SkipMe=True
+TChiWZ_150_115_Delphes_v09+      : TChiWZ_150_115_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/115) Delphes v09", SkipMe=True
+TChiWZ_150_120_Delphes_v09+      : TChiWZ_150_120_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/120) Delphes v09", SkipMe=True
+TChiWZ_150_125_Delphes_v09+      : TChiWZ_150_125_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+4, Label="sig (150/125) Delphes v09", SkipMe=True
+TChiWZ_150_130_Delphes_v09+      : TChiWZ_150_130_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/130) Delphes v09", SkipMe=True
+TChiWZ_150_135_Delphes_v09+      : TChiWZ_150_135_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/135) Delphes v09", SkipMe=True
+TChiWZ_150_140_Delphes_v09+      : TChiWZ_150_140_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/140) Delphes v09", SkipMe=True
+TChiWZ_150_145_Delphes_v09+      : TChiWZ_150_145_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-4, Label="sig (150/145) Delphes v09", SkipMe=True
+TChiWZ_200_160_Delphes_v09+      : TChiWZ_200_160_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/160) Delphes v09", SkipMe=True
+TChiWZ_200_165_Delphes_v09+      : TChiWZ_200_165_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/165) Delphes v09", SkipMe=True
+TChiWZ_200_170_Delphes_v09+      : TChiWZ_200_170_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/170) Delphes v09", SkipMe=True
+TChiWZ_200_175_Delphes_v09+      : TChiWZ_200_175_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+4, Label="sig (200/175) Delphes v09", SkipMe=True
+TChiWZ_200_180_Delphes_v09+      : TChiWZ_200_180_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/180) Delphes v09", SkipMe=True
+TChiWZ_200_185_Delphes_v09+      : TChiWZ_200_185_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/185) Delphes v09", SkipMe=True
+TChiWZ_200_190_Delphes_v09+      : TChiWZ_200_190_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/190) Delphes v09", SkipMe=True
+TChiWZ_200_195_Delphes_v09+      : TChiWZ_200_195_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange-4, Label="sig (200/195) Delphes v09", SkipMe=True
+TChiWZ_250_210_Delphes_v09+      : TChiWZ_250_210_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/210) Delphes v09", SkipMe=True
+TChiWZ_250_215_Delphes_v09+      : TChiWZ_250_215_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/215) Delphes v09", SkipMe=True
+TChiWZ_250_220_Delphes_v09+      : TChiWZ_250_220_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/220) Delphes v09", SkipMe=True
+TChiWZ_250_225_Delphes_v09+      : TChiWZ_250_225_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring+4, Label="sig (250/225) Delphes v09", SkipMe=True
+TChiWZ_250_230_Delphes_v09+      : TChiWZ_250_230_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/230) Delphes v09", SkipMe=True
+TChiWZ_250_235_Delphes_v09+      : TChiWZ_250_235_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/235) Delphes v09", SkipMe=True
+TChiWZ_250_240_Delphes_v09+      : TChiWZ_250_240_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/240) Delphes v09", SkipMe=True
+TChiWZ_250_245_Delphes_v09+      : TChiWZ_250_245_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-4, Label="sig (250/245) Delphes v09", SkipMe=True
+TChiWZ_300_260_Delphes_v09+      : TChiWZ_300_260_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/260) Delphes v09", SkipMe=True
+TChiWZ_300_265_Delphes_v09+      : TChiWZ_300_265_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/265) Delphes v09", SkipMe=True
+TChiWZ_300_270_Delphes_v09+      : TChiWZ_300_270_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/270) Delphes v09", SkipMe=True
+TChiWZ_300_275_Delphes_v09+      : TChiWZ_300_275_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed+4, Label="sig (300/275) Delphes v09", SkipMe=True
+TChiWZ_300_280_Delphes_v09+      : TChiWZ_300_280_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/280) Delphes v09", SkipMe=True
+TChiWZ_300_285_Delphes_v09+      : TChiWZ_300_285_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/285) Delphes v09", SkipMe=True
+TChiWZ_300_290_Delphes_v09+      : TChiWZ_300_290_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/290) Delphes v09", SkipMe=True
+TChiWZ_300_295_Delphes_v09+      : TChiWZ_300_295_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed-4, Label="sig (300/295) Delphes v09", SkipMe=True
+TChiWZ_350_310_Delphes_v09+      : TChiWZ_350_310_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/310) Delphes v09", SkipMe=True
+TChiWZ_350_315_Delphes_v09+      : TChiWZ_350_315_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/315) Delphes v09", SkipMe=True
+TChiWZ_350_320_Delphes_v09+      : TChiWZ_350_320_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/320) Delphes v09", SkipMe=True
+TChiWZ_350_325_Delphes_v09+      : TChiWZ_350_325_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen+4, Label="sig (350/325) Delphes v09", SkipMe=True
+TChiWZ_350_330_Delphes_v09+      : TChiWZ_350_330_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/330) Delphes v09", SkipMe=True
+TChiWZ_350_335_Delphes_v09+      : TChiWZ_350_335_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/335) Delphes v09", SkipMe=True
+TChiWZ_350_340_Delphes_v09+      : TChiWZ_350_340_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/340) Delphes v09", SkipMe=True
+TChiWZ_350_345_Delphes_v09+      : TChiWZ_350_345_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kGreen-4, Label="sig (350/345) Delphes v09", SkipMe=True
