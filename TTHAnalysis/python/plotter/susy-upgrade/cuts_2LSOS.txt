@@ -85,21 +85,25 @@ mll smaller 50: mllMin < 50
 #mll > 50: mllMin > 50
 bjet: nBJet == 0
 
-mllMin in [5,10]: mllMin>5 && mllMin<10
+mllMin in [15, 20]: mllMin>15 && mllMin<20
 
-lead lep pT: mu1_pt < 30 && mu1_pt > 5
-sublead lep pT: mu2_pt < 30 && mu2_pt > 5
-
+lead lep pT: mu1_pt < 30 && mu1_pt > 10
+sublead lep pT: mu2_pt < 30 && mu2_pt > 10
 met: met > 300
 HT: ht > 10
 njets: nJet >= 0
-met over ht: met/ht > .2 && met/ht < 1.8
+jet1_pt: jet1_puppi_pt > 300
+met over ht: met/ht > .4 && met/ht < 1.
 pt2l: pt2l>0
 mt: mt1 < 270 && mt2 < 270
 
-#met: met > 300
+#mllMin in [5, 10]: mllMin>5 && mllMin<10
+#
+#lead lep pT: mu1_pt < 30 && mu1_pt > 10
+#sublead lep pT: mu2_pt < 30 && mu2_pt > 10
+#met: met > 400
 #HT: ht > 10
 #njets: nJet >= 0
-#met over ht: met/ht > .2 && met/ht < 1.8
+#met over ht: met/ht > .6 && met/ht < 1.0
 #pt2l: pt2l>0
-#mt: mt1 < 270 && mt2 < 270
+#mt: mt1 < 80 && mt2 < 80
