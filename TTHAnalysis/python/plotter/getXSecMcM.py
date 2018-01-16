@@ -16,7 +16,9 @@ def go(dataset):
         for d in dsets:
             go(d['dataset'][0]['name'])
         return
+    print 'Foo01', dsets
     for d in dsets:
+        print 'Foo02', d['dataset']
         for record in d['dataset']:
             if 'mcm' in record:
                 mcm = record['mcm']

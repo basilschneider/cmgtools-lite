@@ -15,10 +15,12 @@ python mcAnalysis.py \
     "${cuts}" \
     -P "${trees}" \
     -l "${lumi}" \
-    -j 4 \
+    -j 22 \
+    -G \
     --tree treeProducerSusyUpgrade \
     --obj Delphes
 
 # Useful options:
 # -e: show statistical errors
 # -u: don't use any weights
+# -G: don't show cut efficiencies

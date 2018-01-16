@@ -17,7 +17,7 @@ python mcPlots.py \
     "${plots}" \
     -P "${trees}" \
     -l "${lumi}" \
-    -j 4 \
+    -j 22 \
     -f \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
