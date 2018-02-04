@@ -23,7 +23,7 @@ ht25 larger 400: ht25 > 400
 jet1_pt larger 250: jet1_puppi_pt > 250
 
 # MET/HT cut
-met/ht in [0.4, 1.]: met/ht > 0.4 && met/ht < 1.
+met/ht25 in [0.4, 1.]: met/ht25 > 0.4 && met/ht25 < 1.
 
 # dr between leptons
 drLep1Lep2 smaller 2: drLep1Lep2 < 2
