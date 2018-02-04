@@ -555,20 +555,38 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     return (ratios, unity, unity0, line)
 
 def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Significance",doWide=False,showStatTotLegend=False):
+    sigmax = 100
     if pspec.hasOption('LowerSig'):
         ylabel='Lower Sig.'
     numkeys = []
     for sig in [x for x in mca.listSignals() if pmap.has_key(x) and pmap[x].Integral() > 0]:
         numkeys.append(sig)
     ratios = [] #None
+    rmin = 99999
+    rmax =-99999
     for numkey in numkeys:
         sig = pmap[numkey].Clone("significance");
         for i in xrange(sig.GetNbinsX()):
             if pspec.hasOption('LowerSig'):
-                sig.SetBinContent(i+1, ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(0, i+1), pmap[ratioDen].Integral(0, i+1), .3))
+                sigV = ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(0, i+1), pmap[ratioDen].Integral(0, i+1), .3)
+                if sigV < sigmax:
+                    sig.SetBinContent(i+1, sigV)
+                    rmin = min(rmin, sigV)
+                    rmax = max(rmax, sigV)
+                else:
+                    sig.SetBinContent(i+1, sigmax)
             else:
-                sig.SetBinContent(i+1, ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(i+1, sig.GetNbinsX()), pmap[ratioDen].Integral(i+1, sig.GetNbinsX()), .3))
+                sigV = ROOT.RooStats.NumberCountingUtils.BinomialExpZ(pmap[numkey].Integral(i+1, sig.GetNbinsX()), pmap[ratioDen].Integral(i+1, sig.GetNbinsX()), .3)
+                if sigV < sigmax:
+                    sig.SetBinContent(i+1, sigV)
+                    rmin = min(rmin, sigV)
+                    rmax = max(rmax, sigV)
+                else:
+                    sig.SetBinContent(i+1, sigmax)
         ratios.append(sig)
+
+    rmin -= (rmax - rmin)/10.
+    rmax += (rmax - rmin)/10.
 
     unity  = totalSyst.Clone("sim_div");
     unity0 = total.Clone("sim_div");
@@ -606,15 +624,6 @@ def doSigHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,
     else:
         if total != totalSyst and errorsOnRef:
             unity0.Draw("E2 SAME");
-    tmin = 99999
-    tmax =-99999
-    for ratio in ratios:
-        tmin = min(tmin, ratio.GetMinimum())
-        tmax = max(tmax, ratio.GetMaximum())
-    tfac = tmax - tmin
-    rmin = tmin - tfac/10.
-    rmax = tmax + tfac/10.
-    del tmin, tmax, tfac
     unity.GetYaxis().SetRangeUser(rmin,rmax);
     unity.GetXaxis().SetTitleFont(42)
     unity.GetXaxis().SetTitleSize(0.14)
