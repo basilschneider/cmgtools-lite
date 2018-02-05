@@ -45,3 +45,4 @@ python mcPlots.py \
 # --ratioNums sample2: For --showRatio, use sample 2 in numerator
 # --ratioYLabel: Label for ratio plot
 # --plotmode mode: Use plotting mode, e.g. nostack
+# --printBinAuto: Show n GeV on y axis (works only for regular binning)

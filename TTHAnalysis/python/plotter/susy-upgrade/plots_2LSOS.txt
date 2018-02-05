@@ -248,3 +248,9 @@ mht150_log: mht150: 26, 0, 650; XTitle="MHT150 [GeV]", Logy, YMin=.2, YMax=8e9
 #sf_met_ht200_coarse_varbin: if3(ht25>200, met, -1) : [0, 100, 200, 300, 400, 500, 700, 1000]; XTitle="MET", IncludeOverflows=False
 #genmet_ht: genmet\:ht25 : 50, 0, 1000, 50, 0, 1000; XTitle="H_{T}", YTitle="Gen MET"
 #mu12_pt: mu1_pt\:mu2_pt : 50, 0, 50, 50, 0, 50; XTitle="p_{T} (#mu_{2})", YTitle="p_{T} (#mu_{1})"
+
+## TDR plots
+#met: met: [300, 350, 400, 500, 800]; XTitle="MET [GeV]", YMin=0., YMax=1300.
+#met_log: met: [300, 350, 400, 500, 800]; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
+#mllMin: mllMin: [0, 5, 10, 20, 30, 50]; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=1700.
+#mllMin_log: mllMin: [0, 5, 10, 20, 30, 50]; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9

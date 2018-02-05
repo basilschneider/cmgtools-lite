@@ -70,14 +70,15 @@
 
 ### Bin by bin optimisation
 alwaystrue: 1.
-#nLep == 2: nLep == 2
-2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+nLep == 2: nLep == 2
+#2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+SFOS: hasSFOS && hasSoftSFOS
 #2 muons: nLep == 2 && nMu == 2
-#lead lep pT: mu1_pt < 30 && mu1_pt > 5
-#sublead lep pT: mu2_pt < 30 && mu2_pt > 5
+lead lep pT: lep1_pt < 30 && lep1_pt > 5
+sublead lep pT: lep2_pt < 30 && lep2_pt > 5
 ###nSoftLep == 2: nSoftLep == 2
 ##2 soft muons: nSoftMu == 2
-#mu eta cut: fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4
+lep eta cut: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 #mu os: mu1_q*mu2_q < 0
 
 ##mllMin == mllMax: mllMin == mllMax

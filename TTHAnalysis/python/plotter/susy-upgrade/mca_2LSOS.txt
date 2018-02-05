@@ -1,20 +1,20 @@
 ##### Background Delphes Snowmass
 ##
-##Wj1                              : Bj_ST0to300                      : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST300to600                    : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST600to1100                   : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST1100to1800                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST1800to2700                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST2700to3700                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-##Wj1                              : Bj_ST3700toInfo                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
+##Wj1                              : Bj_ST0to300                      : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST300to600                    : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST600to1100                   : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST1100to1800                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST1800to2700                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST2700to3700                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+##Wj1                              : Bj_ST3700toInfo                  : xs/nTot          : !nZ>=1 : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
 ##
-##DY1                                 : Bj_ST0to300                      : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST300to600                    : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST600to1100                   : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST1100to1800                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST1800to2700                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST2700to3700                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-##DY1                                 : Bj_ST3700toInfo                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
+##DY1                                 : Bj_ST0to300                      : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST300to600                    : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST600to1100                   : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST1100to1800                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST1800to2700                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST2700to3700                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+##DY1                                 : Bj_ST3700toInfo                  : xs/nTot          : nZ>=1 : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
 ##
 ####B                                : B_ST0to1                         : xs/nTot          : 1. ; FillColor=ROOT.kSpring-5, Label="B"
 ###
@@ -24,11 +24,11 @@
 ####tj                               : tj_ST1600to2400                  : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj"
 ####tj                               : tj_ST2400toInf                   : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj"
 
-tt                               : tt_ST0to600                      : xs*metSF/nTot          : if3(lep2_pt < 15, 1/2.16, 1.)*if3(lep2_pt < 10, 1/1.8, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST600to1100                   : xs*metSF/nTot          : if3(lep2_pt < 15, 1/2.16, 1.)*if3(lep2_pt < 10, 1/1.8, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST1100to1700                  : xs*metSF/nTot          : if3(lep2_pt < 15, 1/2.16, 1.)*if3(lep2_pt < 10, 1/1.8, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST1700to2500                  : xs*metSF/nTot          : if3(lep2_pt < 15, 1/2.16, 1.)*if3(lep2_pt < 10, 1/1.8, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
-tt                               : tt_ST2500toInf                   : xs*metSF/nTot          : if3(lep2_pt < 15, 1/2.16, 1.)*if3(lep2_pt < 10, 1/1.8, 1.) ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST0to600                      : xs*metSF/nTot          : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST600to1100                   : xs*metSF/nTot          : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST1100to1700                  : xs*metSF/nTot          : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST1700to2500                  : xs*metSF/nTot          : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
+tt                               : tt_ST2500toInf                   : xs*metSF/nTot          : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
 
 ###LL                               : LL_ST0to100                      : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL"
 ###LL                               : LL_ST100to200                    : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL"
@@ -78,20 +78,20 @@ tt                               : tt_ST2500toInf                   : xs*metSF/n
 ####### Background Delphes HGCal
 ####
 ##### DY MISSING M10to50
-####DY                                : DYToLL_M_50_0J              :  3668000/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-####DY                                : DYToLL_M_50_1J              :  1094000/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-####DY                                : DYToLL_M_50_2J              :   369700/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-####DY                                : DYToLL_M_50_3J              :   190200/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
+####DY                                : DYToLL_M_50_0J              :  3668000/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+####DY                                : DYToLL_M_50_1J              :  1094000/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+####DY                                : DYToLL_M_50_2J              :   369700/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+####DY                                : DYToLL_M_50_3J              :   190200/nTot         : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
 ####
 #####TT_Dilept                         : TT_Dilept                   :    90750/nTot         : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
 #####TTbar                             : TTbar                       :   864400/nTot         : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
 ####TT                                : TT_Dilept                   :    90750/nTot/2       : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
 ####TT                                : TTbar                       :   864400/nTot/2       : 1. ; FillColor=ROOT.kCyan-5, Label="tt"
 ####
-####Wj                                : WToLNu_0J                   : 37950000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-####Wj                                : WToLNu_1J                   : 10400000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-####Wj                                : WToLNu_2J                   :  3459000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
-####Wj                                : WToLNu_3J                   :  1794000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="Wj"
+####Wj                                : WToLNu_0J                   : 37950000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+####Wj                                : WToLNu_1J                   : 10400000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+####Wj                                : WToLNu_2J                   :  3459000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+####Wj                                : WToLNu_3J                   :  1794000/nTot         : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
 ##
 ##
 ##
@@ -103,25 +103,25 @@ tt                               : tt_ST2500toInf                   : xs*metSF/n
 #DY_Delphes+                      : DYToLL_M_50_2J              : .1*3.699e+05/9542294   : 1. ; FillColor=ROOT.kAzure+7, Label="DY (Delphes)"
 #DY_Delphes+                      : DYToLL_M_50_3J              : .1*1.909e+05/11654444  : 1. ; FillColor=ROOT.kAzure+7, Label="DY (Delphes)"
 
-DY2                              : DYToLL_M_5to50_HT100to200   : 224200*metSF/nTot           : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_5to50_HT200to400   : 37200*metSF/nTot            : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_5to50_HT400to600   : 3581*metSF/nTot             : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_5to50_HT600toInf   : 1124*metSF/nTot             : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT100to200      : 1.23*147400*metSF/nTot      : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT200to400      : 1.23*40990*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT400to600      : 1.23*5678*metSF/nTot        : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT600to800      : 1.23*1367*metSF/nTot        : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT800to1200     : 1.23*630.4*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT1200to2500    : 1.23*151.4*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
-DY2                              : DYToLL_M_50_HT2500toInf     : 1.23*3.565*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="DY"
+DY2                              : DYToLL_M_5to50_HT100to200   : 224200*metSF/nTot           : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_5to50_HT200to400   : 37200*metSF/nTot            : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_5to50_HT400to600   : 3581*metSF/nTot             : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_5to50_HT600toInf   : 1124*metSF/nTot             : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT100to200      : 1.23*147400*metSF/nTot      : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT200to400      : 1.23*40990*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT400to600      : 1.23*5678*metSF/nTot        : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT600to800      : 1.23*1367*metSF/nTot        : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT800to1200     : 1.23*630.4*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT1200to2500    : 1.23*151.4*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
+DY2                              : DYToLL_M_50_HT2500toInf     : 1.23*3.565*metSF/nTot       : 1. ; FillColor=ROOT.kOrange+7, Label="Drell Yan"
 
-Wj2                              : WJetsToLNu_HT100to200       : 1.21*1345000*metSF/nTot     : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT200to400       : 1.21*359700*metSF/nTot      : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT400to600       : 1.21*48910*metSF/nTot       : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT600to800       : 1.21*12050*metSF/nTot       : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT800to1200      : 1.21*5501*metSF/nTot        : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT1200to2500     : 1.21*1329*metSF/nTot        : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
-Wj2                              : WJetsToLNu_HT2500toInf      : 1.21*32.16*metSF/nTot       : if3(lep2_pt < 10, 1/3.16, 1.) ; FillColor=ROOT.kYellow+2, Label="Wj"
+Wj2                              : WJetsToLNu_HT100to200       : 1.21*1345000*metSF/nTot     : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT200to400       : 1.21*359700*metSF/nTot      : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT400to600       : 1.21*48910*metSF/nTot       : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT600to800       : 1.21*12050*metSF/nTot       : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT800to1200      : 1.21*5501*metSF/nTot        : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT1200to2500     : 1.21*1329*metSF/nTot        : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
+Wj2                              : WJetsToLNu_HT2500toInf      : 1.21*32.16*metSF/nTot       : 1. ; FillColor=ROOT.kYellow+2, Label="W+jets"
 
 WW                               : WWTo2L2Nu                   : 12178/nTot            : 1. ; FillColor=ROOT.kBlue-4, Label="WW"
 
@@ -141,10 +141,10 @@ WW                               : WWTo2L2Nu                   : 12178/nTot     
 ##TT2L2Nu+                           : TTTo2L2Nu                        : 90750/8730351               : 1. ; FillColor=ROOT.kYellow+1, Label="tt (FullSim)"
 #TTbar_incl                         : TTbar_incl                       : 864400/4638786                   ; FillColor=ROOT.kMagenta+4, Label="ttbar incl."
 #
-#TChiWZ_400_375_Delphes_v09+      : TChiWZ_400_375_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (400/375) Delphes v09"
-#TChiWZ_400_375_FS+               : TChiWZ_400_375_FS                : 33.52*.1/90451      ; FillColor=ROOT.kCyan+1, Label="sig (400/375) FS"
-#TChiWZ_300_250_FS+               : TChiWZ_300_250_FS                : 33.52*.1/102426     ; FillColor=ROOT.kCyan+1, Label="sig (300/250) FS"
-#TChiWZ_300_293_FS+               : TChiWZ_300_293_FS                : 33.52*.1/92323      ; FillColor=ROOT.kCyan+1, Label="sig (300/293) FS"
+#TChiWZ_400_375_Delphes_v09+      : TChiWZ_400_375_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (400/375)"
+#TChiWZ_400_375_FS+               : TChiWZ_400_375_FS                : 33.52*.1/90451      ; FillColor=ROOT.kCyan+1, Label="signal (400/375) FS"
+#TChiWZ_300_250_FS+               : TChiWZ_300_250_FS                : 33.52*.1/102426     ; FillColor=ROOT.kCyan+1, Label="signal (300/250) FS"
+#TChiWZ_300_293_FS+               : TChiWZ_300_293_FS                : 33.52*.1/92323      ; FillColor=ROOT.kCyan+1, Label="signal (300/293) FS"
 
 ### RelVal
 #RelVal_TTbar                       : MiniEvents_RelVal_TTbar          : 1. ; FillColor=ROOT.kBlue-2, Label="ttbar (RelVal)"
@@ -152,35 +152,35 @@ WW                               : WWTo2L2Nu                   : 12178/nTot     
 
 ### Signal
 
-TChiWZ_100_60_Delphes_v09+       : TChiWZ_100_60_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/60) Delphes v09", SkipMe=True
-TChiWZ_100_65_Delphes_v09+       : TChiWZ_100_65_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/65) Delphes v09", SkipMe=True
-TChiWZ_100_70_Delphes_v09+       : TChiWZ_100_70_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/70) Delphes v09", SkipMe=True
-TChiWZ_100_75_Delphes_v09+       : TChiWZ_100_75_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/75) Delphes v09", SkipMe=True
-TChiWZ_100_80_Delphes_v09+       : TChiWZ_100_80_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/80) Delphes v09", SkipMe=True
-TChiWZ_100_85_Delphes_v09+       : TChiWZ_100_85_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/85) Delphes v09", SkipMe=True
-TChiWZ_100_90_Delphes_v09+       : TChiWZ_100_90_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/90) Delphes v09", SkipMe=True
-TChiWZ_100_95_Delphes_v09+       : TChiWZ_100_95_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="sig (100/95) Delphes v09", SkipMe=True
-TChiWZ_150_110_Delphes_v09+      : TChiWZ_150_110_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/110) Delphes v09", SkipMe=True
-TChiWZ_150_115_Delphes_v09+      : TChiWZ_150_115_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/115) Delphes v09", SkipMe=True
-TChiWZ_150_120_Delphes_v09+      : TChiWZ_150_120_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/120) Delphes v09", SkipMe=False
-TChiWZ_150_125_Delphes_v09+      : TChiWZ_150_125_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/125) Delphes v09", SkipMe=True
-TChiWZ_150_130_Delphes_v09+      : TChiWZ_150_130_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/130) Delphes v09", SkipMe=True
-TChiWZ_150_135_Delphes_v09+      : TChiWZ_150_135_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/135) Delphes v09", SkipMe=True
-TChiWZ_150_140_Delphes_v09+      : TChiWZ_150_140_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure+1, Label="sig (150/140) Delphes v09", SkipMe=False
-TChiWZ_150_145_Delphes_v09+      : TChiWZ_150_145_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="sig (150/145) Delphes v09", SkipMe=True
-TChiWZ_200_160_Delphes_v09+      : TChiWZ_200_160_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/160) Delphes v09", SkipMe=True
-TChiWZ_200_165_Delphes_v09+      : TChiWZ_200_165_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/165) Delphes v09", SkipMe=True
-TChiWZ_200_170_Delphes_v09+      : TChiWZ_200_170_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/170) Delphes v09", SkipMe=True
-TChiWZ_200_175_Delphes_v09+      : TChiWZ_200_175_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/175) Delphes v09", SkipMe=True
-TChiWZ_200_180_Delphes_v09+      : TChiWZ_200_180_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/180) Delphes v09", SkipMe=False
-TChiWZ_200_185_Delphes_v09+      : TChiWZ_200_185_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/185) Delphes v09", SkipMe=True
-TChiWZ_200_190_Delphes_v09+      : TChiWZ_200_190_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/190) Delphes v09", SkipMe=True
-TChiWZ_200_195_Delphes_v09+      : TChiWZ_200_195_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="sig (200/195) Delphes v09", SkipMe=True
-TChiWZ_250_210_Delphes_v09+      : TChiWZ_250_210_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/210) Delphes v09", SkipMe=True
-TChiWZ_250_215_Delphes_v09+      : TChiWZ_250_215_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/215) Delphes v09", SkipMe=True
-TChiWZ_250_220_Delphes_v09+      : TChiWZ_250_220_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/220) Delphes v09", SkipMe=True
-TChiWZ_250_225_Delphes_v09+      : TChiWZ_250_225_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/225) Delphes v09", SkipMe=True
-TChiWZ_250_230_Delphes_v09+      : TChiWZ_250_230_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/230) Delphes v09", SkipMe=True
-TChiWZ_250_235_Delphes_v09+      : TChiWZ_250_235_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/235) Delphes v09", SkipMe=True
-TChiWZ_250_240_Delphes_v09+      : TChiWZ_250_240_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/240) Delphes v09", SkipMe=True
-TChiWZ_250_245_Delphes_v09+      : TChiWZ_250_245_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="sig (250/245) Delphes v09", SkipMe=True
+TChiWZ_100_60_Delphes_v09+       : TChiWZ_100_60_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/60)", SkipMe=True
+TChiWZ_100_65_Delphes_v09+       : TChiWZ_100_65_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/65)", SkipMe=True
+TChiWZ_100_70_Delphes_v09+       : TChiWZ_100_70_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/70)", SkipMe=True
+TChiWZ_100_75_Delphes_v09+       : TChiWZ_100_75_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/75)", SkipMe=True
+TChiWZ_100_80_Delphes_v09+       : TChiWZ_100_80_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/80)", SkipMe=True
+TChiWZ_100_85_Delphes_v09+       : TChiWZ_100_85_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/85)", SkipMe=True
+TChiWZ_100_90_Delphes_v09+       : TChiWZ_100_90_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/90)", SkipMe=True
+TChiWZ_100_95_Delphes_v09+       : TChiWZ_100_95_Delphes_v09        : xs*metSF*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/95)", SkipMe=True
+TChiWZ_150_110_Delphes_v09+      : TChiWZ_150_110_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/110)", SkipMe=True
+TChiWZ_150_115_Delphes_v09+      : TChiWZ_150_115_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/115)", SkipMe=True
+TChiWZ_150_120_Delphes_v09+      : TChiWZ_150_120_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/120)", SkipMe=False
+TChiWZ_150_125_Delphes_v09+      : TChiWZ_150_125_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/125)", SkipMe=True
+TChiWZ_150_130_Delphes_v09+      : TChiWZ_150_130_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/130)", SkipMe=True
+TChiWZ_150_135_Delphes_v09+      : TChiWZ_150_135_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/135)", SkipMe=True
+TChiWZ_150_140_Delphes_v09+      : TChiWZ_150_140_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure+1, Label="signal (150/140)", SkipMe=False
+TChiWZ_150_145_Delphes_v09+      : TChiWZ_150_145_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/145)", SkipMe=True
+TChiWZ_200_160_Delphes_v09+      : TChiWZ_200_160_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/160)", SkipMe=True
+TChiWZ_200_165_Delphes_v09+      : TChiWZ_200_165_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/165)", SkipMe=True
+TChiWZ_200_170_Delphes_v09+      : TChiWZ_200_170_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/170)", SkipMe=True
+TChiWZ_200_175_Delphes_v09+      : TChiWZ_200_175_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/175)", SkipMe=True
+TChiWZ_200_180_Delphes_v09+      : TChiWZ_200_180_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/180)", SkipMe=False
+TChiWZ_200_185_Delphes_v09+      : TChiWZ_200_185_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/185)", SkipMe=True
+TChiWZ_200_190_Delphes_v09+      : TChiWZ_200_190_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/190)", SkipMe=True
+TChiWZ_200_195_Delphes_v09+      : TChiWZ_200_195_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/195)", SkipMe=True
+TChiWZ_250_210_Delphes_v09+      : TChiWZ_250_210_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/210)", SkipMe=True
+TChiWZ_250_215_Delphes_v09+      : TChiWZ_250_215_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/215)", SkipMe=True
+TChiWZ_250_220_Delphes_v09+      : TChiWZ_250_220_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/220)", SkipMe=True
+TChiWZ_250_225_Delphes_v09+      : TChiWZ_250_225_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/225)", SkipMe=True
+TChiWZ_250_230_Delphes_v09+      : TChiWZ_250_230_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/230)", SkipMe=True
+TChiWZ_250_235_Delphes_v09+      : TChiWZ_250_235_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/235)", SkipMe=True
+TChiWZ_250_240_Delphes_v09+      : TChiWZ_250_240_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/240)", SkipMe=True
+TChiWZ_250_245_Delphes_v09+      : TChiWZ_250_245_Delphes_v09       : xs*metSF*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/245)", SkipMe=True
