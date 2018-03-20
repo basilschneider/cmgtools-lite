@@ -5,6 +5,8 @@
 # You need to have a symbolic link called "trees" pointing to your trees
 
 lumi=3000.
+lumi=1.072
+echo "LUMI SET TO ${lumi}!!!"
 
 mca=susy-upgrade/mca_2LSOS.txt
 cuts=susy-upgrade/cuts_2LSOS.txt

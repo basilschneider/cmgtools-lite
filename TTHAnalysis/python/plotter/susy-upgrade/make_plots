@@ -21,18 +21,18 @@ python mcPlots.py \
     -f \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
-    --showSignificance \
     --maxRatioRange 0.05 1.95 \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
-    --showIndivSigs \
+    --showIndivSigShapes \
     --showMCError \
     --emptyStack \
     --printBinAuto \
     --legendFontSize 0.028 \
     --noCms \
-    --lspam "#bf{CMS} #it{Sim. Prel.}" \
+    --plotmode stack \
+    --lspam "#bf{CMS} #it{Simulation}" \
     --rspam "%(lumi) (14 TeV)"
 
 # Useful options:

@@ -70,16 +70,22 @@
 
 ### Bin by bin optimisation
 alwaystrue: 1.
-nLep == 2: nLep == 2
-#2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-SFOS: hasSFOS && hasSoftSFOS
-#2 muons: nLep == 2 && nMu == 2
-lead lep pT: lep1_pt < 30 && lep1_pt > 5
-sublead lep pT: lep2_pt < 30 && lep2_pt > 5
-###nSoftLep == 2: nSoftLep == 2
-##2 soft muons: nSoftMu == 2
-lep eta cut: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
-#mu os: mu1_q*mu2_q < 0
+#nLep == 2: nLep == 2
+#Ztomm: ZtoLL == 13
+#2 muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+#crazyMuon500: crazyMuon500 == 0
+#crazyMuon200: crazyMuon200 == 0
+#crazyMuon50: crazyMuon50 == 0
+
+2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+#SFOS: hasSFOS && hasSoftSFOS
+##2 muons: nLep == 2 && nMu == 2
+#lead lep pT: lep1_pt < 30 && lep1_pt > 5
+#sublead lep pT: lep2_pt < 30 && lep2_pt > 5
+####nSoftLep == 2: nSoftLep == 2
+###2 soft muons: nSoftMu == 2
+#lep eta cut: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+##mu os: mu1_q*mu2_q < 0
 
 ##mllMin == mllMax: mllMin == mllMax
 mll larger 5: mllMin > 5
@@ -95,38 +101,38 @@ met larger 300: met > 300
 drLep1Lep2 smaller 2: drLep1Lep2 < 2
 met over ht: met/ht25 > .4 && met/ht25 < 1.
 
-#nJet 25 smaller equal 1: nJet25 <= 1
-#leading jet pt larger 200: jet1_puppi_pt > 200
-
-#nJet 25 smaller equal 0: nJet25 == 0
-#subleading muon pt smaller 15: mu2_pt < 15
-
-##mllMin in [10, 50]: mllMin>10 && mllMin<50
-#mllMin larger 10: mllMin>10
-#ht larger 100: ht>100
-#met larger 50: met>50
+##nJet 25 smaller equal 1: nJet25 <= 1
+##leading jet pt larger 200: jet1_puppi_pt > 200
 #
-##baseline cuts: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0 && mllMin>10 && met>50
+##nJet 25 smaller equal 0: nJet25 == 0
+##subleading muon pt smaller 15: mu2_pt < 15
 #
-###mllMin in [15, 20]: mllMin>15 && mllMin<20
+###mllMin in [10, 50]: mllMin>10 && mllMin<50
+##mllMin larger 10: mllMin>10
+##ht larger 100: ht>100
+##met larger 50: met>50
 ##
-##lead lep pT: mu1_pt < 30 && mu1_pt > 10
-##sublead lep pT: mu2_pt < 30 && mu2_pt > 10
-##met: met > 300
-##HT: ht > 10
-##njets: nJet >= 0
-##jet1_pt: jet1_puppi_pt > 300
-##met over ht: met/ht > .4 && met/ht < 1.
-##pt2l: pt2l>0
-##mt: mt1 < 270 && mt2 < 270
+###baseline cuts: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0 && mllMin>10 && met>50
 ##
-###mllMin in [5, 10]: mllMin>5 && mllMin<10
+####mllMin in [15, 20]: mllMin>15 && mllMin<20
 ###
 ###lead lep pT: mu1_pt < 30 && mu1_pt > 10
 ###sublead lep pT: mu2_pt < 30 && mu2_pt > 10
-###met: met > 400
+###met: met > 300
 ###HT: ht > 10
 ###njets: nJet >= 0
-###met over ht: met/ht > .6 && met/ht < 1.0
+###jet1_pt: jet1_puppi_pt > 300
+###met over ht: met/ht > .4 && met/ht < 1.
 ###pt2l: pt2l>0
-###mt: mt1 < 80 && mt2 < 80
+###mt: mt1 < 270 && mt2 < 270
+###
+####mllMin in [5, 10]: mllMin>5 && mllMin<10
+####
+####lead lep pT: mu1_pt < 30 && mu1_pt > 10
+####sublead lep pT: mu2_pt < 30 && mu2_pt > 10
+####met: met > 400
+####HT: ht > 10
+####njets: nJet >= 0
+####met over ht: met/ht > .6 && met/ht < 1.0
+####pt2l: pt2l>0
+####mt: mt1 < 80 && mt2 < 80
