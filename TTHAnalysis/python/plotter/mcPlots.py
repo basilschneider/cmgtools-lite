@@ -214,7 +214,8 @@ def doStackSignalNorm(pspec,pmap,individuals,extrascale=1.0,norm=True):
             sig.SetMarkerSize(0)
             if norm: sig.Scale(total*extrascale/sig.Integral())
             sig.Draw("HIST SAME")
-            sig.Draw("E SAME")
+            if options.showMCError:
+                sig.Draw("E SAME")
             sigs.append(sig)
         return sigs
     else:

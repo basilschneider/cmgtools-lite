@@ -26,7 +26,6 @@ python mcPlots.py \
     --noErrorBandOnRatio \
     --noStackSig \
     --showIndivSigShapes \
-    --showMCError \
     --emptyStack \
     --printBinAuto \
     --legendFontSize 0.028 \
