@@ -32,7 +32,7 @@ python mcPlots.py \
     --legendFontSize 0.028 \
     --noCms \
     --plotmode stack \
-    --lspam "#bf{CMS} #it{Simulation}" \
+    --lspam "#bf{CMS} #it{Supplementary}" \
     --rspam "%(lumi) (14 TeV)"
 
 # Useful options:
