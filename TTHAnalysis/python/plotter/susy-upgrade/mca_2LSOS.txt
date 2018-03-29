@@ -148,46 +148,46 @@ BG                              : WWTo2L2Nu                   : 12178/nTot      
 #TT2L2Nu                           : TTTo2L2Nu                        : 90750/7248651               : 1. ; FillColor=ROOT.kYellow+1, Label="tt (FullSim)"
 #TTbar_incl                         : TTbar_incl                       : 864400/4619131                   ; FillColor=ROOT.kMagenta+4, Label="ttbar incl."
 
-#TChiWZ_400_375_Delphes_v09+      : TChiWZ_400_375_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (400/375)"
-#TChiWZ_400_375_FS+               : TChiWZ_400_375_FS                : 33.52*.1/90451      ; FillColor=ROOT.kOrange+1, Label="signal (400/375) FS"
-#TChiWZ_300_250_FS+               : TChiWZ_300_250_FS                : 33.52*.1/102426     ; FillColor=ROOT.kCyan+1, Label="signal (300/250) FS"
-#TChiWZ_300_293_FS+               : TChiWZ_300_293_FS                : 33.52*.1/92323      ; FillColor=ROOT.kCyan+1, Label="signal (300/293) FS"
+#TChiWZ_400_375_Delphes_v09+      : TChiWZ_400_375_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(400/375)"
+#TChiWZ_400_375_FS+               : TChiWZ_400_375_FS                : 33.52*.1/90451      ; FillColor=ROOT.kOrange+1, Label="TChiWZ(400/375) FS"
+#TChiWZ_300_250_FS+               : TChiWZ_300_250_FS                : 33.52*.1/102426     ; FillColor=ROOT.kCyan+1, Label="TChiWZ(300/250) FS"
+#TChiWZ_300_293_FS+               : TChiWZ_300_293_FS                : 33.52*.1/92323      ; FillColor=ROOT.kCyan+1, Label="TChiWZ(300/293) FS"
 
 ### RelVal
 #RelVal_TTbar                       : MiniEvents_RelVal_TTbar          : 1. ; FillColor=ROOT.kBlue-2, Label="ttbar (RelVal)"
 #RelVal_ZMM                         : MiniEvents_RelVal_ZMM            : 1. ; FillColor=ROOT.kGreen+3, Label="ZMM (RelVal)"
 
-#### Signal
+#### TChiWZ
 #
-#TChiWZ_100_60_Delphes_v09+       : TChiWZ_100_60_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/60)", SkipMe=True
-#TChiWZ_100_65_Delphes_v09+       : TChiWZ_100_65_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/65)", SkipMe=True
-#TChiWZ_100_70_Delphes_v09+       : TChiWZ_100_70_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/70)", SkipMe=True
-#TChiWZ_100_75_Delphes_v09+       : TChiWZ_100_75_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/75)", SkipMe=True
-#TChiWZ_100_80_Delphes_v09+       : TChiWZ_100_80_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/80)", SkipMe=True
-#TChiWZ_100_85_Delphes_v09+       : TChiWZ_100_85_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/85)", SkipMe=True
-#TChiWZ_100_90_Delphes_v09+       : TChiWZ_100_90_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/90)", SkipMe=True
-#TChiWZ_100_95_Delphes_v09+       : TChiWZ_100_95_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (100/95)", SkipMe=True
-#TChiWZ_150_110_Delphes_v09+      : TChiWZ_150_110_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/110)", SkipMe=True
-#TChiWZ_150_115_Delphes_v09+      : TChiWZ_150_115_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/115)", SkipMe=True
-TChiWZ_150_120_Delphes_v09+      : TChiWZ_150_120_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+2, Label="signal (150/120)", SkipMe=False
-#TChiWZ_150_125_Delphes_v09+      : TChiWZ_150_125_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/125)", SkipMe=True
-#TChiWZ_150_130_Delphes_v09+      : TChiWZ_150_130_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/130)", SkipMe=True
-#TChiWZ_150_135_Delphes_v09+      : TChiWZ_150_135_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/135)", SkipMe=True
-#TChiWZ_150_140_Delphes_v09+      : TChiWZ_150_140_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+1, Label="signal (150/140)", SkipMe=False
-#TChiWZ_150_145_Delphes_v09+      : TChiWZ_150_145_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="signal (150/145)", SkipMe=True
-#TChiWZ_200_160_Delphes_v09+      : TChiWZ_200_160_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/160)", SkipMe=True
-#TChiWZ_200_165_Delphes_v09+      : TChiWZ_200_165_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/165)", SkipMe=True
-#TChiWZ_200_170_Delphes_v09+      : TChiWZ_200_170_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/170)", SkipMe=True
-#TChiWZ_200_175_Delphes_v09+      : TChiWZ_200_175_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/175)", SkipMe=True
-TChiWZ_200_180_Delphes_v09+      : TChiWZ_200_180_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="signal (200/180)", SkipMe=False
-#TChiWZ_200_185_Delphes_v09+      : TChiWZ_200_185_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/185)", SkipMe=True
-#TChiWZ_200_190_Delphes_v09+      : TChiWZ_200_190_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/190)", SkipMe=True
-#TChiWZ_200_195_Delphes_v09+      : TChiWZ_200_195_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="signal (200/195)", SkipMe=True
-#TChiWZ_250_210_Delphes_v09+      : TChiWZ_250_210_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/210)", SkipMe=True
-#TChiWZ_250_215_Delphes_v09+      : TChiWZ_250_215_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/215)", SkipMe=True
-#TChiWZ_250_220_Delphes_v09+      : TChiWZ_250_220_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/220)", SkipMe=True
-#TChiWZ_250_225_Delphes_v09+      : TChiWZ_250_225_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/225)", SkipMe=True
-#TChiWZ_250_230_Delphes_v09+      : TChiWZ_250_230_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/230)", SkipMe=True
-#TChiWZ_250_235_Delphes_v09+      : TChiWZ_250_235_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="signal (250/235)", SkipMe=True
-TChiWZ_250_240_Delphes_v09+      : TChiWZ_250_240_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+7, Label="signal (250/240)", SkipMe=False
-#TChiWZ_250_245_Delphes_v09+      : TChiWZ_250_245_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed, Label="signal (250/245)", SkipMe=True
+#TChiWZ_100_60_Delphes_v09+       : TChiWZ_100_60_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/60)", SkipMe=True
+#TChiWZ_100_65_Delphes_v09+       : TChiWZ_100_65_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/65)", SkipMe=True
+#TChiWZ_100_70_Delphes_v09+       : TChiWZ_100_70_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/70)", SkipMe=True
+#TChiWZ_100_75_Delphes_v09+       : TChiWZ_100_75_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/75)", SkipMe=True
+#TChiWZ_100_80_Delphes_v09+       : TChiWZ_100_80_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/80)", SkipMe=True
+#TChiWZ_100_85_Delphes_v09+       : TChiWZ_100_85_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/85)", SkipMe=True
+#TChiWZ_100_90_Delphes_v09+       : TChiWZ_100_90_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/90)", SkipMe=True
+#TChiWZ_100_95_Delphes_v09+       : TChiWZ_100_95_Delphes_v09        : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(100/95)", SkipMe=True
+#TChiWZ_150_110_Delphes_v09+      : TChiWZ_150_110_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/110)", SkipMe=True
+#TChiWZ_150_115_Delphes_v09+      : TChiWZ_150_115_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/115)", SkipMe=True
+#TChiWZ_150_120_Delphes_v09+      : TChiWZ_150_120_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+2, Label="TChiWZ(150/120)", SkipMe=False
+#TChiWZ_150_125_Delphes_v09+      : TChiWZ_150_125_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/125)", SkipMe=True
+#TChiWZ_150_130_Delphes_v09+      : TChiWZ_150_130_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/130)", SkipMe=True
+#TChiWZ_150_135_Delphes_v09+      : TChiWZ_150_135_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/135)", SkipMe=True
+#TChiWZ_150_140_Delphes_v09+      : TChiWZ_150_140_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure+1, Label="TChiWZ(150/140)", SkipMe=False
+#TChiWZ_150_145_Delphes_v09+      : TChiWZ_150_145_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kAzure-5, Label="TChiWZ(150/145)", SkipMe=True
+#TChiWZ_200_160_Delphes_v09+      : TChiWZ_200_160_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/160)", SkipMe=True
+#TChiWZ_200_165_Delphes_v09+      : TChiWZ_200_165_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/165)", SkipMe=True
+#TChiWZ_200_170_Delphes_v09+      : TChiWZ_200_170_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/170)", SkipMe=True
+#TChiWZ_200_175_Delphes_v09+      : TChiWZ_200_175_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/175)", SkipMe=True
+#TChiWZ_200_180_Delphes_v09+      : TChiWZ_200_180_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/180)", SkipMe=False
+#TChiWZ_200_185_Delphes_v09+      : TChiWZ_200_185_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/185)", SkipMe=True
+#TChiWZ_200_190_Delphes_v09+      : TChiWZ_200_190_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/190)", SkipMe=True
+#TChiWZ_200_195_Delphes_v09+      : TChiWZ_200_195_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kCyan+1, Label="TChiWZ(200/195)", SkipMe=True
+#TChiWZ_250_210_Delphes_v09+      : TChiWZ_250_210_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/210)", SkipMe=True
+#TChiWZ_250_215_Delphes_v09+      : TChiWZ_250_215_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/215)", SkipMe=True
+#TChiWZ_250_220_Delphes_v09+      : TChiWZ_250_220_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/220)", SkipMe=True
+#TChiWZ_250_225_Delphes_v09+      : TChiWZ_250_225_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/225)", SkipMe=True
+#TChiWZ_250_230_Delphes_v09+      : TChiWZ_250_230_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/230)", SkipMe=True
+#TChiWZ_250_235_Delphes_v09+      : TChiWZ_250_235_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kSpring-5, Label="TChiWZ(250/235)", SkipMe=True
+TChiWZ_250_240_Delphes_v09+      : TChiWZ_250_240_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kOrange+7, Label="TChiWZ(250/240)", SkipMe=False
+#TChiWZ_250_245_Delphes_v09+      : TChiWZ_250_245_Delphes_v09       : xs*.1/nTot          ; FillColor=ROOT.kRed, Label="TChiWZ(250/245)", SkipMe=True

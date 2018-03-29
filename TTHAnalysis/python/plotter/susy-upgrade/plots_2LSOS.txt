@@ -103,8 +103,8 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ##ht_log: ht: 13, 0, 650; XTitle="H_{T} [GeV]", Logy, YMin=.2, YMax=8e9
 #
 ## MET
-met: met: 6, 300, 900; XTitle="MET [GeV]", YMin=0., YMax=.85
-met_log: met: 26, 0, 650; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
+met: met: 6, 300, 900; XTitle="p_{T}^{miss} [GeV]", YMin=0., YMax=.85
+met_log: met: 26, 0, 650; XTitle="p_{T}^{miss} [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
 ##met_relval: met: 100, 0, 2000; XTitle="MET [GeV]"
 ##met_eta: met_eta: 36, -9, 9; XTitle="#eta (MET)"
 ##met_phi: met_phi: 14, -3.5, 3.5; XTitle="#phi (MET)"
@@ -142,7 +142,7 @@ met_log: met: 26, 0, 650; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMi
 ##mhlt_log: mhlt: 26, 0, 650; XTitle="MHLT [GeV]", Logy, YMin=.2, YMax=8e9
 #
 ## mll
-mllMin: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=1.25
+mllMin: mllMin: 10, 0, 50; XTitle="m_{#mu#mu} [GeV]", LowerSig, YMin=0., YMax=1.25
 #mllMin_log: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
 ##mllMin_relval: if3(nLep==2&&nMu==2, mllMin, -1) : 40, 0, 55; XTitle="m_{ll} [GeV]", IncludeOverflows=False
 ##mllMin_fine: mllMin: 100, 0, 200; XTitle="m_{ll} [GeV]", LowerSig

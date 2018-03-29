@@ -142,10 +142,12 @@ def doTinyCmsPrelim(textLeft="_default_",textRight="_default_",hasExpo=False,tex
     elif lumi > 3.54e-3: lumitext = "%.1f pb^{-1}" % (lumi*1000)
     else               : lumitext = "%.2f pb^{-1}" % (lumi*1000)
     lumitext = "%.1f fb^{-1}" % lumi
+    if lumi > 1000.:
+        lumitext = "%f ab^{-1}" % (lumi/1000.)
     textLeft = textLeft.replace("%(lumi)",lumitext)
     textRight = textRight.replace("%(lumi)",lumitext)
     if textLeft not in ['', None]:
-        doSpam(textLeft, (.28 if hasExpo else 0.07 if doWide else .17)+xoffs, .955, .60+xoffs, .995, align=12, textSize=textSize)
+        doSpam(textLeft, (.28 if hasExpo else 0.07 if doWide else .17)+xoffs, .945, .60+xoffs, .995, align=12, textSize=textSize)
     if textRight not in ['', None]:
         doSpam(textRight,(0.6 if doWide else .68)+xoffs, .955, .99+xoffs, .995, align=32, textSize=textSize)
 
@@ -711,6 +713,7 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
             if mca.getProcessOption(p,'HideInLegend',False): continue
             if p in pmap and pmap[p].Integral() > (cutoff*total if cutoffSignals else 0):
                 lbl = mca.getProcessOption(p,'Label',p)
+                lbl = lbl.replace('TChiWZ', '(#chi_{2}^{0}/#chi_{1}^{0}) = ')
                 if signalPlotScale and signalPlotScale!=1:
                     lbl=lbl+" x "+("%d"%signalPlotScale if floor(signalPlotScale)==signalPlotScale else "%.2f"%signalPlotScale)
                 myStyle = mcStyle if type(mcStyle) == str else mcStyle[0]
@@ -972,7 +975,7 @@ class PlotMaker:
                     ytitle = "Events"
                 total.GetXaxis().SetTitleFont(42)
                 total.GetXaxis().SetTitleSize(0.05)
-                total.GetXaxis().SetTitleOffset(0.9)
+                total.GetXaxis().SetTitleOffset(1.1)
                 total.GetXaxis().SetLabelFont(42)
                 total.GetXaxis().SetLabelSize(0.05)
                 total.GetXaxis().SetLabelOffset(0.007)
