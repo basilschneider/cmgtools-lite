@@ -31,9 +31,8 @@ python mcPlots.py \
     --legendFontSize 0.028 \
     --noCms \
     --plotmode stack \
-    --lspam "#bf{CMS} #it{Delphes Phase-2 Simulation}" \
-    --rspam "%(lumi)" \
-    --legendHeader "(14 TeV, 200 PU)"
+    --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
+    --rspam ""
 
 # Useful options:
 # -f: Only make plots for complete set of cuts

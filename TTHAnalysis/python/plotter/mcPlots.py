@@ -143,10 +143,11 @@ def doTinyCmsPrelim(textLeft="_default_",textRight="_default_",hasExpo=False,tex
     else               : lumitext = "%.2f pb^{-1}" % (lumi*1000)
     lumitext = "%.1f fb^{-1}" % lumi
     if lumi > 1000.:
-        lumitext = "%f ab^{-1}" % (lumi/1000.)
+        lumitext = "%.1f ab^{-1}" % (lumi/1000.)
     textLeft = textLeft.replace("%(lumi)",lumitext)
     textRight = textRight.replace("%(lumi)",lumitext)
     if textLeft not in ['', None]:
+        textSize = 0.0278
         doSpam(textLeft, (.28 if hasExpo else 0.07 if doWide else .17)+xoffs, .945, .60+xoffs, .995, align=12, textSize=textSize)
     if textRight not in ['', None]:
         doSpam(textRight,(0.6 if doWide else .68)+xoffs, .955, .99+xoffs, .995, align=32, textSize=textSize)
@@ -741,6 +742,7 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
         elif corner == "BL":
             (x1,y1,x2,y2) = (.2, .33 + textSize*max(nentries-3,0), .2+legWidth, .15)
 
+        textSize *= 1.1
         leg = ROOT.TLegend(x1,y1,x2,y2)
         if header: leg.SetHeader(header.replace("\#", "#"))
         leg.SetFillColor(0)
@@ -968,7 +970,7 @@ class PlotMaker:
                 ytitle = "Events" if not self._options.printBinning else "Events / %s" %(self._options.printBinning)
                 if self._options.printBinningAuto:
                     try:
-                        ytitle = "Events / %s GeV" %((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
+                        ytitle = "Events / %s GeV" %int((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
                     except ReferenceError:
                         ytitle = "Events"
                 else:
