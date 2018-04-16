@@ -77,7 +77,7 @@ alwaystrue: 1.
 #crazyMuon200: crazyMuon200 == 0
 #crazyMuon50: crazyMuon50 == 0
 
-2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+#2 sos muons: nLep == 2 && nMu == 2 && mu1_pt < 30 && mu1_pt > 5 && mu2_pt < 30 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
 #SFOS: hasSFOS && hasSoftSFOS
 ##2 muons: nLep == 2 && nMu == 2
 #lead lep pT: lep1_pt < 30 && lep1_pt > 5
@@ -86,21 +86,21 @@ alwaystrue: 1.
 ###2 soft muons: nSoftMu == 2
 #lep eta cut: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 ##mu os: mu1_q*mu2_q < 0
-
-##mllMin == mllMax: mllMin == mllMax
-mll larger 5: mllMin > 5
-mll smaller 50: mllMin < 50
-#mllMin > 5 && mllMin < 50: mllMin > 5 && mllMin < 50
-#Upsilon veto: mllMin < 9 || mllMin > 10.5
-#mll > 50: mllMin > 50
-bjet: nBJet == 0
-
-ht25 larger 400: ht25 > 400
-jet1_pt larger 250: jet1_puppi_pt > 250
-met larger 300: met > 300
-drLep1Lep2 smaller 2: drLep1Lep2 < 2
-met over ht: met/ht25 > .4 && met/ht25 < 1.
-
+#
+###mllMin == mllMax: mllMin == mllMax
+#mll larger 5: mllMin > 5
+#mll smaller 50: mllMin < 50
+##mllMin > 5 && mllMin < 50: mllMin > 5 && mllMin < 50
+##Upsilon veto: mllMin < 9 || mllMin > 10.5
+##mll > 50: mllMin > 50
+#bjet: nBJet == 0
+#
+#ht25 larger 400: ht25 > 400
+#jet1_pt larger 250: jet1_puppi_pt > 250
+#met larger 300: met > 300
+#drLep1Lep2 smaller 2: drLep1Lep2 < 2
+#met over ht: met/ht25 > .4 && met/ht25 < 1.
+#
 ##nJet 25 smaller equal 1: nJet25 <= 1
 ##leading jet pt larger 200: jet1_puppi_pt > 200
 #
