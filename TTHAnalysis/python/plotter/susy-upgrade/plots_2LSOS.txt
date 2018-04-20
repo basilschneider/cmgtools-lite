@@ -3,10 +3,18 @@
 #el1_pt_log: el1_pt: 10, 0, 50; XTitle="p_{T} (e_{1})", Logy, YMin=.2, YMax=8e9
 #el2_pt: el2_pt: 10, 0, 50; XTitle="p_{T} (e_{2})"
 #el2_pt_log: el2_pt: 10, 0, 50; XTitle="p_{T} (e_{2})", Logy, YMin=.2, YMax=8e9
-mu1_pt: if3(mu1_pt>10, mu1_pt, -1): 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-mu1_pt_log: if3(mu1_pt>10, mu1_pt, -1): 70, 0, 70; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
-mu2_pt: if3(mu2_pt>10, mu2_pt, -1): 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
-mu2_pt_log: if3(mu2_pt>10, mu2_pt, -1): 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu1_pt: mu1_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu1_pt_log: mu1_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu2_pt: mu2_pt: 20, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+mu2_pt_log: mu2_pt: 20, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu1_soft_pt: mu1_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu1_soft_pt_log: mu1_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu2_soft_pt: mu2_pt: 12, 0, 60; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+mu2_soft_pt_log: mu2_pt: 12, 0, 60; XTitle="p_{T} (#mu_{2})", LowerSig, Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu1_woIso_pt: mu1_woIso_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1}) (woIso)", IncludeOverflows=False
+mu1_woIso_pt_log: mu1_woIso_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1}) (woIso)", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
+mu1_woIso_soft_pt: mu1_woIso_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1}) (woIso)", IncludeOverflows=False
+mu1_woIso_soft_pt_log: mu1_woIso_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1}) (woIso)", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
 ##lep1_pt: lep1_pt: 10, 0, 50; XTitle="p_{T} (l_{1})"
 ##lep1_pt_log: lep1_pt: 10, 0, 50; XTitle="p_{T} (l_{1})", Logy, YMin=.2, YMax=8e9
 ##lep2_pt: lep2_pt: 10, 0, 50; XTitle="p_{T} (l_{2})"
@@ -84,27 +92,27 @@ mu2_pt_log: if3(mu2_pt>10, mu2_pt, -1): 70, 0, 70; XTitle="p_{T} (#mu_{2})", Low
 yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ##
 ### Jet pt's
-#jet1_pt: jet1_puppi_pt: 16, 0, 800; XTitle="p_{T} (jet_{1})"
-#jet1_pt_log: jet1_puppi_pt: 16, 0, 800; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
-##jet1_pt_log: jet1_puppi_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
+jet1_pt: jet1_pt: 16, 0, 800; XTitle="p_{T} (jet_{1})"
+jet1_pt_log: jet1_pt: 16, 0, 800; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
+##jet1_pt_log: jet1_pt: 16, 0, 400; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
 ##jet1_pt_relval: if3(jet1_pt>40, jet1_pt, -1) : 50, 0, 1000; XTitle="p_{T} (jet_{1})", IncludeOverflows=False
-##jet1_puppi_pt_relval: if3(jet1_puppi_pt>40, jet1_puppi_pt, -1) : 50, 0, 1000; XTitle="p_{T} (jet_{1})", IncludeOverflows=False
+##jet1_pt_relval: if3(jet1_pt>40, jet1_pt, -1) : 50, 0, 1000; XTitle="p_{T} (jet_{1})", IncludeOverflows=False
 ##
 ### Jet eta's
-##jet1_eta: jet1_puppi_eta: 16, -4, 4; XTitle="#eta (jet_{1})"
-##jet1_eta_log: jet1_puppi_eta: 20, -4, 4; XTitle="#eta (jet_{1})", Logy, YMin=.2, YMax=8e9
+jet1_eta: jet1_eta: 16, -4, 4; XTitle="#eta (jet_{1})"
+jet1_eta_log: jet1_eta: 16, -4, 4; XTitle="#eta (jet_{1})", Logy, YMin=.2, YMax=8e9
 ##
 ### Jet phi's
-##jet1_phi: jet1_puppi_phi: 14, -3.5, 3.5; XTitle="#phi (jet_{1})"
-##jet1_phi_log: jet1_puppi_phi: 14, -3.5, 3.5; XTitle="#phi (jet_{1})", Logy
+##jet1_phi: jet1_phi: 14, -3.5, 3.5; XTitle="#phi (jet_{1})"
+##jet1_phi_log: jet1_phi: 14, -3.5, 3.5; XTitle="#phi (jet_{1})", Logy
 #
 ## HT
-##ht: ht: 16, 0, 800; XTitle="H_{T} [GeV]"
-##ht_log: ht: 13, 0, 650; XTitle="H_{T} [GeV]", Logy, YMin=.2, YMax=8e9
+#ht: ht: 16, 0, 800; XTitle="H_{T} [GeV]"
+#ht_log: ht: 16, 0, 800; XTitle="H_{T} [GeV]", Logy, YMin=.2, YMax=8e9
 #
 ## MET
-#met: met: 26, 0, 650; XTitle="MET [GeV]"
-#met_log: met: 26, 0, 650; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
+met: met: 26, 0, 650; XTitle="MET [GeV]"
+met_log: met: 26, 0, 650; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
 ##met_relval: met: 100, 0, 2000; XTitle="MET [GeV]"
 ##met_eta: met_eta: 36, -9, 9; XTitle="#eta (MET)"
 ##met_phi: met_phi: 14, -3.5, 3.5; XTitle="#phi (MET)"
@@ -118,9 +126,12 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ##PFmet_log: PFmet: 26, 0, 650; XTitle="PF MET [GeV]", Logy, YMin=.2, YMax=8e9
 ##PFmet_eta: PFmet_eta: 36, -9, 9; XTitle="#eta (PF MET)"
 ##PFmet_phi: PFmet_phi: 14, -3.5, 3.5; XTitle="#phi (PF MET)"
-#genmet: genmet: 26, 0, 26; XTitle="Gen MET [GeV]"
-##genmet_log: genmet: 26, 0, 650; XTitle="Gen MET [GeV]", Logy, YMin=.2, YMax=8e9
-##genmet_eta: genmet_eta: 36, -9, 9; XTitle="#eta (Gen MET)"
+genmet: genmet: 26, 0, 650; XTitle="Gen MET [GeV]"
+genmet_log: genmet: 26, 0, 650; XTitle="Gen MET [GeV]", Logy, YMin=.2, YMax=8e9
+genmet_eta: genmet_eta: 36, -9, 9; XTitle="#eta (Gen MET)"
+genmet_eta_log: genmet_eta: 36, -9, 9; XTitle="#eta (Gen MET)", Logy, YMin=.2, YMax=8e9
+genmet-met: genmet-met: 52, -650, 650; XTitle="Gen MET - MET [GeV]"
+genmet-met_log: genmet-met: 52, -650, 650; XTitle="Gen MET - MET [GeV]", Logy, YMin=.2, YMax=8e9
 ##genmet_phi: genmet_phi: 14, -3.5, 3.5; XTitle="#phi (Gen MET)"
 ##genpumet: genpumet: 26, 0, 650; XTitle="Gen PU MET [GeV]"
 ##genpumet_log: genpumet: 26, 0, 650; XTitle="Gen PU MET [GeV]", Logy, YMin=.2, YMax=8e9
@@ -142,8 +153,8 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ##mhlt_log: mhlt: 26, 0, 650; XTitle="MHLT [GeV]", Logy, YMin=.2, YMax=8e9
 #
 ## mll
-#mllMin: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig
-#mllMin_log: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
+mllMin: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig
+mllMin_log: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
 ##mllMin_relval: if3(nLep==2&&nMu==2, mllMin, -1) : 40, 0, 55; XTitle="m_{ll} [GeV]", IncludeOverflows=False
 ##mllMin_fine: mllMin: 100, 0, 200; XTitle="m_{ll} [GeV]", LowerSig
 ##mllMin_log: mllMin: 10, 0, 100; XTitle="m_{ll} [GeV]", Logy, YMin=.2, YMax=8e9, LowerSig
@@ -175,9 +186,9 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ### Additional plots
 #met_ht: met/ht25: 20, 0, 2; XTitle="MET/HT"
 #met_ht_log: met/ht25: 20, 0, 2; XTitle="MET/HT", Logy, YMin=.2, YMax=8e9
-##jet1_met: jet1_puppi_pt/met: 12, 0, 3; XTitle="p_{T} (jet)/MET"
-##met_jet1: met/jet1_puppi_pt: 12, 0, 3; XTitle="p_{T} (jet)/MET"
-##jet1_met_log: jet1_puppi_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", Logy
+##jet1_met: jet1_pt/met: 12, 0, 3; XTitle="p_{T} (jet)/MET"
+##met_jet1: met/jet1_pt: 12, 0, 3; XTitle="p_{T} (jet)/MET"
+##jet1_met_log: jet1_pt/met: 30, 0, 3; XTitle="p_{T} (jet)/MET", Logy
 #pt2l: pt2l: 20, 0, 60; XTitle="pt2l"
 #pt2l_log: pt2l: 20, 0, 60; XTitle="pt2l", Logy, YMin=.2, YMax=8e9
 ##
@@ -187,14 +198,12 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ###mu1_mother: fabs(mu1_mother): 31, -.5, 30.5; XTitle="mother (#mu_{1})"
 ###mu2_mother: fabs(mu2_mother): 31, -.5, 30.5; XTitle="mother (#mu_{1})"
 #
-#drLep1Lep2: drLep1Lep2: 32, 0, 8; XTitle="dR(l_{1}\, l_{2})", LowerSig
-#drLep1Lep2_log: drLep1Lep2: 32, 0, 8; XTitle="dR(l_{1}\, l_{2})", Logy, YMin=.2, YMax=8e9, LowerSig
-#drLep1Jet1: drLep1Jet1: 32, 0, 8; XTitle="dR(l_{1}\, j_{1})"
-#drLep1Jet1_log: drLep1Jet1: 32, 0, 8; XTitle="dR(l_{1}\, j_{1})", Logy, YMin=.2, YMax=8e9
-#drLep2Jet1: drLep2Jet1: 32, 0, 8; XTitle="dR(l_{2}\, j_{1})"
-#drLep2Jet1_log: drLep2Jet1: 32, 0, 8; XTitle="dR(l_{2}\, j_{1})", Logy, YMin=.2, YMax=8e9
-#drLepJet1Max: if3(drLep1Jet1>drLep2Jet1, drLep1Jet1, drLep2Jet1): 32, 0, 8; XTitle="dR(l_{max}\, j_{1})"
-#drLepJet1Max_log: if3(drLep1Jet1>drLep2Jet1, drLep1Jet1, drLep2Jet1): 32, 0, 8; XTitle="dR(l_{max}\, j_{1})", Logy, YMin=.2, YMax=8e9
+drMetJet1: deltaPhi(met_phi, jet1_phi) : 32, -4, 4; XTitle="dPhi(MET\, Jet1)"
+drMetJet1_log: deltaPhi(met_phi, jet1_phi) : 32, -4, 4; XTitle="dPhi(MET\, Jet1)", Logy, YMin=.2, YMax=8e9
+drMetLep1: deltaPhi(met_phi, mu1_phi) : 32, -4, 4; XTitle="dPhi(MET\, mu1)"
+drMetLep1_log: deltaPhi(met_phi, mu1_phi) : 32, -4, 4; XTitle="dPhi(MET\, mu1)", Logy, YMin=.2, YMax=8e9
+drMetLep2: deltaPhi(met_phi, mu2_phi) : 32, -4, 4; XTitle="dPhi(MET\, mu2)"
+drMetLep2_log: deltaPhi(met_phi, mu2_phi) : 32, -4, 4; XTitle="dPhi(MET\, mu2)", Logy, YMin=.2, YMax=8e9
 ##mu_pt5to10_origin_cone: mu_pt5to10_origin_cone: 51, -25.5, 25.5; XTitle="PID (5 GeV < p_{T}(#mu) < 10 GeV)"
 ##mu_pt5to10_origin_cone_log: mu_pt5to10_origin_cone: 51, -25.5, 25.5; XTitle="PID (5 GeV < p_{T}(#mu) < 10 GeV)", Logy, YMin=.2, YMax=8e9
 ##mu_pt5to10_origin_nghbr: mu_pt5to10_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (5 GeV < p_{T}(#mu) < 10 GeV)"
@@ -208,18 +217,18 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 ##mu_pt20to30_origin_nghbr: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)"
 ##mu_pt20to30_origin_nghbr_log: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)", Logy, YMin=.2, YMax=8e9
 #
-#njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
-#njet25_log: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig, Logy, YMin=.2, YMax=8e9
-#njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
-#njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
+njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
+njet25_log: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig, Logy, YMin=.2, YMax=8e9
+njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
+njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
 #njet60: nJet60: 7, -.5, 6.5; XTitle="n_{jet60}", LowerSig
 #njet60_log: nJet60: 7, -.5, 6.5; XTitle="n_{jet60}", LowerSig, Logy, YMin=.2, YMax=8e9
 #njet100: nJet100: 7, -.5, 6.5; XTitle="n_{jet100}", LowerSig
 #njet100_log: nJet100: 7, -.5, 6.5; XTitle="n_{jet100}", LowerSig, Logy, YMin=.2, YMax=8e9
 #njet150: nJet150: 7, -.5, 6.5; XTitle="n_{jet150}", LowerSig
 #njet150_log: nJet150: 7, -.5, 6.5; XTitle="n_{jet150}", LowerSig, Logy, YMin=.2, YMax=8e9
-#ht25: ht25: 16, 0, 800; XTitle="H_{T}25 [GeV]"
-#ht25_log: ht25: 16, 0, 800; XTitle="H_{T}25 [GeV]", Logy, YMin=.2, YMax=8e9
+ht25: ht25: 16, 0, 800; XTitle="H_{T}25 [GeV]"
+ht25_log: ht25: 16, 0, 800; XTitle="H_{T}25 [GeV]", Logy, YMin=.2, YMax=8e9
 #ht40: ht40: 16, 0, 800; XTitle="H_{T}40 [GeV]"
 #ht40_log: ht40: 16, 0, 800; XTitle="H_{T}40 [GeV]", Logy, YMin=.2, YMax=8e9
 #ht60: ht60: 16, 0, 800; XTitle="H_{T}60 [GeV]"
@@ -310,3 +319,6 @@ yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 #met_log: met: [300, 350, 400, 500, 800]; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
 #mllMin: mllMin: [0, 5, 10, 20, 30, 50]; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=1700.
 #mllMin_log: mllMin: [0, 5, 10, 20, 30, 50]; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
+
+dPhiJ1_dPhiMu1: deltaPhi(met_phi, jet1_phi)\:deltaPhi(met_phi, mu1_phi) : 32, -4, 4, 32, -4, 4; XTitle="dPhi(MET\, mu1)", YTitle="dPhi(MET\, Jet1)"
+dPhiMu1_dPhiMu2: deltaPhi(met_phi, mu1_phi)\:deltaPhi(met_phi, mu2_phi) : 32, -4, 4, 32, -4, 4; XTitle="dPhi(MET\, mu2)", YTitle="dPhi(MET\, mu1)"
