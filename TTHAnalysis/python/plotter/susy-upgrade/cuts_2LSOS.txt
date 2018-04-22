@@ -75,9 +75,10 @@ alwaystrue: 1.
 #2 muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
 #2 soft muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
 2 hard muons: nLep == 2 && nMu == 2 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-nJet25 == 1: nJet25 == 1
-nJet100 == 1: nJet100 == 1
-jet1_eta < 2.4: fabs(jet1_eta) < 2.4
+nJet25 == 2: nJet25 == 2
+jet1_pt > 50: jet1_pt > 50 && fabs(jet1_eta) < 2.1
+#nJet100 == 1: nJet100 == 1
+#jet1_eta < 2.4: fabs(jet1_eta) < 1.3
 #jet central: fabs(jet1_eta) < 1.3
 #crazyMuon500: crazyMuon500 == 0
 #crazyMuon200: crazyMuon200 == 0
