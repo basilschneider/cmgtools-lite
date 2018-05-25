@@ -1,0 +1,18 @@
+alwaystrue: 1.
+2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
+lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+SFOS: hasSFOS && hasSoftSFOS
+bjet: nBJet == 0
+ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
+mll between 5 and 50: mllMin > 5 && mllMin < 40
+Upsilon veto: mllMin < 9 || mllMin > 10.5
+met larger 300: met > 300
+jet1_pt > 200: jet1_pt > 200
+drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+
+# MET cut
+met in [300, 350]: met > 300 && met < 350
+
+# mllbin
+mllMin in [25, 30]: mllMin > 25 && mllMin < 30
