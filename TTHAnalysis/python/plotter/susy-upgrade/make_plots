@@ -18,7 +18,9 @@ python mcPlots.py \
     -P "${trees}" \
     -l "${lumi}" \
     -j 22 \
+    --s2v \
     -f \
+    --showSignificance \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
     --maxRatioRange 0.05 1.95 \

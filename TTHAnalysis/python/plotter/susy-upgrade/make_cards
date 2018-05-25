@@ -82,7 +82,8 @@ for signal in "${signals[@]}"; do
             "${cuts}" \
             -P "${trees}" \
             -l "${lumi}" \
-            -j 4 \
+            -j 20 \
+            --s2v \
             --tree treeProducerSusyUpgrade \
             --obj Delphes \
             --AP \

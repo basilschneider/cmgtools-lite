@@ -5,7 +5,6 @@
 # You need to have a symbolic link called "trees" pointing to your trees
 
 lumi=3000.
-lumi=.1
 echo "LUMI SET TO ${lumi}!"
 
 mca=susy-upgrade/mca_2LSOS.txt
@@ -19,6 +18,7 @@ python mcAnalysis.py \
     -l "${lumi}" \
     -j 22 \
     -G \
+    --s2v \
     --tree treeProducerSusyUpgrade \
     --obj Delphes
 
