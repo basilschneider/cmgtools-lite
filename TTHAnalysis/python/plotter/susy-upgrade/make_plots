@@ -19,7 +19,6 @@ python mcPlots.py \
     -l "${lumi}" \
     -j 22 \
     --s2v \
-    -f \
     --showSignificance \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \

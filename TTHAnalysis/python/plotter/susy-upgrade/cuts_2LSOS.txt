@@ -67,34 +67,43 @@
 #
 ### SOS Run-2 DY Cutflow Region
 
-
-### Bin by bin optimisation
+### Validation plot region
 alwaystrue: 1.
-#nLep == 2: nLep == 2
-#Ztomm: ZtoLL == 14
-#ht25>100: ht25>100
-#crazyMuon500: crazyMuon500 == 0
-#crazyMuon200: crazyMuon200 == 0
-#crazyMuon50: crazyMuon50 == 0
-#at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
-#2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
-#2 soft muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#2 hard muons: nLep == 2 && nMu == 2 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#at least one jet: nJet25 >= 1 && fabs(jet1_eta) < 2.4
-2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
-nSoftLep == 2: nSoftLep == 2
-lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
-lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
-SFOS: hasSFOS && hasSoftSFOS
-bjet: nBJet == 0
-drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
-met larger 300: met > 300
+at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
+2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
 ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
 mll between 5 and 40: mllMin > 5 && mllMin < 40
 Upsilon veto: mllMin < 9 || mllMin > 10.5
-#jet1_eta < 2.4: fabs(jet1_eta) < 2.4
-jet1_pt > 200: jet1_pt > 200
+met larger 300: met > 300
+
+#### Bin by bin optimisation
+#alwaystrue: 1.
+##nLep == 2: nLep == 2
+##Ztomm: ZtoLL == 14
+##ht25>100: ht25>100
+##crazyMuon500: crazyMuon500 == 0
+##crazyMuon200: crazyMuon200 == 0
+##crazyMuon50: crazyMuon50 == 0
+##at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
+##2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
+##2 soft muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##2 hard muons: nLep == 2 && nMu == 2 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##at least one jet: nJet25 >= 1 && fabs(jet1_eta) < 2.4
+#2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+#nSoftLep == 2: nSoftLep == 2
+#lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
+#lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+#SFOS: hasSFOS && hasSoftSFOS
+#bjet: nBJet == 0
+#drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+#met larger 300: met > 300
+#ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
+#mll between 5 and 40: mllMin > 5 && mllMin < 40
+#Upsilon veto: mllMin < 9 || mllMin > 10.5
+##jet1_eta < 2.4: fabs(jet1_eta) < 2.4
+#jet1_pt > 200: jet1_pt > 200
 
 #jet1_pt > 50: jet1_pt > 50 && fabs(jet1_eta) < 2.1
 #nJet100 == 1: nJet100 == 1
