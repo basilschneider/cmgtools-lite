@@ -19,7 +19,6 @@ python mcPlots.py \
     -l "${lumi}" \
     -j 22 \
     --s2v \
-    --showSignificance \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
     --maxRatioRange 0.05 1.95 \
@@ -34,7 +33,8 @@ python mcPlots.py \
     --noCms \
     --plotmode stack \
     --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
-    --rspam ""
+    --rspam "" \
+    --pdir plots_p2_fs_2m
 
 # Useful options:
 # -f: Only make plots for complete set of cuts

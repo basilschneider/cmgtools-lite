@@ -71,11 +71,14 @@
 alwaystrue: 1.
 at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
 2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
-ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
-mll between 5 and 40: mllMin > 5 && mllMin < 40
-Upsilon veto: mllMin < 9 || mllMin > 10.5
-met larger 300: met > 300
+lepton pt upper bound: mu1_pt < 30 && mu2_pt < 30
+##at least one electron: nLep >= 1 && nEl >= 1 && el1_pt > 5 && fabs(el1_eta) < 2.4
+##2 os electrons: nLep == 2 && nEl == 2 && el1_pt > 5 && el2_pt > 5 && fabs(el1_eta) < 2.4 && fabs(el2_eta) < 2.4 && el1_q*el2_q < 0
+##lepton pt upper bound: el1_pt < 30 && el2_pt < 30
+#ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
+#mll between 5 and 40: mllMin > 5 && mllMin < 40
+#Upsilon veto: mllMin < 9 || mllMin > 10.5
+#met larger 300: met > 300
 
 #### Bin by bin optimisation
 #alwaystrue: 1.
