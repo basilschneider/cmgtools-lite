@@ -1,11 +1,19 @@
 #### Lepton pT's
 el1_pt: el1_pt: 70, 0, 70; XTitle="p_{T} (e_{1})"
+el1_pt_wide: el1_pt: 100, 0, 200; XTitle="p_{T} (e_{1})"
+el1_woIso_pt: el1_woIso_pt: 70, 0, 70; XTitle="p_{T} (e_{1})"
 ##el1_pt_log: el1_pt: 10, 0, 50; XTitle="p_{T} (e_{1})", Logy, YMin=.2, YMax=8e9
 el2_pt: el2_pt: 70, 0, 70; XTitle="p_{T} (e_{2})"
+el2_pt_wide: el2_pt: 100, 0, 200; XTitle="p_{T} (e_{2})"
+el2_woIso_pt: el2_woIso_pt: 70, 0, 70; XTitle="p_{T} (e_{2})"
 ##el2_pt_log: el2_pt: 10, 0, 50; XTitle="p_{T} (e_{2})", Logy, YMin=.2, YMax=8e9
 mu1_pt: mu1_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu1_pt_wide: mu1_pt: 100, 0, 200; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+mu1_woIso_pt: mu1_woIso_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
 ##mu1_pt_log: mu1_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
 mu2_pt: mu2_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+mu2_pt_wide: mu2_pt: 100, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+mu2_woIso_pt: mu2_woIso_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
 ##mu2_pt_log: mu2_pt: 20, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
 ##mu1_soft_pt: mu1_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
 ##mu1_soft_pt_log: mu1_pt: 12, 0, 60; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
