@@ -403,7 +403,8 @@ def doNormFit(pspec,pmap,mca,saveScales=False):
 def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=None,errorsOnRef=True,ratioNums="signal",ratioDen="background",ylabel="Data/pred.",doWide=False,showStatTotLegend=False):
     numkeys = [ "data" ]
     if "data" not in pmap:
-        if len(pmap) >= 4 and ratioDen in pmap:
+        #if len(pmap) >= 4 and ratioDen in pmap:
+        if ratioDen in pmap:
             numkeys = []
             for p in pmap.iterkeys():
                 for s in ratioNums.split(","):
@@ -518,6 +519,7 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     total.GetYaxis().SetTitleOffset(0.75 if doWide else 1.48)
     total.GetYaxis().SetLabelSize(0.05)
     total.GetYaxis().SetLabelOffset(0.007)
+    total.GetYaxis().SetTitle(ylabel)
     binlabels = pspec.getOption("xBinLabels","")
     if binlabels != "" and len(binlabels.split(",")) == unity.GetNbinsX():
         blist = binlabels.split(",")
@@ -533,10 +535,30 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     #$ROOT.gStyle.SetErrorX(0.0);
     line = ROOT.TLine(unity.GetXaxis().GetXmin(),1,unity.GetXaxis().GetXmax(),1)
     line.SetLineWidth(2);
-    line.SetLineColor(58);
+    line.SetLineColor(12);
     line.Draw("L")
     for ratio in ratios:
-        ratio.Draw("E SAME" if ratio.ClassName() != "TGraphAsymmErrors" else "PZ SAME");
+        ratio.GetXaxis().SetTitleFont(42)
+        ratio.GetXaxis().SetTitleSize(0.14)
+        ratio.GetXaxis().SetTitleOffset(0.9)
+        ratio.GetXaxis().SetLabelFont(42)
+        ratio.GetXaxis().SetLabelSize(0.1)
+        ratio.GetXaxis().SetLabelOffset(0.007)
+        ratio.GetYaxis().SetNdivisions(505)
+        ratio.GetYaxis().SetTitleFont(42)
+        ratio.GetYaxis().SetTitleSize(0.11)
+        offset = 0.32 if doWide else 0.62
+        ratio.GetYaxis().SetTitleOffset(offset)
+        ratio.GetYaxis().SetLabelFont(42)
+        ratio.GetYaxis().SetLabelSize(0.11)
+        ratio.GetYaxis().SetLabelOffset(0.007)
+        ratio.GetYaxis().SetDecimals(True)
+        ratio.GetYaxis().SetTitle(ylabel)
+        ratio.SetMarkerSize(0.)
+        ratio.SetFillColorAlpha(ROOT.kRed, 0.)
+        ratio.Draw("HIST E0")
+        #ratio.Draw("E SAME" if ratio.ClassName() != "TGraphAsymmErrors" else "PZ SAME");
+    line.Draw("L")
     leg0 = ROOT.TLegend(0.12 if doWide else 0.2, 0.8, 0.25 if doWide else 0.45, 0.9)
     leg0.SetFillColor(0)
     leg0.SetShadowColor(0)
@@ -994,6 +1016,7 @@ class PlotMaker:
                 #
                 if not makeCanvas and not self._options.printPlots: return
                 doRatio = self._options.showRatio and ('data' in pmap or (plotmode != "stack")) and ("TH2" not in total.ClassName())
+                doRatio = True
                 doSignificance = self._options.showSignificance and ('signal' in pmap) and not doRatio
                 islog = pspec.hasOption('Logy');
                 if doRatio or doSignificance: ROOT.gStyle.SetPaperSize(20.,sf*(plotformat[1]+150))
