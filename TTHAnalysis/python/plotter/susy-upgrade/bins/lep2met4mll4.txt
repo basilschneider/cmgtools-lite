@@ -15,6 +15,6 @@ nJet25 in [1, 4]: nJet25 >= 1 && nJet25 <= 4
 jet1 pt larger 200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
 mhlt larger 250: mhlt25 >= 250
 
-mhlt25 bin 2: mhlt25 >= 350 && mhlt25 < 400
+mhlt25 bin 4: mhlt25 >= 500 && mhlt25 < 99999
 
-mll bin 5: mllMin >= 30 && mllMin < 35
+mll bin 4: mllMin >= 25 && mllMin < 30

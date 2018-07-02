@@ -1016,7 +1016,6 @@ class PlotMaker:
                 #
                 if not makeCanvas and not self._options.printPlots: return
                 doRatio = self._options.showRatio and ('data' in pmap or (plotmode != "stack")) and ("TH2" not in total.ClassName())
-                doRatio = True
                 doSignificance = self._options.showSignificance and ('signal' in pmap) and not doRatio
                 islog = pspec.hasOption('Logy');
                 if doRatio or doSignificance: ROOT.gStyle.SetPaperSize(20.,sf*(plotformat[1]+150))

@@ -1,18 +1,20 @@
 alwaystrue: 1.
 2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+nSoftLep == 2: nSoftLep == 2
 lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
 lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 SFOS: hasSFOS && hasSoftSFOS
-bjet: nBJet == 0
-ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
-mll between 5 and 50: mllMin > 5 && mllMin < 40
-Upsilon veto: mllMin < 9 || mllMin > 10.5
-met larger 300: met > 300
-jet1_pt > 200: jet1_pt > 200
-drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+dPhi VecSum Jet1 smaller 1: fabs(deltaPhi(mhlt25_phi, jet1_phi)) < 1.
+dPhi MET Jet1 larger 2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
+dR Lep1 Lep2 smaller 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 1.5
+nbjet: nBJet <= 2
+mllMin in [10, 40]: mllMin>5 && mllMin<40
+VecSum over HT in [0.5, 1.0]: mhlt25/ht25 >= 0.5 && mhlt25/ht25 <= 1.
+MET over HT in [0.5, 1.0]: met/ht25 >= 0.5 && met/ht25 <= 1.
+nJet25 in [1, 4]: nJet25 >= 1 && nJet25 <= 4
+jet1 pt larger 200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
+mhlt larger 250: mhlt25 >= 250
 
-# MET cut
-met in [400, 500]: met > 400 && met < 500
+mhlt25 bin 2: mhlt25 >= 350 && mhlt25 < 400
 
-# mllbin
-mllMin in [20, 25]: mllMin > 20 && mllMin < 25
+mll bin 3: mllMin >= 20 && mllMin < 25
