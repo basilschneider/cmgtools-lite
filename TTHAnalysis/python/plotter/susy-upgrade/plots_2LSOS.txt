@@ -168,7 +168,7 @@ mhlt25_log: mhlt25: 26, 0, 650; XTitle="#Sigma #vec{p}_{T}^{leps/jets}", Logy, Y
 ####mllMin_log: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
 #####mllMin_relval: if3(nLep==2&&nMu==2, mllMin, -1) : 40, 0, 55; XTitle="m_{ll} [GeV]", IncludeOverflows=False
 mllMin_fine: mllMin: 40, 0, 120; XTitle="m_{ll} [GeV]", LowerSig
-mllMin_fine_log: mllMin: 40, 0, 120; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
+mllMin_fine_log: mllMin: 40, 0, 80; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=1e3
 #####mllMin_log: mllMin: 10, 0, 100; XTitle="m_{ll} [GeV]", Logy, YMin=.2, YMax=8e9, LowerSig
 #####mllMin_log_fine: mllMin: 100, 0, 200; XTitle="m_{ll} [GeV]", Logy, YMin=.2, YMax=8e9, LowerSig
 #####mllMax: mllMax: 10, 0, 100; XTitle="m_{ll} [GeV]", LowerSig

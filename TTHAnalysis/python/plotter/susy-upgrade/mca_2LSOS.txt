@@ -184,7 +184,7 @@ S_175_165_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==175 && mN
 S_175_168_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==175 && mN1==168)* 778.59*.1/103716*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(175/167.5)", SkipMe=True
 S_200_160_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==160)* 479.10*.1/103946*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/160)", SkipMe=True
 S_200_170_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==170)* 479.10*.1/ 98290*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/170)", SkipMe=True
-S_200_180_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==180)* 479.10*.1/ 99762*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kCyan+4, Label="TChiWZ(200/180)", SkipMe=False
+S_200_180_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==180)* 479.10*.1/ 99762*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kCyan, Label="TChiWZ(200/180)", SkipMe=False
 S_200_185_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==185)* 479.10*.1/ 93362*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/185)", SkipMe=True
 S_200_190_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==190)* 479.10*.1/ 90272*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/190)", SkipMe=True
 S_200_193_Delphes_v10+      : TChiWZ_Delphes_v10               : (mN2==200 && mN1==193)* 479.10*.1/101693*if3(nEl>=2, 1.50, 1.01) ; FillColor=ROOT.kMagenta, Label="TChiWZ(200/192.5)", SkipMe=True
