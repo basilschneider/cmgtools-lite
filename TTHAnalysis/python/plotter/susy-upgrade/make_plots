@@ -37,7 +37,7 @@ python mcPlots.py \
     --plotmode stack \
     --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
     --rspam "" \
-    --pdir plots
+    --pdir plots_2m_baseline_delphesFS
 
 # Useful options:
 # -f: Only make plots for complete set of cuts
