@@ -410,8 +410,10 @@ met: met: 26, 0, 650; XTitle="MET [GeV]"
 met_log: met: 26, 0, 650; XTitle="MET [GeV]", Logy, YMin=.2, YMax=8e9
 mhlt25: mhlt25: 26, 0, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j}"
 mhlt25_log: mhlt25: 26, 0, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j}", Logy, YMin=.2, YMax=8e9, Logy, YMin=.2, YMax=8e9
-mllMin_fine: mllMin: 40, 0, 120; XTitle="m_{ll} [GeV]", LowerSig
-mllMin_fine_log: mllMin: 40, 0, 120; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
+mllMin_fine: mllMin: 40, 0, 120; XTitle="m_{ll}^{min} [GeV]", LowerSig
+mllMin_fine_log: mllMin: 40, 0, 120; XTitle="m_{ll}^{min} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
+mllMax_fine: mllMax: 40, 0, 120; XTitle="m_{ll}^{max} [GeV]", LowerSig
+mllMax_fine_log: mllMax: 40, 0, 120; XTitle="m_{ll}^{max} [GeV]", LowerSig, Logy, YMin=.2, YMax=8e9
 mt1: mt1: 12, 0, 120; XTitle="m_{T} (l_{1}\, MET) [GeV]"
 mt1_log: mt1: 12, 0, 120; XTitle="m_{T} (l_{1}\, MET) [GeV]", Logy, YMin=.2, YMax=8e9
 mt2: mt2: 12, 0, 120; XTitle="m_{T} (l_{2}\, MET) [GeV]"
