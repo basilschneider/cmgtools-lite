@@ -184,8 +184,8 @@ def doShadedUncertainty(h):
     for i,((x,y),(EXlow,EXhigh,EYlow,EYhigh)) in enumerate(zip(points,errors)):
         ret.SetPoint(i, x, y)
         ret.SetPointError(i, EXlow,EXhigh,EYlow,EYhigh)
-    ret.SetFillStyle(3244);
-    ret.SetFillColor(ROOT.kGray+2)
+    ret.SetFillStyle(3344);
+    ret.SetFillColor(ROOT.kRed+1)
     ret.SetMarkerStyle(0)
     ret.Draw("PE2 SAME")
     return ret
@@ -754,9 +754,9 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
         if corner == "TR":
             (x1,y1,x2,y2) = (0.97-legWidth if doWide else .85-legWidth, .7 - textSize*max(nentries-3,0), .90, .91)
         elif corner == "TC":
-            (x1,y1,x2,y2) = (.5, .75 - textSize*max(nentries-3,0), .5+legWidth, .91)
+            (x1,y1,x2,y2) = (.5, .7 - textSize*max(nentries-3,0), .5+legWidth, .91)
         elif corner == "TL":
-            (x1,y1,x2,y2) = (.2, .75 - textSize*max(nentries-3,0), .2+legWidth, .91)
+            (x1,y1,x2,y2) = (.2, .7 - textSize*max(nentries-3,0), .2+legWidth, .91)
         elif corner == "BR":
             (x1,y1,x2,y2) = (.85-legWidth, .33 + textSize*max(nentries-3,0), .90, .15)
         elif corner == "BC":
@@ -991,10 +991,16 @@ class PlotMaker:
                 stack.Draw("GOFF")
                 ytitle = "Events" if not self._options.printBinning else "Events / %s" %(self._options.printBinning)
                 if self._options.printBinningAuto:
-                    try:
-                        ytitle = "Events / %s GeV" %int((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
-                    except ReferenceError:
+                    if 'eta' in pspec.getOption('XTitle', outputName) or \
+                            'dPhi' in pspec.getOption('XTitle', outputName) or \
+                            'dR' in pspec.getOption('XTitle', outputName) or \
+                            'n_' in pspec.getOption('XTitle', outputName):
                         ytitle = "Events"
+                    else:
+                        try:
+                            ytitle = "Events / %s GeV" %int((stack.GetXaxis().GetBinUpEdge(stack.GetXaxis().GetNbins())-stack.GetXaxis().GetBinLowEdge(1))/stack.GetXaxis().GetNbins())
+                        except ReferenceError:
+                            ytitle = "Events"
                 else:
                     ytitle = "Events"
                 total.GetXaxis().SetTitleFont(42)
