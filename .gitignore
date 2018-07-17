@@ -9,4 +9,5 @@ __init__.py
 *cc.d
 *.pcm
 LSFJOB*/
-
+TTHAnalysis/python/plotter/plots*
+TTHAnalysis/python/plotter/susy-upgrade/cards/
