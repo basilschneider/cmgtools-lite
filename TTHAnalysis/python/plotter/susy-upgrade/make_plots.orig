@@ -18,24 +18,31 @@ python mcPlots.py \
     -P "${trees}" \
     -l "${lumi}" \
     -j 22 \
-    -e \
-    --s2v \
+    -f \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
     --maxRatioRange 0.05 1.95 \
     --fixRatioRange \
     --noErrorBandOnRatio \
     --noStackSig \
+<<<<<<< Updated upstream
+    --showIndivSigShapes \
+=======
     --showIndivSigs \
     --showMCError \
+>>>>>>> Stashed changes
     --emptyStack \
     --printBinAuto \
     --legendFontSize 0.028 \
     --noCms \
+<<<<<<< Updated upstream
     --plotmode stack \
     --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
-    --rspam "" \
-    --pdir plots
+    --rspam ""
+=======
+    --lspam "#bf{CMS} #it{Sim. Prel.}" \
+    --rspam "%(lumi) (14 TeV)"
+>>>>>>> Stashed changes
 
 # Useful options:
 # -f: Only make plots for complete set of cuts

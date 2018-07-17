@@ -7,7 +7,7 @@
 lumi=3000.
 
 mca=susy-upgrade/mca_2LSOS.txt
-cuts=susy-upgrade/cuts_2LSOS.txt
+cuts=susy-upgrade/cuts_2LSOS_3.txt
 trees=trees/
 plots=susy-upgrade/plots_2LSOS.txt
 
@@ -18,7 +18,6 @@ python mcPlots.py \
     -P "${trees}" \
     -l "${lumi}" \
     -j 22 \
-    -e \
     --s2v \
     --tree treeProducerSusyUpgrade \
     --obj Delphes \
@@ -27,15 +26,14 @@ python mcPlots.py \
     --noErrorBandOnRatio \
     --noStackSig \
     --showIndivSigs \
-    --showMCError \
     --emptyStack \
     --printBinAuto \
     --legendFontSize 0.028 \
     --noCms \
     --plotmode stack \
     --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
-    --rspam "" \
-    --pdir plots
+    --rspam "" --showRatio -f --ratioDen DY_Delphes --ratioNum DY_FS \
+    --ratioYLabel "FullSim/Delphes" --pdir "plots_met_4thTry/plots_tt_2hardmu_1pjet100_woSF"
 
 # Useful options:
 # -f: Only make plots for complete set of cuts

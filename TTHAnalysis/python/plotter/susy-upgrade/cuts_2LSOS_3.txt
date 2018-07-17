@@ -67,114 +67,50 @@
 #
 ### SOS Run-2 DY Cutflow Region
 
-#### Validation plot region
-#alwaystrue: 1.
-#
-### Muons
-##at least one muon: mu_pt@.size() >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
-##2 os muons: mu_pt@.size() == 2 && el_pt@.size() == 0 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-###lepton pt upper bound: mu1_pt < 30 && mu2_pt < 30
-##lepton pt lower bound: mu1_pt > 30 && mu2_pt > 30
-#
-## Electrons
-#at least one electron: el_pt@.size() >= 1 && el1_pt > 5 && fabs(el1_eta) < 2.4
-#2 os electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 5 && el2_pt > 5 && fabs(el1_eta) < 2.4 && fabs(el2_eta) < 2.4 && el1_q*el2_q < 0
+### Validation plot region
+alwaystrue: 1.
+#at least one muon: mu_pt@.size() >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
+#2 os muons: mu_pt@.size() == 2 && el_pt@.size() == 0 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+#lepton pt upper bound: mu1_pt < 30 && mu2_pt < 30
+##at least one electron: el_pt@.size() >= 1 && el1_pt > 5 && fabs(el1_eta) < 2.4
+##2 os electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 5 && el2_pt > 5 && fabs(el1_eta) < 2.4 && fabs(el2_eta) < 2.4 && el1_q*el2_q < 0
 ##lepton pt upper bound: el1_pt < 30 && el2_pt < 30
-#lepton pt lower bound: el1_pt > 30 && el2_pt > 30
-#
-## Leptons
-##at least one lepton: lep_pt@.size() >= 1 && lep1_pt > 5 && fabs(lep1_eta) < 2.4
-##2 os leptons: lep_pt@.size() == 2 && lep1_pt > 5 && lep2_pt > 5 && fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4 && hasSFOS # the hasSFOS is not completely correct here, it also includes SFOS with leptons below 5 GeV
-##lepton pt upper bound: lep1_pt < 30 && lep2_pt < 30
-##lepton pt lower bound: lep1_pt > 30 && lep2_pt > 30
-#
-### 2 Hard Leptons
-##2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
-##nSoftLep == 0: nSoftLep == 0
-##SFOS: hasSFOS && hasSoftSFOS
-#
-#1 hard jet: jet1_pt > 200 && fabs(jet1_eta) < 2.4
-#
-###ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
-###mll between 5 and 40: mllMin > 5 && mllMin < 40
-###Upsilon veto: mllMin < 9 || mllMin > 10.5
-###met larger 300: met > 300
-#
-##2el and 1j: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 30 && el2_pt > 30 && fabs(el1_eta) < 2.4 && fabs(el2_eta) < 2.4 && el1_q*el2_q < 0
-##hardjet: jet1_pt > 250
+##ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
+##mll between 5 and 40: mllMin > 5 && mllMin < 40
+##Upsilon veto: mllMin < 9 || mllMin > 10.5
+##met larger 300: met > 300
 
-### Bin by bin optimisation
+2mu and 1j: mu_pt@.size() == 2 && el_pt@.size() == 0 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+hardjet: jet1_pt > 100
+#eta jet: fabs(jet1_eta) < 2.4
+
+#### Bin by bin optimisation
 #alwaystrue: 1.
-#nLep == 2: nLep == 2
-#Ztomm: ZtoLL == 14
-#ht25>100: ht25>100
-#crazyMuon500: crazyMuon500 == 0
-#crazyMuon200: crazyMuon200 == 0
-#crazyMuon50: crazyMuon50 == 0
-#at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
-#2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
-#2 soft muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#2 hard muons: nLep == 2 && nMu == 2 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
-#at least one jet: nJet25 >= 1 && fabs(jet1_eta) < 2.4
+##nLep == 2: nLep == 2
+##Ztomm: ZtoLL == 14
+##ht25>100: ht25>100
+##crazyMuon500: crazyMuon500 == 0
+##crazyMuon200: crazyMuon200 == 0
+##crazyMuon50: crazyMuon50 == 0
+##at least one muon: nLep >= 1 && nMu >= 1 && mu1_pt > 5 && fabs(mu1_eta) < 2.4
+##2 os muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##muon pt upper bound: mu1_pt < 30 && mu2_pt < 30
+##2 soft muons: nLep == 2 && nMu == 2 && mu1_pt > 5 && mu2_pt > 5 && mu1_pt < 30 && mu2_pt < 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##2 hard muons: nLep == 2 && nMu == 2 && mu1_pt > 30 && mu2_pt > 30 && fabs(mu1_eta) < 2.4 && fabs(mu2_eta) < 2.4 && mu1_q*mu2_q < 0
+##at least one jet: nJet25 >= 1 && fabs(jet1_eta) < 2.4
 #2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
 #nSoftLep == 2: nSoftLep == 2
 #lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
 #lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 #SFOS: hasSFOS && hasSoftSFOS
 #bjet: nBJet == 0
-#met larger 200: met > 200
+#drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+#met larger 300: met > 300
 #ht25 larger 100: ht25 >= 100 && fabs(jet1_eta) < 2.4
 #mll between 5 and 40: mllMin > 5 && mllMin < 40
 #Upsilon veto: mllMin < 9 || mllMin > 10.5
 ##jet1_eta < 2.4: fabs(jet1_eta) < 2.4
 #jet1_pt > 200: jet1_pt > 200
-#drLep1Lep2 < 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
-
-# 2L
-alwaystrue: 1.
-nLep == 2: nLep == 2
-2 leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
-nSoftLep == 2: nSoftLep == 2
-lep pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
-lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
-SFOS: hasSFOS && hasSoftSFOS
-mhlt larger 250: mhlt40 >= 250
-nbjet: nBJet <= 2
-mllMin in [5, 40]: mllMin>5 && mllMin<40
-dPhi VecSum Jet1 larger 2: fabs(deltaPhi(mhlt40_phi, jet1_phi)) > 2.
-jet1_pt larger 200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
-nJet40 in [1, 4]: nJet40 >= 1 && nJet40 <= 4
-jet1pt over mhlt40 in [0.5, 1.5]: jet1_pt/mhlt40 > 0.5 && jet1_pt/mhlt40 < 1.5
-MET over HT above 0.4: met/ht25 >= 0.4
-dR Lep1 Lep2 smaller 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
-#mllMin in [5, 10]: mllMin>5 && mllMin<10
-
-# 2L with old VecSum definition (different sign)
-#dPhi VecSum Jet1 smaller 1: fabs(deltaPhi(mhlt25_phi, jet1_phi)) < 1.
-#dPhi MET Jet1 larger 2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
-#dR Lep1 Lep2 smaller 2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 1.5
-#nbjet: nBJet <= 2
-#mllMin in [5, 40]: mllMin>5 && mllMin<40
-#VecSum over HT in [0.5, 1.0]: mhlt25/ht25 >= 0.5 && mhlt25/ht25 <= 1.
-#MET over HT in [0.5, 1.0]: met/ht25 >= 0.5 && met/ht25 <= 1.
-#nJet25 in [1, 4]: nJet25 >= 1 && nJet25 <= 4
-#jet1 pt larger 200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
-
-## 3L
-#alwaystrue: 1.
-#3 leps: nLep == 3
-#SFOS: hasSFOS && hasSoftSFOS
-#lep pts: lep1_pt > 5 && lep2_pt > 5 && lep3_pt > 5 && lep1_pt < 30 && lep2_pt < 30 && lep3_pt < 30
-#lep etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4 && fabs(lep3_eta) < 2.4
-#nbjet: nBJet <= 2
-#mhlt25 larger 250: mhlt25 >= 250
-#jet1_pt > 250: jet1_pt > 250 && fabs(jet1_eta) < 2.4
-#nJet25 in [1, 3]: nJet25 >= 1 && nJet25 <= 3
-#mllMin in [5, 40]: mllMin>5 && mllMin<40
-#mllMax < 60: mllMax < 60
-#VecSum over HT in [0.5, 1.0]: mhlt25/ht25 >= 0.5 && mhlt25/ht25 <= 1.
-#MET over HT in [0.5, 1.0]: met/ht25 >= 0.5 && met/ht25 <= 1.
 
 #jet1_pt > 50: jet1_pt > 50 && fabs(jet1_eta) < 2.1
 #nJet100 == 1: nJet100 == 1
