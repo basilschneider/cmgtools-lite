@@ -465,22 +465,28 @@
 #el2_el1 : el2_pt/el1_pt : 20, 0, 1 ; XTitle="el2pt/el1pt"
 #el2_el1_log : el2_pt/el1_pt : 20, 0, 1 ; XTitle="el2pt/el1pt", Logy, YMin=.2, YMax=8e9
 
-# YR plots
-njet40: nJet40: 5, -.5, 4.5; XTitle="n_{jet}", LowerSig, YMin=0., YMax=470., Legend="TL", XNDiv=5
-njet40_log: nJet40: 5, -.5, 4.5; XTitle="n_{jet}", LowerSig, Logy, YMin=.2, YMax=2e5, Legend="TL", XNDiv=5
-lep1_pt: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", YMin=0., YMax=340., Legend="TL"
+## YR plots (outdated)
+#njet40: nJet40: 5, -.5, 4.5; XTitle="n_{jet}", LowerSig, YMin=0., YMax=470., Legend="TL", XNDiv=5
+#njet40_log: nJet40: 5, -.5, 4.5; XTitle="n_{jet}", LowerSig, Logy, YMin=.2, YMax=2e5, Legend="TL", XNDiv=5
+#lep1_pt: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", YMin=0., YMax=340., Legend="TL"
+#lep1_pt_log: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", Logy, YMin=.2, YMax=2e5, Legend="TL"
+#lep2_pt: lep2_pt: 8, 0, 40; XTitle="p_{T} (l_{2}) [GeV]", YMin=0., YMax=420.
+#lep2_pt_log: lep2_pt: 6, 0, 30; XTitle="p_{T} (l_{2}) [GeV]", Logy, YMin=.2, YMax=2e6, XNDiv=506
+#jet1_pt: jet1_pt: 10, 200, 700; XTitle="p_{T} (j_{1}) [GeV]", YMin=0., YMax=340., XNDiv=506
+#jet1_pt_log: jet1_pt: 10, 200, 700; XTitle="p_{T} (j_{1}) [GeV]", Logy, YMin=.2, YMax=2e5
+#jet1_eta: jet1_eta: 10, -2.5, 2.5; XTitle="#eta (j_{1})", YMin=0., YMax=300, Legend="TL"
+#jet1_eta_log: jet1_eta: 10, -2.5, 2.5; XTitle="#eta (j_{1})", Logy, YMin=.2, YMax=2e5, Legend="TC"
+#mllMin_fine: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=340.
+#mllMin_fine_log: mllMin: 8, 0, 40; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=4e5
+#mhlt40: mhlt40: 16, 250, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j} [GeV]", YMin=0., YMax=320.
+#mhlt40_log: mhlt40: 16, 250, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j} [GeV]", Logy, YMin=.2, YMax=2e5
+#drMhlt40Jet1: deltaPhi(mhlt40_phi, jet1_phi) : 10, -1, 1; XTitle="dPhi(#Sigma #vec{p}_{T}^{l\,j}\, j_{1})", YMin=0., YMax=720.
+#drMhlt40Jet1_log: deltaPhi(mhlt40_phi, jet1_phi) : 10, -1, 1; XTitle="dPhi(#Sigma #vec{p}_{T}^{l\,j}\, j_{1})", Logy, YMin=.2, YMax=8e6
+#drLep1Lep2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 5, 0, 1.5; XTitle="dR(l_{1}\, l_{2})", Legend="TL", YMin=0., YMax=460.
+#drLep1Lep2_log: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 5, 0, 1.5; XTitle="dR(l_{1}\, l_{2})", Logy, YMin=.2, YMax=2e6
+
+# YR plots (outdated)
 lep1_pt_log: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", Logy, YMin=.2, YMax=2e5, Legend="TL"
-lep2_pt: lep2_pt: 8, 0, 40; XTitle="p_{T} (l_{2}) [GeV]", YMin=0., YMax=420.
 lep2_pt_log: lep2_pt: 6, 0, 30; XTitle="p_{T} (l_{2}) [GeV]", Logy, YMin=.2, YMax=2e6, XNDiv=506
-jet1_pt: jet1_pt: 10, 200, 700; XTitle="p_{T} (j_{1}) [GeV]", YMin=0., YMax=340., XNDiv=506
-jet1_pt_log: jet1_pt: 10, 200, 700; XTitle="p_{T} (j_{1}) [GeV]", Logy, YMin=.2, YMax=2e5
-jet1_eta: jet1_eta: 10, -2.5, 2.5; XTitle="#eta (j_{1})", YMin=0., YMax=300, Legend="TL"
-jet1_eta_log: jet1_eta: 10, -2.5, 2.5; XTitle="#eta (j_{1})", Logy, YMin=.2, YMax=2e5, Legend="TC"
 mllMin_fine: mllMin: 10, 0, 50; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=340.
-mllMin_fine_log: mllMin: 8, 0, 40; XTitle="m_{ll} [GeV]", LowerSig, Logy, YMin=.2, YMax=4e5
-mhlt40: mhlt40: 16, 250, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j} [GeV]", YMin=0., YMax=320.
 mhlt40_log: mhlt40: 16, 250, 650; XTitle="#Sigma #vec{p}_{T}^{l\,j} [GeV]", Logy, YMin=.2, YMax=2e5
-drMhlt40Jet1: deltaPhi(mhlt40_phi, jet1_phi) : 10, -1, 1; XTitle="dPhi(#Sigma #vec{p}_{T}^{l\,j}\, j_{1})", YMin=0., YMax=720.
-drMhlt40Jet1_log: deltaPhi(mhlt40_phi, jet1_phi) : 10, -1, 1; XTitle="dPhi(#Sigma #vec{p}_{T}^{l\,j}\, j_{1})", Logy, YMin=.2, YMax=8e6
-drLep1Lep2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 5, 0, 1.5; XTitle="dR(l_{1}\, l_{2})", Legend="TL", YMin=0., YMax=460.
-drLep1Lep2_log: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 5, 0, 1.5; XTitle="dR(l_{1}\, l_{2})", Logy, YMin=.2, YMax=2e6
