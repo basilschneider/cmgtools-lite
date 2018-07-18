@@ -750,13 +750,13 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
                 bgEntries.append( (pmap[p],lbl,myStyle) )
         nentries = len(sigEntries) + len(bgEntries) + ('data' in pmap)
 
-        (x1,y1,x2,y2) = (0.97-legWidth if doWide else .85-legWidth, .7 - textSize*max(nentries-3,0), .90, .91)
+        (x1,y1,x2,y2) = (0.97-legWidth if doWide else .85-legWidth, .65 - textSize*max(nentries-3,0), .90, .91)
         if corner == "TR":
-            (x1,y1,x2,y2) = (0.97-legWidth if doWide else .85-legWidth, .7 - textSize*max(nentries-3,0), .90, .91)
+            (x1,y1,x2,y2) = (0.97-legWidth if doWide else .85-legWidth, .65 - textSize*max(nentries-3,0), .90, .91)
         elif corner == "TC":
-            (x1,y1,x2,y2) = (.5, .7 - textSize*max(nentries-3,0), .5+legWidth, .91)
+            (x1,y1,x2,y2) = (.5, .65 - textSize*max(nentries-3,0), .5+legWidth, .91)
         elif corner == "TL":
-            (x1,y1,x2,y2) = (.2, .7 - textSize*max(nentries-3,0), .2+legWidth, .91)
+            (x1,y1,x2,y2) = (.2, .65 - textSize*max(nentries-3,0), .2+legWidth, .91)
         elif corner == "BR":
             (x1,y1,x2,y2) = (.85-legWidth, .33 + textSize*max(nentries-3,0), .90, .15)
         elif corner == "BC":
@@ -766,6 +766,7 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
 
         textSize *= 1.1
         leg = ROOT.TLegend(x1,y1,x2,y2)
+        #leg.SetNColumns(2)
         if header: leg.SetHeader(header.replace("\#", "#"))
         leg.SetFillColor(0)
         leg.SetShadowColor(0)
