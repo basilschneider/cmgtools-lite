@@ -184,8 +184,8 @@ def doShadedUncertainty(h):
     for i,((x,y),(EXlow,EXhigh,EYlow,EYhigh)) in enumerate(zip(points,errors)):
         ret.SetPoint(i, x, y)
         ret.SetPointError(i, EXlow,EXhigh,EYlow,EYhigh)
-    ret.SetFillStyle(3344);
-    ret.SetFillColor(ROOT.kRed+1)
+    ret.SetFillStyle(3335)
+    ret.SetFillColor(14)
     ret.SetMarkerStyle(0)
     ret.Draw("PE2 SAME")
     return ret
