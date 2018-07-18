@@ -31,11 +31,12 @@ python mcPlots.py \
     --showMCError \
     --emptyStack \
     --printBinAuto \
-    --legendFontSize 0.028 \
+    --legendFontSize 0.032 \
     --noCms \
     --plotmode stack \
-    --lspam "#bf{CMS} #it{Delphes Phase II Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
+    --lspam "#bf{CMS} #it{Delphes Phase-2 Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
     --rspam "" \
+    --legendWidth 0.29 \
     --pdir plots
 
 # Useful options:
