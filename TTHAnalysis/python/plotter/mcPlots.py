@@ -995,7 +995,8 @@ class PlotMaker:
                     if 'eta' in pspec.getOption('XTitle', outputName) or \
                             'dPhi' in pspec.getOption('XTitle', outputName) or \
                             'dR' in pspec.getOption('XTitle', outputName) or \
-                            'n_' in pspec.getOption('XTitle', outputName):
+                            'n_' in pspec.getOption('XTitle', outputName) or \
+                            'bins' in outputName:
                         ytitle = "Events"
                     else:
                         try:
