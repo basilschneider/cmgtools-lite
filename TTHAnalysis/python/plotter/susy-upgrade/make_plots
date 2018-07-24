@@ -28,6 +28,9 @@ python mcPlots.py \
     --noErrorBandOnRatio \
     --noStackSig \
     --showIndivSigs \
+    --showRatio \
+    --ratioDen DY_FS \
+    --ratioNums DY_Delphes \
     --showMCError \
     --emptyStack \
     --printBinAuto \

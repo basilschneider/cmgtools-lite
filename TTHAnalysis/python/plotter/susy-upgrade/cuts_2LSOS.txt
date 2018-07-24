@@ -149,6 +149,8 @@ nJet40-in-1-4: nJet40 >= 1 && nJet40 <= 4
 #MET-over-HT-above-0.4: met/ht25 >= 0.4
 dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
 #mllMin in [5, 10]: mllMin>5 && mllMin<10
+#lep2-pt-bin: lep2_pt > 21 && lep2_pt <= 30
+#mhlt-bin: mhlt40 >= 500
 
 # 2L with old VecSum definition (different sign)
 #dPhi VecSum Jet1 smaller 1: fabs(deltaPhi(mhlt25_phi, jet1_phi)) < 1.

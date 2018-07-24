@@ -1,17 +1,18 @@
 ###### Lepton pT's
-#el1_pt: el1_pt: 70, 0, 70; XTitle="p_{T} (e_{1})"
+el1_pt: el1_pt: 40, 30, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
 ##el1_pt_wide: el1_pt: 100, 0, 200; XTitle="p_{T} (e_{1})"
 ###el1_woIso_pt: el1_woIso_pt: 70, 0, 70; XTitle="p_{T} (e_{1})"
 #el1_pt_log: el1_pt: 10, 0, 50; XTitle="p_{T} (e_{1})", Logy, YMin=.2, YMax=8e9
-#el2_pt: el2_pt: 70, 0, 70; XTitle="p_{T} (e_{2})"
+el2_pt: el2_pt: 40, 30, 70; XTitle="p_{T} (e_{2})", IncludeOverflows=False
+#el_pt: el_pt: 70, 0, 70; XTitle="p_{T} (e_{2})", IncludeOverflows=False
 ##el2_pt_wide: el2_pt: 100, 0, 200; XTitle="p_{T} (e_{2})"
 ###el2_woIso_pt: el2_woIso_pt: 70, 0, 70; XTitle="p_{T} (e_{2})"
 #el2_pt_log: el2_pt: 10, 0, 50; XTitle="p_{T} (e_{2})", Logy, YMin=.2, YMax=8e9
-#mu1_pt: mu1_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+#mu1_pt: mu1_pt: 40, 30, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
 ##mu1_pt_wide: mu1_pt: 100, 0, 200; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
 ###mu1_woIso_pt: mu1_woIso_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
 #mu1_pt_log: mu1_pt: 20, 0, 200; XTitle="p_{T} (#mu_{1})", Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
-#mu2_pt: mu2_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+#mu2_pt: mu2_pt: 40, 30, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
 ##mu2_pt_wide: mu2_pt: 100, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
 ###mu2_woIso_pt: mu2_woIso_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
 #mu2_pt_log: mu2_pt: 20, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, Logy, YMin=.2, YMax=8e9, IncludeOverflows=False
@@ -486,9 +487,9 @@
 #drLep1Lep2_log: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 5, 0, 1.5; XTitle="dR(l_{1}\, l_{2})", Logy, YMin=.2, YMax=2e6
 
 # YR plots
-lep1_pt_log: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", Logy, YMin=.2, YMax=4e7, Legend="TL"
-lep2_pt_log: lep2_pt: 6, 0, 30; XTitle="p_{T} (l_{2}) [GeV]", Logy, YMin=.2, YMax=9e7, XNDiv=506, Legend="TC"
-mllMin_fine: mllMin: 11, 0, 55; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=850., Legend="TR"
-mllMin_fine_bins: mllMin: [0, 5, 10, 20, 30, 40]; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=3200., Legend="TR"
-mhlt40_log: mhlt40: 11, 250, 800; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
-mhlt40_log_bins: mhlt40: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
+#lep1_pt_log: lep1_pt: 6, 0, 30; XTitle="p_{T} (l_{1}) [GeV]", Logy, YMin=.2, YMax=4e7, Legend="TL"
+#lep2_pt_log: lep2_pt: 6, 0, 30; XTitle="p_{T} (l_{2}) [GeV]", Logy, YMin=.2, YMax=9e7, XNDiv=506, Legend="TC"
+#mllMin_fine: mllMin: 11, 0, 55; XTitle="m_{ll} [GeV]", LowerSig, YMin=0., YMax=850., Legend="TR"
+#mllMin_fine_log_bins: mllMin: [0, 5, 10, 20, 30, 40]; XTitle="m_{ll} [GeV]", Logy, LowerSig, YMin=0.2, YMax=8e7, Legend="TR"
+#mhlt40_log: mhlt40: 11, 250, 800; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
+#mhlt40_log_bins: mhlt40: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
