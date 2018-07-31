@@ -1118,7 +1118,7 @@ class PlotMaker:
                     CMS_lumi.lumi_13TeV = "%.1f fb^{-1}" % self._options.lumi
                     CMS_lumi.extraText  = self._options.cmsprel
                     CMS_lumi.lumi_sqrtS = self._options.cmssqrtS
-                    CMS_lumi.CMS_lumi(ROOT.gPad, 4, 0, -0.005 if doWide and (doRatio or doSigificance) else 0.01 if doWide else 0.05)
+                    CMS_lumi.CMS_lumi(ROOT.gPad, 4, 0, -0.005 if doWide and (doRatio or doSignificance) else 0.01 if doWide else 0.05)
                 else:
                     doTinyCmsPrelim(hasExpo = total.GetMaximum() > 9e4 and not c1.GetLogy(),textSize=(0.045 if (doRatio or doSignificance) else 0.033)*options.topSpamSize, options=options,doWide=doWide)
                 if options.addspam:
