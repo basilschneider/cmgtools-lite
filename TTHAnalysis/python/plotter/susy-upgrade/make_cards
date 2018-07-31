@@ -11,6 +11,13 @@ trees=trees/
 dirBins=susy-upgrade/bins/binning_5met_4mll_3slep/
 dirCards=susy-upgrade/cards/
 
+# If cards directory exists, exit
+if [ -d "${dirCards}" ]; then
+    echo "Cards directory ${dirCards} exists already."
+    echo "Exit."
+    exit
+fi
+
 mkdir -p "${dirCards}"
 
 signals=()
