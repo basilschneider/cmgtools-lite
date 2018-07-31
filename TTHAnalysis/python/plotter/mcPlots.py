@@ -538,7 +538,7 @@ def doRatioHists(pspec,pmap,total,totalSyst,maxRange,fixRange=False,fitRatio=Non
     line.SetLineColor(12);
     line.Draw("L")
     for ratio in ratios:
-        ratio.GetYaxis().SetRangeUser(rmin,rmax);
+        #ratio.GetYaxis().SetRangeUser(rmin,rmax);
         ratio.GetXaxis().SetTitleFont(42)
         ratio.GetXaxis().SetTitleSize(0.14)
         ratio.GetXaxis().SetTitleOffset(0.9)
@@ -1025,7 +1025,7 @@ class PlotMaker:
                 #
                 if not makeCanvas and not self._options.printPlots: return
                 doRatio = self._options.showRatio and ('data' in pmap or (plotmode != "stack")) and ("TH2" not in total.ClassName())
-                doRatio = True
+                #doRatio = True
                 doSignificance = self._options.showSignificance and ('signal' in pmap) and not doRatio
                 islog = pspec.hasOption('Logy');
                 if doRatio or doSignificance: ROOT.gStyle.SetPaperSize(20.,sf*(plotformat[1]+150))
