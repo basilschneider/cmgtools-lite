@@ -62,3 +62,9 @@ print 'rate        '," ".join([fpatt % report[p][-1][1][0] for p in procs])
 print '##----------------------------------'
 for name,effmap in systs.iteritems():
     print '%-8s lnN' % name," ".join([kpatt % effmap[p]   for p in procs])
+print 'Foo01', klen
+print 'Foo02', kpatt
+print 'Foo03', fpatt
+print 'Foo04', procs
+print 'Foo05', iproc
+print 'Foo06', report
