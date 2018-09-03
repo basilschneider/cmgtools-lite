@@ -21,7 +21,7 @@ python mcPlots.py \
     -e \
     --s2v \
     --tree treeProducerSusyUpgrade \
-    --obj Delphes \
+    --obj ntuple/ElectronMedium \
     --maxRatioRange 0.05 1.95 \
     --fixRatioRange \
     --noErrorBandOnRatio \

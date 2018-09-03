@@ -84,7 +84,9 @@
 
 # Electrons
 #at least one electron: el_pt@.size() >= 1 && el1_pt > 5 && fabs(el1_eta) < 2.4
-2 recoId electrons: el_recoId_pt@.size() == 2 && mu_pt@.size() == 0 && el_recoId1_pt > 5 && el_recoId2_pt > 5 && fabs(el_recoId1_eta) < 2.4 && fabs(el_recoId2_eta) < 2.4
+#2 recoId electrons: el_recoId_pt@.size() == 2 && mu_pt@.size() == 0 && el_recoId1_pt > 5 && el_recoId2_pt > 5 && fabs(el_recoId1_eta) < 2.4 && fabs(el_recoId2_eta) < 2.4
+2 recoId electrons: ElectronMedium_size == 2 && PT[0] > 5 && PT[1] > 5 && fabs(Eta[0]) < 2.4 && fabs(Eta[1]) < 2.4
+dummy: 1.
 #2 signal electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 5 && el2_pt > 5 && fabs(el1_eta) < 2.4 && fabs(el2_eta) < 2.4 && el1_q*el2_q < 0
 ##lepton pt upper bound: el1_pt < 30 && el2_pt < 30
 ##lepton pt lower bound: el1_pt > 30 && el2_pt > 30
