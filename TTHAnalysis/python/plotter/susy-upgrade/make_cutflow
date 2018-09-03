@@ -21,7 +21,7 @@ python mcAnalysis.py \
     -G \
     --s2v \
     --tree treeProducerSusyUpgrade \
-    --obj ntuple/ElectronMedium -e
+    --obj Delphes -e
 
 # Useful options:
 # -e: show statistical errors
