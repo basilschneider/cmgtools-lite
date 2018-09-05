@@ -1,0 +1,18 @@
+LUMI SET TO 3000.!
+            CUT              N2C1_350_315_Delphe 
+------------------------------------------------
+entry point                       17710   39.19 
+alwaystrue                        17710   39.19 
+nLep-equal-2                       4072   19.55 
+2-leps                             3638   18.59 
+nSoftLep-equal-2                   2313   14.78 
+lep-pts                            2313   14.78 
+lep-etas                           2147   14.23 
+SFOS                               2014   13.77 
+mhlt-larger-250                   67.94    2.53 
+nbjet                             64.32    2.46 
+mllMin-in-5-40                    61.46    2.40 
+dPhi-VecSum-Jet1-larger-2         61.15    2.39 
+jet1-pt-larger-200                53.36    2.24 
+nJet40-in-1-4                     52.35    2.22 
+dR-Lep1-Lep2-smaller-2            37.42    1.87 
