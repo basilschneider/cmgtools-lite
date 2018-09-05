@@ -23,13 +23,13 @@
 #####tj                               : tj_ST1000to1600                  : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj", NormSystematic=.1
 #####tj                               : tj_ST1600to2400                  : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj", NormSystematic=.1
 #####tj                               : tj_ST2400toInf                   : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj", NormSystematic=.1
-#
-#tt                              : tt_ST0to600_200PU                : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
-#tt                              : tt_ST600to1100_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
-#tt                              : tt_ST1100to1700_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
-#tt                              : tt_ST1700to2500_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
-#tt                              : tt_ST2500toInf_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
-#
+
+tt                              : tt_ST0to600_200PU                : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
+tt                              : tt_ST600to1100_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
+tt                              : tt_ST1100to1700_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
+tt                              : tt_ST1700to2500_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
+tt                              : tt_ST2500toInf_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.3 # 1/8. is the bjet correction
+
 ####LL                               : LL_ST0to100                      : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL", NormSystematic=.1
 ####LL                               : LL_ST100to200                    : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL", NormSystematic=.1
 ####LL                               : LL_ST200to500                    : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL", NormSystematic=.1
@@ -107,28 +107,28 @@
 #Wj_Delphes+                     : WToLNu_2J_200PU                   : .33*3.314e+06/nTot*if3(nEl>=999, 2.04, 1.14)    : 1. ; FillColor=ROOT.kGreen+2, Label="Wj (Delphes)", NormSystematic=.3
 #Wj_Delphes+                     : WToLNu_3J_200PU                   : .33*1.891e+06/nTot*if3(nEl>=999, 2.04, 1.14)    : 1. ; FillColor=ROOT.kGreen+2, Label="Wj (Delphes)", NormSystematic=.3
 
-#DY2                             : DYToLL_M-5to50_HT100to200_200PU   : 1.1*.1*224200/nTot*if3(nEl>=2, 1.36, 1.01)           : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-5to50_HT200to400_200PU   : 1.1*.1*37200/nTot*if3(nEl>=2, 1.36, 1.01)            : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-5to50_HT400to600_200PU   : 1.1*.1*3581/nTot*if3(nEl>=2, 1.36, 1.01)             : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-5to50_HT600toInf_200PU   : 1.1*.1*1124/nTot*if3(nEl>=2, 1.36, 1.01)             : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT100to200_200PU      : 1.1*.1*1.23*147400/nTot*if3(nEl>=2, 1.36, 1.01)      : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT200to400_200PU      : 1.1*.1*1.23*40990/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT400to600_200PU      : 1.1*.1*1.23*5678/nTot*if3(nEl>=2, 1.36, 1.01)        : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT600to800_200PU      : 1.1*.1*1.23*1367/nTot*if3(nEl>=2, 1.36, 1.01)        : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT800to1200_200PU     : 1.1*.1*1.23*630.4/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT1200to2500_200PU    : 1.1*.1*1.23*151.4/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#DY2                             : DYToLL_M-50_HT2500toInf_200PU     : 1.1*.1*1.23*3.565/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
-#
-#Wj2                             : WJetsToLNu_HT100to200_200PU       : 1.1*.33*1.21*1345000/nTot*if3(nEl>=2, 2.04, 1.14)    : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT200to400_200PU       : 1.1*.33*1.21*359700/nTot*if3(nEl>=2, 2.04, 1.14)     : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT400to600_200PU       : 1.1*.33*1.21*48910/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT600to800_200PU       : 1.1*.33*1.21*12050/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT800to1200_200PU      : 1.1*.33*1.21*5501/nTot*if3(nEl>=2, 2.04, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT1200to2500_200PU     : 1.1*.33*1.21*1329/nTot*if3(nEl>=2, 2.04, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#Wj2                             : WJetsToLNu_HT2500toInf_200PU      : 1.1*.33*1.21*32.16/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
-#
-#WW                              : WWTo2L2Nu_200PU                   : .33*.33*12178/nTot*if3(nEl>=2, 1.36, 1.01)            : 1. ; FillColor=10, Label="WW", NormSystematic=.1
-#
+DY2                             : DYToLL_M-5to50_HT100to200_200PU   : 1.1*.1*224200/nTot*if3(nEl>=2, 1.36, 1.01)           : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-5to50_HT200to400_200PU   : 1.1*.1*37200/nTot*if3(nEl>=2, 1.36, 1.01)            : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-5to50_HT400to600_200PU   : 1.1*.1*3581/nTot*if3(nEl>=2, 1.36, 1.01)             : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-5to50_HT600toInf_200PU   : 1.1*.1*1124/nTot*if3(nEl>=2, 1.36, 1.01)             : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT100to200_200PU      : 1.1*.1*1.23*147400/nTot*if3(nEl>=2, 1.36, 1.01)      : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT200to400_200PU      : 1.1*.1*1.23*40990/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT400to600_200PU      : 1.1*.1*1.23*5678/nTot*if3(nEl>=2, 1.36, 1.01)        : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT600to800_200PU      : 1.1*.1*1.23*1367/nTot*if3(nEl>=2, 1.36, 1.01)        : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT800to1200_200PU     : 1.1*.1*1.23*630.4/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT1200to2500_200PU    : 1.1*.1*1.23*151.4/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+DY2                             : DYToLL_M-50_HT2500toInf_200PU     : 1.1*.1*1.23*3.565/nTot*if3(nEl>=2, 1.36, 1.01)       : 1. ; FillColor=ROOT.kAzure-7, Label="Drell Yan", NormSystematic=.1
+
+Wj2                             : WJetsToLNu_HT100to200_200PU       : 1.1*.33*1.21*1345000/nTot*if3(nEl>=2, 2.04, 1.14)    : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT200to400_200PU       : 1.1*.33*1.21*359700/nTot*if3(nEl>=2, 2.04, 1.14)     : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT400to600_200PU       : 1.1*.33*1.21*48910/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT600to800_200PU       : 1.1*.33*1.21*12050/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT800to1200_200PU      : 1.1*.33*1.21*5501/nTot*if3(nEl>=2, 2.04, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT1200to2500_200PU     : 1.1*.33*1.21*1329/nTot*if3(nEl>=2, 2.04, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+Wj2                             : WJetsToLNu_HT2500toInf_200PU      : 1.1*.33*1.21*32.16/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
+
+WW                              : WWTo2L2Nu_200PU                   : .33*.33*12178/nTot*if3(nEl>=2, 1.36, 1.01)            : 1. ; FillColor=10, Label="WW", NormSystematic=.1
+
 ##TTbar_Delphes                     : TTbar_200PU                       : 864400/nTot           : 1. ; FillColor=ROOT.kMagenta+4, Label="ttbar incl. (Delphes)", NormSystematic=.3
 
 #### Background FullSim
@@ -173,7 +173,7 @@ N2C1_150_130_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==150
 N2C1_150_135_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==150 && mN1==135)*1357.28*.1/197405*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(150/135)", SkipMe=True, NormSystematic=.1
 N2C1_150_140_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==150 && mN1==140)*1357.28*.1/199257*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(150/140)", SkipMe=True, NormSystematic=.1
 N2C1_150_145_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==150 && mN1==145)*1357.28*.1/206034*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(150/145)", SkipMe=True, NormSystematic=.1
-N2C1_200_160_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==200 && mN1==160)* 479.10*.1/210211*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kBlack, Label="N2C1(200/160)", SkipMe=True, NormSystematic=.1, LineStyle=2
+N2C1_200_160_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==200 && mN1==160)* 479.10*.1/210211*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kBlack, Label="N2C1(200/160)", SkipMe=False, NormSystematic=.1, LineStyle=2
 N2C1_200_165_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==200 && mN1==165)* 479.10*.1/211286*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kBlack, Label="N2C1(200/165)", SkipMe=True, NormSystematic=.1, LineStyle=2
 N2C1_200_170_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==200 && mN1==170)* 479.10*.1/209234*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(200/170)", SkipMe=True, NormSystematic=.1
 N2C1_200_175_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==200 && mN1==175)* 479.10*.1/207076*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(200/175)", SkipMe=True, NormSystematic=.1
@@ -187,13 +187,13 @@ N2C1_250_220_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250
 N2C1_250_225_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==225)* 209.89*.1/210169*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kSpring-3, Label="N2C1(250/220)", SkipMe=True, NormSystematic=.1
 N2C1_250_230_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==230)* 209.89*.1/210250*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(250/230)", SkipMe=True, NormSystematic=.1
 N2C1_250_235_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==235)* 209.89*.1/211283*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(250/235)", SkipMe=True, NormSystematic=.1
-N2C1_250_240_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==240)* 209.89*.1/204814*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kBlue, Label="N2C1(250/240)", SkipMe=True, NormSystematic=.1, LineStyle=3
+N2C1_250_240_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==240)* 209.89*.1/204814*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kBlue, Label="N2C1(250/240)", SkipMe=False, NormSystematic=.1, LineStyle=3
 N2C1_250_245_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==250 && mN1==245)* 209.89*.1/206549*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(250/245)", SkipMe=True, NormSystematic=.1
 N2C1_300_260_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==260)* 104.91*.1/195146*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kRed, Label="N2C1(300/260)", SkipMe=True, NormSystematic=.1, LineStyle=7
 N2C1_300_265_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==265)* 104.91*.1/193334*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kRed, Label="N2C1(300/265)", SkipMe=True, NormSystematic=.1, LineStyle=7
 N2C1_300_270_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==270)* 104.91*.1/208817*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(300/270)", SkipMe=True, NormSystematic=.1
 N2C1_300_275_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==275)* 104.91*.1/192444*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(300/275)", SkipMe=True, NormSystematic=.1
-N2C1_300_280_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==280)* 104.91*.1/199989*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kRed, Label="N2C1(300/280)", SkipMe=True, NormSystematic=.1, LineStyle=7
+N2C1_300_280_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==280)* 104.91*.1/199989*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kRed, Label="N2C1(300/280)", SkipMe=False, NormSystematic=.1, LineStyle=7
 N2C1_300_285_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==285)* 104.91*.1/201926*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(300/285)", SkipMe=True, NormSystematic=.1
 N2C1_300_290_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==290)* 104.91*.1/203104*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(300/290)", SkipMe=True, NormSystematic=.1
 N2C1_300_295_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.*(mN2==300 && mN1==295)* 104.91*.1/196270*if3(nEl>=2, 1.36, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(300/295)", SkipMe=True, NormSystematic=.1
