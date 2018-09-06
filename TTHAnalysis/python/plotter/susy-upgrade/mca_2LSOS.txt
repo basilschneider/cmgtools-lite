@@ -127,7 +127,7 @@ Wj2                             : WJetsToLNu_HT800to1200_200PU      : 1.1*.33*1.
 Wj2                             : WJetsToLNu_HT1200to2500_200PU     : 1.1*.33*1.21*1329/nTot*if3(nEl>=2, 2.04, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
 Wj2                             : WJetsToLNu_HT2500toInf_200PU      : 1.1*.33*1.21*32.16/nTot*if3(nEl>=2, 2.04, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.3
 
-WW                              : WWTo2L2Nu_200PU                   : .33*.33*12178/nTot*if3(nEl>=2, 1.36, 1.01)            : 1. ; FillColor=10, Label="WW", NormSystematic=.1
+WW                              : WW_YR                             : 131./70.*12178/nTot*if3(nEl>=2, 1.36, 1.01)                   : 1. ; FillColor=10, Label="WW", NormSystematic=.1
 
 ##TTbar_Delphes                     : TTbar_200PU                       : 864400/nTot           : 1. ; FillColor=ROOT.kMagenta+4, Label="ttbar incl. (Delphes)", NormSystematic=.3
 
