@@ -507,48 +507,50 @@
 #mhlt40_log: mhlt40: 11, 250, 800; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
 #mhlt40_log_bins: mhlt40: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
 
-## Lepton control plots
+# Lepton control plots
 el1_pt: el1_pt: 70, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
-#el1_pt_wide: el1_pt: 100, 0, 200; XTitle="p_{T} (e_{1})"
+el1_pt_coarse: el1_pt: 10, 20, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
+el1_pt_wide: el1_pt: 100, 0, 200; XTitle="p_{T} (e_{1})"
 el1_recoId_pt: el1_recoId_pt: 70, 0, 70; XTitle="p_{T} (e_{1}) (recoId)"
-#el1_recoId_pt_wide: el1_recoId_pt: 100, 0, 200; XTitle="p_{T} (e_{1}) (recoId)"
+el1_recoId_pt_wide: el1_recoId_pt: 100, 0, 200; XTitle="p_{T} (e_{1}) (recoId)"
 el2_pt: el2_pt: 70, 0, 70; XTitle="p_{T} (e_{2})", IncludeOverflows=False
-#el2_pt_wide: el2_pt: 100, 0, 200; XTitle="p_{T} (e_{2})"
+el2_pt_coarse: el2_pt: 10, 20, 70; XTitle="p_{T} (e_{2})", IncludeOverflows=False
+el2_pt_wide: el2_pt: 100, 0, 200; XTitle="p_{T} (e_{2})"
 el2_recoId_pt: el2_recoId_pt: 70, 0, 70; XTitle="p_{T} (e_{2}) (recoId)"
-#el2_recoId_pt_wide: el2_recoId_pt: 100, 0, 200; XTitle="p_{T} (e_{2}) (recoId)"
-#el1_pt_etas1p5: if3(fabs(el1_eta) < 1.5, el1_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{1}) (|#eta(e_{1})| < 1.5)", IncludeOverflows=False
-#el2_pt_etas1p5: if3(fabs(el2_eta) < 1.5, el2_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{2}) (|#eta(e_{2})| < 1.5)", IncludeOverflows=False
-#el1_recoId_pt_etas1p5: if3(fabs(el1_recoId_eta) < 1.5, el1_recoId_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{1}) (|#eta(e_{1})| < 1.5) (recoId)", IncludeOverflows=False
-#el2_recoId_pt_etas1p5: if3(fabs(el2_recoId_eta) < 1.5, el2_recoId_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{2}) (|#eta(e_{2})| < 1.5) (recoId)", IncludeOverflows=False
-##mu1_pt: mu1_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-##mu1_pt_wide: mu1_pt: 100, 0, 200; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-##mu1_recoId_pt: mu1_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
-##mu1_recoId_pt_wide: mu1_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
-##mu2_pt: mu2_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
-##mu2_pt_wide: mu2_pt: 100, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
-##mu2_recoId_pt: mu2_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2}) (recoId)", LowerSig, IncludeOverflows=False
-##mu2_recoId_pt_wide: mu2_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2}) (recoId)", LowerSig, IncludeOverflows=False
+el2_recoId_pt_wide: el2_recoId_pt: 100, 0, 200; XTitle="p_{T} (e_{2}) (recoId)"
+el1_pt_etas1p6: if3(fabs(el1_eta) < 1.6, el1_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{1}) (|#eta(e_{1})| < 1.5)", IncludeOverflows=False
+el2_pt_etas1p6: if3(fabs(el2_eta) < 1.6, el2_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{2}) (|#eta(e_{2})| < 1.5)", IncludeOverflows=False
+el1_recoId_pt_etas1p6: if3(fabs(el1_recoId_eta) < 1.6, el1_recoId_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{1}) (|#eta(e_{1})| < 1.5) (recoId)", IncludeOverflows=False
+el2_recoId_pt_etas1p6: if3(fabs(el2_recoId_eta) < 1.6, el2_recoId_pt, -999) : 70, 0, 70; XTitle="p_{T} (e_{2}) (|#eta(e_{2})| < 1.5) (recoId)", IncludeOverflows=False
+#mu1_pt: mu1_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+#mu1_pt_wide: mu1_pt: 100, 0, 200; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+#mu1_recoId_pt: mu1_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
+#mu1_recoId_pt_wide: mu1_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
+#mu2_pt: mu2_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+#mu2_pt_wide: mu2_pt: 100, 0, 200; XTitle="p_{T} (#mu_{2})", LowerSig, IncludeOverflows=False
+#mu2_recoId_pt: mu2_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2}) (recoId)", LowerSig, IncludeOverflows=False
+#mu2_recoId_pt_wide: mu2_recoId_pt: 70, 0, 70; XTitle="p_{T} (#mu_{2}) (recoId)", LowerSig, IncludeOverflows=False
 el1_eta: el1_eta: 20, -4, 4; XTitle="#eta (e_{1})"
 el2_eta: el2_eta: 20, -4, 4; XTitle="#eta (e_{2})"
-#el1_eta_ptl10: if3(el1_pt > 10, el1_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 10 GeV))", IncludeOverflows=False
-#el1_eta_ptl30: if3(el1_pt > 30, el1_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 30 GeV))", IncludeOverflows=False
-#el2_eta_ptl10: if3(el2_pt > 10, el2_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 10 GeV))", IncludeOverflows=False
-#el2_eta_ptl30: if3(el2_pt > 30, el2_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 30 GeV))", IncludeOverflows=False
-##mu1_eta: mu1_eta: 20, -4, 4; XTitle="#eta (#mu_{1})"
-##mu2_eta: mu2_eta: 20, -4, 4; XTitle="#eta (#mu_{2})"
+el1_eta_ptl10: if3(el1_pt > 10, el1_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 10 GeV))", IncludeOverflows=False
+el1_eta_ptl30: if3(el1_pt > 30, el1_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 30 GeV))", IncludeOverflows=False
+el2_eta_ptl10: if3(el2_pt > 10, el2_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 10 GeV))", IncludeOverflows=False
+el2_eta_ptl30: if3(el2_pt > 30, el2_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 30 GeV))", IncludeOverflows=False
+#mu1_eta: mu1_eta: 20, -4, 4; XTitle="#eta (#mu_{1})"
+#mu2_eta: mu2_eta: 20, -4, 4; XTitle="#eta (#mu_{2})"
 el1_recoId_eta: el1_recoId_eta: 20, -4, 4; XTitle="#eta (e_{1}) (recoId)"
 el2_recoId_eta: el2_recoId_eta: 20, -4, 4; XTitle="#eta (e_{2}) (recoId)"
-#el1_recoId_eta_ptl10: if3(el1_recoId_pt > 10, el1_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 10 GeV)) (recoId)", IncludeOverflows=False
-#el1_recoId_eta_ptl30: if3(el1_recoId_pt > 30, el1_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 30 GeV)) (recoId)", IncludeOverflows=False
-#el2_recoId_eta_ptl10: if3(el2_recoId_pt > 10, el2_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 10 GeV)) (recoId)", IncludeOverflows=False
-#el2_recoId_eta_ptl30: if3(el2_recoId_pt > 30, el2_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 30 GeV)) (recoId)", IncludeOverflows=False
-##mu1_recoId_eta: mu1_recoId_eta: 20, -4, 4; XTitle="#eta (#mu_{1}) (recoId)"
-##mu2_recoId_eta: mu2_recoId_eta: 20, -4, 4; XTitle="#eta (#mu_{2}) (recoId)"
-#el1_eta_pt: el1_pt\:el1_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
-#el2_eta_pt: el2_pt\:el2_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
-##mu1_eta_pt: mu1_pt\:mu1_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
-##mu2_eta_pt: mu2_pt\:mu2_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
-#el1_recoId_eta_pt: el1_recoId_pt\:el1_recoId_eta : 80, -4, 4, 70, 0, 70; XTitle="#eta (e_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
-#el2_recoId_eta_pt: el2_recoId_pt\:el2_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
-##mu1_recoId_eta_pt: mu1_recoId_pt\:mu1_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
-##mu2_recoId_eta_pt: mu2_recoId_pt\:mu2_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
+el1_recoId_eta_ptl10: if3(el1_recoId_pt > 10, el1_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 10 GeV)) (recoId)", IncludeOverflows=False
+el1_recoId_eta_ptl30: if3(el1_recoId_pt > 30, el1_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{1}) (p_{T} (e_{1} > 30 GeV)) (recoId)", IncludeOverflows=False
+el2_recoId_eta_ptl10: if3(el2_recoId_pt > 10, el2_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 10 GeV)) (recoId)", IncludeOverflows=False
+el2_recoId_eta_ptl30: if3(el2_recoId_pt > 30, el2_recoId_eta, -999) : 20, -4, 4 : ; XTitle="#eta (e_{2}) (p_{T} (e_{2} > 30 GeV)) (recoId)", IncludeOverflows=False
+#mu1_recoId_eta: mu1_recoId_eta: 20, -4, 4; XTitle="#eta (#mu_{1}) (recoId)"
+#mu2_recoId_eta: mu2_recoId_eta: 20, -4, 4; XTitle="#eta (#mu_{2}) (recoId)"
+el1_eta_pt: el1_pt\:el1_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
+el2_eta_pt: el2_pt\:el2_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
+#mu1_eta_pt: mu1_pt\:mu1_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
+#mu2_eta_pt: mu2_pt\:mu2_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
+el1_recoId_eta_pt: el1_recoId_pt\:el1_recoId_eta : 80, -4, 4, 70, 0, 70; XTitle="#eta (e_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
+el2_recoId_eta_pt: el2_recoId_pt\:el2_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (e_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
+#mu1_recoId_eta_pt: mu1_recoId_pt\:mu1_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
+#mu2_recoId_eta_pt: mu2_recoId_pt\:mu2_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
