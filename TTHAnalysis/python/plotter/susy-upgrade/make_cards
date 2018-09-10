@@ -7,6 +7,7 @@
 lumi=3000.
 
 mca=susy-upgrade/mca_2LSOS.txt
+systs=susy-upgrade/systs.txt
 trees=trees/
 dirBins=susy-upgrade/bins/binning_5met_4mll_3slep/
 dirCards=susy-upgrade/cards/
@@ -92,6 +93,7 @@ for signal in "${signals[@]}"; do
         python makeCountingCards.py \
             <(sed "/${signal}/s/SkipMe *= *True/SkipMe=False/g" "${mca}") \
             "${cuts}" \
+            "${systs}" \
             -P "${trees}" \
             -l "${lumi}" \
             -j 20 \

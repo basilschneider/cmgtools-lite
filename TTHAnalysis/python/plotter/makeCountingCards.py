@@ -35,7 +35,7 @@ for sysfile in args[2:]:
         if re.match(binmap,binname) == None: continue
         if name not in systs: systs[name] = []
         systs[name].append((re.compile(procmap),amount))
-    sys.stderr.write("Loaded %d systematics\n" % len(systs))
+    #sys.stderr.write("Loaded %d systematics\n" % len(systs))
 
 for name in systs.keys():
     effmap = {}
@@ -62,9 +62,21 @@ print 'rate        '," ".join([fpatt % report[p][-1][1][0] for p in procs])
 print '##----------------------------------'
 for name,effmap in systs.iteritems():
     print '%-8s lnN' % name," ".join([kpatt % effmap[p]   for p in procs])
-print 'Foo01', klen
-print 'Foo02', kpatt
-print 'Foo03', fpatt
-print 'Foo04', procs
-print 'Foo05', iproc
-print 'Foo06', report
+#print 'Foo01', klen
+#print 'Foo02', kpatt
+#print 'Foo03', fpatt
+#print 'Foo04', procs
+#print 'Foo05', iproc
+#print 'Foo06', report
+for process, pData in report.iteritems():
+    pUnc = pData[0][1][1]
+    if process[0:4] == 'N2C1':
+        print '%-8s lnN %26s %27s %27s %27s %27s' % ('sig_stat', pUnc, '-', '-', '-', '-')
+    elif process == 'tt':
+        print '%-8s lnN %26s %27s %27s %27s %27s' % ('tt_stat', '-', pUnc, '-', '-', '-')
+    elif process == 'DY2':
+        print '%-8s lnN %26s %27s %27s %27s %27s' % ('dy_stat', '-', '-', pUnc, '-', '-')
+    elif process == 'Wj2':
+        print '%-8s lnN %26s %27s %27s %27s %27s' % ('wj_stat', '-', '-', '-', pUnc, '-')
+    elif process == 'WW':
+        print '%-8s lnN %26s %27s %27s %27s %27s' % ('ww_stat', '-', '-', '-', '-', pUnc)
