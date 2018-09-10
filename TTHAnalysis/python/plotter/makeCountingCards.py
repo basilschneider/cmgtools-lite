@@ -68,6 +68,7 @@ for name,effmap in systs.iteritems():
 #print 'Foo04', procs
 #print 'Foo05', iproc
 #print 'Foo06', report
+print 'Stat uncertainties are buggy, showing absolute values instead of relative ones'
 for process, pData in report.iteritems():
     pUnc = pData[0][1][1]
     if process[0:4] == 'N2C1':

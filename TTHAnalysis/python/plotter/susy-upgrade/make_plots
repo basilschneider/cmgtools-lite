@@ -18,6 +18,7 @@ python mcPlots.py \
     -P "${trees}" \
     -l "${lumi}" \
     -j 22 \
+    -f \
     -e \
     --s2v \
     --tree treeProducerSusyUpgrade \
