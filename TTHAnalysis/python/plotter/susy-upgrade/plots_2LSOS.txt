@@ -266,7 +266,7 @@
 ########mu_pt20to30_origin_nghbr: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)"
 ########mu_pt20to30_origin_nghbr_log: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)", Logy, YMin=.2, YMax=8e9
 ####
-#njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
+njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
 #njet25_log: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig, Logy, YMin=.2, YMax=8e9
 #njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
 #njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
@@ -414,7 +414,7 @@
 #nLep_log: nLep: 5, -.5, 4.5; XTitle="n_{lepton}", Logy, YMin=.2, YMax=8e9
 #yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 #yields_log: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True, Logy, YMin=.2, YMax=8e9
-#jet1_pt: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})"
+jet1_pt: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})"
 #jet1_pt_log: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
 #jet1_eta: jet1_eta: 20, -4, 4; XTitle="#eta (jet_{1})"
 #jet1_eta_log: jet1_eta: 20, -4, 4; XTitle="#eta (jet_{1})", Logy, YMin=.2, YMax=8e9
@@ -468,6 +468,8 @@
 #drJet1LepMax_log: if3(deltaR(jet1_eta, jet1_phi, lep1_eta, lep1_phi)>deltaR(jet1_eta, jet1_phi, lep2_eta, lep2_phi), deltaR(jet1_eta, jet1_phi, lep1_eta, lep1_phi), deltaR(jet1_eta, jet1_phi, lep2_eta, lep2_phi)) : 20, 0, 5; XTitle="dR(jet1\, lep)max", Logy, YMin=.2, YMax=8e9
 #drLep1Lep2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 25, 0, 5; XTitle="dR(lep1\, lep2)"
 #drLep1Lep2_log: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 25, 0, 5; XTitle="dR(lep1\, lep2)", Logy, YMin=.2, YMax=8e9
+#drLep1Lep2: deltaR(mu1_eta, mu1_phi, mu2_eta, mu2_phi) : 25, 0, 5; XTitle="dR(mu1\, mu2)"
+drLep1Lep2: deltaR(el1_eta, el1_phi, el2_eta, el2_phi) : 25, 0, 5; XTitle="dR(el1\, el2)"
 #njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
 #njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
 #ht40: ht40: 16, 0, 800; XTitle="H_{T}40 [GeV]"
@@ -561,12 +563,12 @@
 ###mu1_recoId_eta_pt: mu1_recoId_pt\:mu1_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{1}) (recoId)", YTitle="p_{T} (e_{1}) (recoId)"
 ###mu2_recoId_eta_pt: mu2_recoId_pt\:mu2_recoId_eta : 20, -4, 4, 70, 0, 70; XTitle="#eta (#mu_{2}) (recoId)", YTitle="p_{T} (e_{2}) (recoId)"
 
-# Isolation efficiency plots
-el1_pt: el1_pt: 14, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
-el1_recoId_pt: el1_recoId_pt: 14, 0, 70; XTitle="p_{T} (e_{1}) (recoId)", IncludeOverflows=False
-mu1_pt: mu1_pt: 14, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
-mu1_recoId_pt: mu1_recoId_pt: 14, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
-el1_pt_onebin: el1_pt: 1, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=True
-el1_recoId_pt_onebin: el1_recoId_pt: 1, 0, 70; XTitle="p_{T} (e_{1}) (recoId)", IncludeOverflows=True
-mu1_pt_onebin: mu1_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=True
-mu1_recoId_pt_onebin: mu1_recoId_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=True
+## Isolation efficiency plots
+#el1_pt: el1_pt: 14, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
+#el1_recoId_pt: el1_recoId_pt: 14, 0, 70; XTitle="p_{T} (e_{1}) (recoId)", IncludeOverflows=False
+#mu1_pt: mu1_pt: 14, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+#mu1_recoId_pt: mu1_recoId_pt: 14, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=False
+#el1_pt_onebin: el1_pt: 1, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=True
+#el1_recoId_pt_onebin: el1_recoId_pt: 1, 0, 70; XTitle="p_{T} (e_{1}) (recoId)", IncludeOverflows=True
+#mu1_pt_onebin: mu1_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=True
+#mu1_recoId_pt_onebin: mu1_recoId_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=True

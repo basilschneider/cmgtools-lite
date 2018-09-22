@@ -104,10 +104,10 @@
 #2 signal electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 20 && el2_pt > 20 && fabs(el1_eta) < 1.6 && fabs(el2_eta) < 1.6 && el1_q*el2_q < 0
 ##leading jet: jet1_pt > 200 && fabs(jet1_eta) < 2.4
 
-## Hard Electrons
-#2 recoId electrons: el_recoId_pt@.size() == 2 && mu_recoId_pt@.size() == 0 && el_recoId1_pt > 5 && el_recoId2_pt > 5 && fabs(el_recoId1_eta) < 1.6 && fabs(el_recoId2_eta) < 1.6
-#2 signal electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 30 && el2_pt > 30 && fabs(el1_eta) < 1.6 && fabs(el2_eta) < 1.6 && el1_q*el2_q < 0
-#leading jet: jet1_pt > 200 && fabs(jet1_eta) < 2.4
+# Hard Electrons
+2 recoId electrons: el_recoId_pt@.size() == 2 && mu_recoId_pt@.size() == 0 && el_recoId1_pt > 5 && el_recoId2_pt > 5 && fabs(el_recoId1_eta) < 1.6 && fabs(el_recoId2_eta) < 1.6
+2 signal electrons: el_pt@.size() == 2 && mu_pt@.size() == 0 && el1_pt > 30 && el2_pt > 30 && fabs(el1_eta) < 1.6 && fabs(el2_eta) < 1.6 && el1_q*el2_q < 0
+leading jet: jet1_pt > 200 && fabs(jet1_eta) < 2.4
 
 ### Electrons
 ##at least one electron: el_pt@.size() >= 1 && el1_pt > 5 && fabs(el1_eta) < 2.4
@@ -293,5 +293,5 @@
 #1 recoId electron: el_recoId_pt@.size() == 1 && mu_recoId_pt@.size() == 0 && el_recoId1_pt > 5 && fabs(el_recoId1_eta) < 2.4
 #1 signal electron: el_pt@.size() == 1 && mu_pt@.size() == 0 && el1_pt > 5 && fabs(el1_eta) < 2.4
 
-# Plot isolation efficiency
-1 recoId lepton: (el_recoId_pt@.size() == 1 && mu_recoId_pt@.size() == 0) || (el_recoId_pt@.size() == 0 && mu_recoId_pt@.size() == 1)
+## Plot isolation efficiency
+#1 recoId lepton: (el_recoId_pt@.size() == 1 && mu_recoId_pt@.size() == 0) || (el_recoId_pt@.size() == 0 && mu_recoId_pt@.size() == 1)
