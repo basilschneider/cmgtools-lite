@@ -266,7 +266,7 @@
 ########mu_pt20to30_origin_nghbr: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)"
 ########mu_pt20to30_origin_nghbr_log: mu_pt20to30_origin_nghbr: 51, -25.5, 25.5; XTitle="PID (20 GeV < p_{T}(#mu) < 30 GeV)", Logy, YMin=.2, YMax=8e9
 ####
-njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
+#njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
 #njet25_log: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig, Logy, YMin=.2, YMax=8e9
 #njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
 #njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
@@ -414,7 +414,7 @@ njet25: nJet25: 7, -.5, 6.5; XTitle="n_{jet25}", LowerSig
 #nLep_log: nLep: 5, -.5, 4.5; XTitle="n_{lepton}", Logy, YMin=.2, YMax=8e9
 #yields: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True
 #yields_log: nLep: 1, -.5, .5; YTitle="Total event yields", IncludeOverflows=True, Logy, YMin=.2, YMax=8e9
-jet1_pt: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})"
+#jet1_pt: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})"
 #jet1_pt_log: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})", Logy, YMin=.2, YMax=8e9
 #jet1_eta: jet1_eta: 20, -4, 4; XTitle="#eta (jet_{1})"
 #jet1_eta_log: jet1_eta: 20, -4, 4; XTitle="#eta (jet_{1})", Logy, YMin=.2, YMax=8e9
@@ -469,7 +469,7 @@ jet1_pt: jet1_pt: 24, 0, 600; XTitle="p_{T} (jet_{1})"
 #drLep1Lep2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 25, 0, 5; XTitle="dR(lep1\, lep2)"
 #drLep1Lep2_log: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) : 25, 0, 5; XTitle="dR(lep1\, lep2)", Logy, YMin=.2, YMax=8e9
 #drLep1Lep2: deltaR(mu1_eta, mu1_phi, mu2_eta, mu2_phi) : 25, 0, 5; XTitle="dR(mu1\, mu2)"
-drLep1Lep2: deltaR(el1_eta, el1_phi, el2_eta, el2_phi) : 25, 0, 5; XTitle="dR(el1\, el2)"
+#drLep1Lep2: deltaR(el1_eta, el1_phi, el2_eta, el2_phi) : 25, 0, 5; XTitle="dR(el1\, el2)"
 #njet40: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig
 #njet40_log: nJet40: 7, -.5, 6.5; XTitle="n_{jet40}", LowerSig, Logy, YMin=.2, YMax=8e9
 #ht40: ht40: 16, 0, 800; XTitle="H_{T}40 [GeV]"
@@ -572,3 +572,7 @@ drLep1Lep2: deltaR(el1_eta, el1_phi, el2_eta, el2_phi) : 25, 0, 5; XTitle="dR(el
 #el1_recoId_pt_onebin: el1_recoId_pt: 1, 0, 70; XTitle="p_{T} (e_{1}) (recoId)", IncludeOverflows=True
 #mu1_pt_onebin: mu1_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=True
 #mu1_recoId_pt_onebin: mu1_recoId_pt: 1, 0, 70; XTitle="p_{T} (#mu_{1}) (recoId)", IncludeOverflows=True
+
+# DY-->tautau plots
+mu_pt: mu_pt: 40, 30, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False
+el_pt: el_pt: 40, 30, 70; XTitle="p_{T} (#mu_{1})", IncludeOverflows=False

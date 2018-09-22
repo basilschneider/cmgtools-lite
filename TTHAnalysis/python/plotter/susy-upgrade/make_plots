@@ -40,7 +40,8 @@ python mcPlots.py \
     --lspam "#bf{CMS} #it{Delphes Phase-2 Simulation Preliminary}, PU 200, 3 ab^{-1}, 14 TeV" \
     --rspam "" \
     --legendWidth 0.29 \
-    --pdir plots
+    --pdir plots \
+    --showRatio
 
 # Useful options:
 # -f: Only make plots for complete set of cuts
