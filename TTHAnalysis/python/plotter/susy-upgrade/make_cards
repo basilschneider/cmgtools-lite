@@ -4,6 +4,10 @@
 # This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
 # You need to have a symbolic link called "trees" pointing to your trees
 
+# TODO: Speed this script up. Now it splits single jobs and runs them parallel,
+# which most likely is not very efficient. Try not splitting single jobs, but
+# running several of them in parallel. Or use HTCondor.
+
 lumi=3000.
 
 mca=susy-upgrade/mca_2LSOS.txt
