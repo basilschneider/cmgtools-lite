@@ -1,0 +1,10 @@
+FS_SG lnN 1.05 - - - -
+FS_TT lnN - 1.05 - - -
+FS_DY lnN - - 1.05 - -
+FS_WJ lnN - - - 1.15 -
+FS_WW lnN - - - - 1.05
+FS_SG lnN 1.05 - - - -
+FS_TT lnN - 1.05 - - -
+FS_DY lnN - - 1.05 - -
+FS_WJ lnN - - - 1.15 -
+FS_WW lnN - - - - 1.05

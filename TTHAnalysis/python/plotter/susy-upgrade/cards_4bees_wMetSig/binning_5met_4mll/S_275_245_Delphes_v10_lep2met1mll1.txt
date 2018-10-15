@@ -1,0 +1,11 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll//lep2met1mll1.txt
+##----------------------------------
+bin          lep2met1mll1
+observation  163.998956719
+##----------------------------------
+##----------------------------------
+bin                    lep2met1mll1            lep2met1mll1            lep2met1mll1            lep2met1mll1            lep2met1mll1 
+process       S_275_245_Delphes_v10                      WW                     Wj2                     DY2                      tt 
+process                           0                       1                       2                       3                       4 
+rate                          5.058                   2.010                  26.116                  53.550                  77.265 
+##----------------------------------
