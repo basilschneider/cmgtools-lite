@@ -4,16 +4,12 @@
 # This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
 # You need to have a symbolic link called "trees" pointing to your trees
 
-# TODO: Speed this script up. Now it splits single jobs and runs them parallel,
-# which most likely is not very efficient. Try not splitting single jobs, but
-# running several of them in parallel. Or use HTCondor.
-
 lumi=3000.
 
 mca=susy-upgrade/mca_2LSOS.txt
 systs=susy-upgrade/systs.txt
 trees=trees/
-dirBins=susy-upgrade/bins/binning_5met_4mll_3slep/
+dirBins=susy-upgrade/bins/binning_5met_4mll_3slep_realMET/
 dirCards=susy-upgrade/cards/
 
 # If cards directory exists, exit
@@ -112,26 +108,41 @@ signals+=(N2C1_550_535_Delphes_14TeV)
 signals+=(N2C1_550_540_Delphes_14TeV)
 signals+=(N2C1_550_545_Delphes_14TeV)
 
+# Make sure that all signal is enabled in mca
+sed -i "s/SkipMe *= *True/SkipMe=False/g" "${mca}"
+
 for signal in "${signals[@]}"; do
-    echo -n "Make datacards for signal point ${signal}... "
+    echo "Make datacards for signal point ${signal}... " 1>&2
     for cuts in "${dirBins}"/*; do
-        region="${cuts##*/}"
-        region="${region%.*}"
-        echo -n "${region}... "
-        python makeCountingCards.py \
-            <(sed "/${signal}/s/SkipMe *= *True/SkipMe=False/g" "${mca}") \
-            "${cuts}" \
-            "${systs}" \
-            -P "${trees}" \
-            -l "${lumi}" \
-            -j 20 \
-            --s2v \
-            --tree treeProducerSusyUpgrade \
-            --obj Delphes \
-            --AP \
-            -p Wj2,DY2,tt,WW,"${signal}" \
-            > "${dirCards}"/"${signal}"_"${cuts##*/}"
+        #region="${cuts##*/}"
+        #region="${region%.*}"
+        #echo -n "${region}... "
+        #echo makeCountingCards.py \
+        #    "${mca}" \
+        #    "${cuts}" \
+        #    "${systs}" \
+        #    -P "${trees}" \
+        #    -l "${lumi}" \
+        #    -j 1 \
+        #    --s2v \
+        #    --tree treeProducerSusyUpgrade \
+        #    --obj Delphes \
+        #    --AP \
+        #    -p Wj2,DY2,tt,WW,"${signal}" \
+        #    \> "${dirCards}"/"${signal}"_"${cuts##*/}"
+        echo "${mca}" "${cuts}" "${systs}" "${trees}" "${lumi}" "${signal}" \
+            "${dirCards}" "${cuts##*/}"
     done
-    echo "Done."
-done
+done | xargs -L 1 -P $(( $(nproc) - 2 )) bash -c 'python makeCountingCards.py \
+    "${0}" \
+    "${1}" \
+    "${2}" \
+    -P "${3}" \
+    -l "${4}" \
+    -j 1 \
+    --s2v \
+    --tree treeProducerSusyUpgrade \
+    --obj Delphes \
+    --AP \
+    -p Wj2,DY2,tt,WW,"${5}" > "${6}"/"${5}"_"${7}"'
 echo "Bye."
