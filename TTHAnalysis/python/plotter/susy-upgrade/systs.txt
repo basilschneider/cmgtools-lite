@@ -1,0 +1,6 @@
+# Flat uncertainties
+tt_flat  : tt     : .* : 1.1
+WW_flat  : WW     : .* : 1.1
+DY2_flat : DY2    : .* : 1.1
+Wj2_flat : Wj2    : .* : 1.3
+sig_flat : N2C1_* : .* : 1.1
