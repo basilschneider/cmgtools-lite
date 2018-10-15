@@ -7,7 +7,7 @@ observation  36.5217611949
 bin                    lep2met2mll0slep0            lep2met2mll0slep0            lep2met2mll0slep0            lep2met2mll0slep0            lep2met2mll0slep0 
 process       N2C1_300_290_Delphes_14TeV                           tt                          DY2                          Wj2                           WW 
 process                                0                            1                            2                            3                            4 
-rate 33.78 383.76 139.59 26.64 10.395
+rate                               3.378                        9.594                       18.612                        3.552                        1.386 
 ##----------------------------------
 FS_SG lnN 1.05 - - - -
 FS_TT lnN - 1.05 - - -
