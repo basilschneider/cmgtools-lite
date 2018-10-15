@@ -298,17 +298,17 @@
 ## Plot isolation efficiency
 #1 recoId lepton: (el_recoId_pt@.size() == 1 && mu_recoId_pt@.size() == 0) || (el_recoId_pt@.size() == 0 && mu_recoId_pt@.size() == 1)
 
-# ATLAS region (using MET)
-met > 500: met > 500
-2-leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
-lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
-SFOS: hasSFOS && hasSoftSFOS
-#lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
-lep-pts: lep1_pt > 5 && lep2_pt > 5
-nbjet == 0: nBJet <= 2
-dPhi-J1-MET-larger-2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
-mllMin-smaller-60: mllMin<60
-dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2.
+## ATLAS region (using MET)
+#met > 500: met > 500
+#2-leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+#lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+#SFOS: hasSFOS && hasSoftSFOS
+##lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
+#lep-pts: lep1_pt > 5 && lep2_pt > 5
+#nbjet == 0: nBJet <= 2
+#dPhi-J1-MET-larger-2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
+#mllMin-smaller-60: mllMin<60
+#dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2.
 
 ## ATLAS region (using VecSum)
 #mhlt40 > 500: mhlt40 > 500
@@ -330,25 +330,25 @@ dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2.
 
 
 
-## 2L
-#alwaystrue: 1.
-#nLep-equal-2: nLep == 2
-#2-leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
-#nSoftLep-equal-2: nSoftLep == 2
-#lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
-#lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
-#SFOS: hasSFOS && hasSoftSFOS
-#mhlt-larger-250: mhlt40 >= 250 && met >= 100
-#nbjet: nBJet <= 2
-#mllMin-in-5-40: mllMin>5 && mllMin<40
-#dPhi-VecSum-Jet1-larger-2: fabs(deltaPhi(mhlt40_phi, jet1_phi)) > 2.
-#jet1-pt-larger-200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
-#nJet40-in-1-4: nJet40 >= 1 && nJet40 <= 4
-##jet1pt-over-mhlt40-in-0.5-1.5: jet1_pt/mhlt40 > 0.5 && jet1_pt/mhlt40 < 1.5
-##MET-over-HT-above-0.4: met/ht25 >= 0.4
-#dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
-##mllMin in [5, 10]: mllMin>5 && mllMin<10
-##lep2-pt-bin: lep2_pt > 21 && lep2_pt <= 30
-##mhlt-bin: mhlt40 >= 500
-##mTauTau not in [0, 160]: mTauTau <=0 || mTauTau >= 160
+# 2L
+alwaystrue: 1.
+nLep-equal-2: nLep == 2
+2-leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+nSoftLep-equal-2: nSoftLep == 2
+lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
+lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+SFOS: hasSFOS && hasSoftSFOS
+mhlt-larger-250: mhlt40 >= 250 && met >= 100
+nbjet: nBJet <= 2
+mllMin-in-5-40: mllMin>5 && mllMin<40
+dPhi-VecSum-Jet1-larger-2: fabs(deltaPhi(mhlt40_phi, jet1_phi)) > 2.
+jet1-pt-larger-200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
+nJet40-in-1-4: nJet40 >= 1 && nJet40 <= 4
+#jet1pt-over-mhlt40-in-0.5-1.5: jet1_pt/mhlt40 > 0.5 && jet1_pt/mhlt40 < 1.5
+#MET-over-HT-above-0.4: met/ht25 >= 0.4
+dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+#mllMin in [5, 10]: mllMin>5 && mllMin<10
+#lep2-pt-bin: lep2_pt > 21 && lep2_pt <= 30
+#mhlt-bin: mhlt40 >= 500
+#mTauTau not in [0, 160]: mTauTau <=0 || mTauTau >= 160
 
