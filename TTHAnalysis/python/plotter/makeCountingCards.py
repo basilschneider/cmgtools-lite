@@ -68,9 +68,12 @@ for name,effmap in systs.iteritems():
 #print 'Foo04', procs
 #print 'Foo05', iproc
 #print 'Foo06', report
-print 'Stat uncertainties are buggy, showing absolute values instead of relative ones'
 for process, pData in report.iteritems():
-    pUnc = pData[0][1][1]
+    # Uncertainty factor is 1 + (absolute value) / (central value)
+    try:
+        pUnc = 1 + pData[0][1][1] / pData[0][1][0]
+    except ZeroDivisionError:
+        continue
     if process[0:4] == 'N2C1':
         print '%-8s lnN %26s %27s %27s %27s %27s' % ('sig_stat', pUnc, '-', '-', '-', '-')
     elif process == 'tt':
