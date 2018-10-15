@@ -1,0 +1,22 @@
+# 2L
+alwaystrue: 1.
+nLep-equal-2: nLep == 2
+2-leps: nLep == 2 && (nEl == 2 && nMu == 0 || nEl == 0 && nMu == 2)
+nSoftLep-equal-2: nSoftLep == 2
+lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
+lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
+SFOS: hasSFOS && hasSoftSFOS
+met-larger-250: met >= 250 && met >= 100
+nbjet: nBJet <= 2
+mllMin-in-5-40: mllMin>5 && mllMin<40
+dPhi-MET-Jet1-larger-2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
+jet1-pt-larger-200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
+nJet40-in-1-4: nJet40 >= 1 && nJet40 <= 4
+#MET over HT above 0.4: met/ht25 >= 0.4
+dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
+
+mll-bin-2: mllMin >= 20 && mllMin < 30
+
+met-bin-1: met >= 300 && met < 350
+
+subleading-lepton-bin-0: lep2_pt < 13
