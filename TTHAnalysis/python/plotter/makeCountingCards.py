@@ -61,7 +61,7 @@ print 'process     '," ".join([kpatt % iproc[p] for p in procs])
 print 'rate        '," ".join([fpatt % report[p][-1][1][0] for p in procs])
 print '##----------------------------------'
 for name,effmap in systs.iteritems():
-    print '%-8s lnN' % name," ".join([kpatt % effmap[p]   for p in procs])
+    print '%-26s lnN' % name," ".join([kpatt % effmap[p]   for p in procs])
 #print 'Foo01', klen
 #print 'Foo02', kpatt
 #print 'Foo03', fpatt
@@ -75,12 +75,12 @@ for process, pData in report.iteritems():
     except ZeroDivisionError:
         continue
     if process[0:4] == 'N2C1':
-        print '%-8s lnN %26s %27s %27s %27s %27s' % ('sig_stat', pUnc, '-', '-', '-', '-')
+        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'sig_stat', pUnc, '-', '-', '-', '-')
     elif process == 'tt':
-        print '%-8s lnN %26s %27s %27s %27s %27s' % ('tt_stat', '-', pUnc, '-', '-', '-')
+        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'tt_stat', '-', pUnc, '-', '-', '-')
     elif process == 'DY2':
-        print '%-8s lnN %26s %27s %27s %27s %27s' % ('dy_stat', '-', '-', pUnc, '-', '-')
+        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'dy_stat', '-', '-', pUnc, '-', '-')
     elif process == 'Wj2':
-        print '%-8s lnN %26s %27s %27s %27s %27s' % ('wj_stat', '-', '-', '-', pUnc, '-')
+        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'wj_stat', '-', '-', '-', pUnc, '-')
     elif process == 'WW':
-        print '%-8s lnN %26s %27s %27s %27s %27s' % ('ww_stat', '-', '-', '-', '-', pUnc)
+        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'ww_stat', '-', '-', '-', '-', pUnc)
