@@ -1,0 +1,19 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll_3slep_realMET//lep2met2mll2slep0.txt
+##----------------------------------
+bin          lep2met2mll2slep0
+observation  38.0344553391
+##----------------------------------
+##----------------------------------
+bin                   lep2met2mll2slep0           lep2met2mll2slep0           lep2met2mll2slep0           lep2met2mll2slep0           lep2met2mll2slep0 
+process       N2C1_100_60_Delphes_14TeV                          tt                         DY2                         Wj2                          WW 
+process                               0                           1                           2                           3                           4 
+rate                              0.000                      34.790                       0.377                       0.000                       2.867 
+##----------------------------------
+tt_flat  lnN                          -                        1.05                           -                           -                           - 
+sig_flat lnN                       1.05                           -                           -                           -                           - 
+WW_flat  lnN                          -                           -                           -                           -                        1.05 
+Wj2_flat lnN                          -                           -                           -                        1.15                           - 
+DY2_flat lnN                          -                           -                        1.05                           -                           - 
+tt_stat  lnN                          -               1.27562610851                           -                           -                           -
+dy_stat  lnN                          -                           -               1.67388982177                           -                           -
+ww_stat  lnN                          -                           -                           -                           -                1.5008406201

@@ -1,0 +1,21 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll_3slep_realMET//lep2met0mll0slep0.txt
+##----------------------------------
+bin          lep2met0mll0slep0
+observation  84.4397759277
+##----------------------------------
+##----------------------------------
+bin                    lep2met0mll0slep0            lep2met0mll0slep0            lep2met0mll0slep0            lep2met0mll0slep0            lep2met0mll0slep0 
+process       N2C1_450_425_Delphes_14TeV                           tt                          DY2                          Wj2                           WW 
+process                                0                            1                            2                            3                            4 
+rate                               1.752                       20.149                       43.819                       11.696                        7.024 
+##----------------------------------
+tt_flat  lnN                           -                         1.05                            -                            -                            - 
+sig_flat lnN                        1.05                            -                            -                            -                            - 
+WW_flat  lnN                           -                            -                            -                            -                         1.05 
+Wj2_flat lnN                           -                            -                            -                         1.15                            - 
+DY2_flat lnN                           -                            -                         1.05                            -                            - 
+sig_stat lnN              1.16471564224                           -                           -                           -                           -
+tt_stat  lnN                          -               1.35414930417                           -                           -                           -
+dy_stat  lnN                          -                           -               1.17850316579                           -                           -
+ww_stat  lnN                          -                           -                           -                           -               1.31649364625
+wj_stat  lnN                          -                           -                           -               1.81833571122                           -
