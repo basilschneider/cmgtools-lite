@@ -1,0 +1,19 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll_3slep_realMET//lep2met3mll0slep2.txt
+##----------------------------------
+bin          lep2met3mll0slep2
+observation  1.60689270323
+##----------------------------------
+##----------------------------------
+bin                    lep2met3mll0slep2            lep2met3mll0slep2            lep2met3mll0slep2            lep2met3mll0slep2            lep2met3mll0slep2 
+process       N2C1_400_370_Delphes_14TeV                           tt                          DY2                          Wj2                           WW 
+process                                0                            1                            2                            3                            4 
+rate                               0.080                        0.458                        1.069                        0.000                        0.000 
+##----------------------------------
+tt_flat                    lnN                           -                         1.05                            -                            -                            - 
+sig_flat                   lnN                        1.05                            -                            -                            -                            - 
+WW_flat                    lnN                           -                            -                            -                            -                         1.05 
+Wj2_flat                   lnN                           -                            -                            -                         1.15                            - 
+DY2_flat                   lnN                           -                            -                         1.05                            -                            - 
+lep2met3mll0slep2tt_stat   lnN                          -                1.5751067373                           -                           -                           -
+lep2met3mll0slep2sig_stat  lnN                        2.0                           -                           -                           -                           -
+lep2met3mll0slep2dy_stat   lnN                          -                           -                1.4473557886                           -                           -
