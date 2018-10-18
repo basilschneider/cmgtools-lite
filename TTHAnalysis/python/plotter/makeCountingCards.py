@@ -10,6 +10,8 @@ addMCAnalysisOptions(parser)
 options.weight = True
 options.final  = True
 
+mcStat = False
+
 mca  = MCAnalysis(args[0],options)
 cuts = CutsFile(args[1],options)
 
@@ -62,25 +64,21 @@ print 'rate        '," ".join([fpatt % report[p][-1][1][0] for p in procs])
 print '##----------------------------------'
 for name,effmap in systs.iteritems():
     print '%-26s lnN' % name," ".join([kpatt % effmap[p]   for p in procs])
-#print 'Foo01', klen
-#print 'Foo02', kpatt
-#print 'Foo03', fpatt
-#print 'Foo04', procs
-#print 'Foo05', iproc
-#print 'Foo06', report
-for process, pData in report.iteritems():
-    # Uncertainty factor is 1 + (absolute value) / (central value)
-    try:
-        pUnc = 1 + pData[0][1][1] / pData[0][1][0]
-    except ZeroDivisionError:
-        continue
-    if process[0:4] == 'N2C1':
-        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'sig_stat', pUnc, '-', '-', '-', '-')
-    elif process == 'tt':
-        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'tt_stat', '-', pUnc, '-', '-', '-')
-    elif process == 'DY2':
-        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'dy_stat', '-', '-', pUnc, '-', '-')
-    elif process == 'Wj2':
-        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'wj_stat', '-', '-', '-', pUnc, '-')
-    elif process == 'WW':
-        print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'ww_stat', '-', '-', '-', '-', pUnc)
+
+if mcStat:
+    for process, pData in report.iteritems():
+        # Uncertainty factor is 1 + (absolute value) / (central value)
+        try:
+            pUnc = 1 + pData[0][1][1] / pData[0][1][0]
+        except ZeroDivisionError:
+            continue
+        if process[0:4] == 'N2C1':
+            print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'sig_stat', pUnc, '-', '-', '-', '-')
+        elif process == 'tt':
+            print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'tt_stat', '-', pUnc, '-', '-', '-')
+        elif process == 'DY2':
+            print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'dy_stat', '-', '-', pUnc, '-', '-')
+        elif process == 'Wj2':
+            print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'wj_stat', '-', '-', '-', pUnc, '-')
+        elif process == 'WW':
+            print '%-26s lnN %26s %27s %27s %27s %27s' % (binname+'ww_stat', '-', '-', '-', '-', pUnc)
