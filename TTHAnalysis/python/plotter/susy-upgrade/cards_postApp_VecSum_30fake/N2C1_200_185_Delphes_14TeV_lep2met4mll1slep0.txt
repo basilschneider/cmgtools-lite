@@ -1,0 +1,16 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll_3slep//lep2met4mll1slep0.txt
+##----------------------------------
+bin          lep2met4mll1slep0
+observation  66.8029167033
+##----------------------------------
+##----------------------------------
+bin                    lep2met4mll1slep0            lep2met4mll1slep0            lep2met4mll1slep0            lep2met4mll1slep0            lep2met4mll1slep0 
+process       N2C1_200_185_Delphes_14TeV                           tt                          DY2                          Wj2                           WW 
+process                                0                            1                            2                            3                            4 
+rate                              14.860                       25.580                        9.540                       13.955                        2.867 
+##----------------------------------
+tt_flat                    lnN                           -                         1.05                            -                            -                            - 
+sig_flat                   lnN                        1.05                            -                            -                            -                            - 
+WW_flat                    lnN                           -                            -                            -                            -                         1.05 
+Wj2_flat                   lnN                           -                            -                            -                         1.30                            - 
+DY2_flat                   lnN                           -                            -                         1.05                            -                            - 
