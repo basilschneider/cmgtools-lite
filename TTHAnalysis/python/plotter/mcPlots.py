@@ -184,7 +184,7 @@ def doShadedUncertainty(h):
     for i,((x,y),(EXlow,EXhigh,EYlow,EYhigh)) in enumerate(zip(points,errors)):
         ret.SetPoint(i, x, y)
         ret.SetPointError(i, EXlow,EXhigh,EYlow,EYhigh)
-    ret.SetFillStyle(3335)
+    ret.SetFillStyle(3344)
     ret.SetFillColor(14)
     ret.SetMarkerStyle(0)
     ret.Draw("PE2 SAME")
@@ -781,6 +781,7 @@ def doLegend(pmap,mca,corner="TR",textSize=0.035,cutoff=1e-2,cutoffSignals=True,
         total = sum([x.Integral() for x in pmap.itervalues()])
         for (plot,label,style) in sigEntries: leg.AddEntry(plot,label,style)
         for (plot,label,style) in  bgEntries: leg.AddEntry(plot,label,style)
+        if totalError: totalError.SetLineColor(ROOT.kWhite)
         if totalError: leg.AddEntry(totalError,"total bkg. unc.","F")
         leg.Draw()
         ## assign it to a global variable so it's not deleted
@@ -931,6 +932,12 @@ class PlotMaker:
                 for p in itertools.chain(reversed(mca.listBackgrounds(allProcs=True)), reversed(mca.listSignals(allProcs=True)), extraProcesses):
                     if p in pmap:
                         plot = pmap[p]
+                        # Set MC stat uncertainties to 0 and for signal to 6 %
+                        for b in xrange(1,plot.GetNbinsX()+1):
+                            if mca.isSignal(p):
+                                plot.SetBinError(b, .06*plot.GetBinContent(b))
+                            else:
+                                plot.SetBinError(b, 0)
                         #if plot.Integral() == 0:
                         #    print 'Warning: plotting histo %s with zero integral, there might be problems in the following'%p
                         if plot.Integral() < 0:

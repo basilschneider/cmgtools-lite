@@ -9,8 +9,8 @@ lumi=3000.
 mca=susy-upgrade/mca_2LSOS.txt
 systs=susy-upgrade/systs.txt
 trees=trees/
-dirBins=susy-upgrade/bins/binning_5met_4mll_3slep/
-#dirBins=susy-upgrade/bins/binning_5met_4mll_3slep_realMET/
+#dirBins=susy-upgrade/bins/binning_5met_4mll_3slep/
+dirBins=susy-upgrade/bins/binning_5met_4mll_3slep_realMET/
 dirCards=susy-upgrade/cards/
 
 # If cards directory exists, exit
