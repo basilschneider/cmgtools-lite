@@ -11,8 +11,8 @@ cuts=susy-upgrade/cuts_2LSOS.txt
 trees=trees/
 plots=susy-upgrade/plots_2LSOS.txt
 
-#lspam="#bf{CMS} #it{Phase-2 Simulation Preliminary}                          3 ab^{-1} (14 TeV)"
-lspam="#bf{CMS} #it{Phase-2 Simulation                }                          3 ab^{-1} (14 TeV)"
+lspam="#bf{CMS} #it{Phase-2 Simulation Preliminary}   3 ab^{-1} (14 TeV)"
+#lspam="#bf{CMS} #it{Phase-2 Simulation                }    3 ab^{-1} (14 TeV)"
 
 python mcPlots.py \
     "${mca}" \
