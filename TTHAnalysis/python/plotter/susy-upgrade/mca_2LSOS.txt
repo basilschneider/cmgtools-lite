@@ -24,11 +24,11 @@
 #####tj                               : tj_ST1600to2400                  : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj", NormSystematic=.1
 #####tj                               : tj_ST2400toInf                   : xs/nTot          : 1. ; FillColor=ROOT.kCyan+3, Label="tj", NormSystematic=.1
 
-tt                              : tt_ST0to600_200PU                : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.08 # 1/8. is the bjet correction
-tt                              : tt_ST600to1100_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.08 # 1/8. is the bjet correction
-tt                              : tt_ST1100to1700_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.08 # 1/8. is the bjet correction
-tt                              : tt_ST1700to2500_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.08 # 1/8. is the bjet correction
-tt                              : tt_ST2500toInf_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="tt", NormSystematic=.08 # 1/8. is the bjet correction
+tt                              : tt_ST0to600_200PU                : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="ttbar", NormSystematic=.08 # 1/8. is the bjet correction
+tt                              : tt_ST600to1100_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="ttbar", NormSystematic=.08 # 1/8. is the bjet correction
+tt                              : tt_ST1100to1700_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="ttbar", NormSystematic=.08 # 1/8. is the bjet correction
+tt                              : tt_ST1700to2500_200PU            : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="ttbar", NormSystematic=.08 # 1/8. is the bjet correction
+tt                              : tt_ST2500toInf_200PU             : 1/8.*xs/nTot          : 1. ; FillColor=ROOT.kSpring-6, Label="ttbar", NormSystematic=.08 # 1/8. is the bjet correction
 
 ####LL                               : LL_ST0to100                      : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL", NormSystematic=.1
 ####LL                               : LL_ST100to200                    : xs/nTot          : 1. ; FillColor=ROOT.kBlue+2, Label="LL", NormSystematic=.1
@@ -127,7 +127,7 @@ Wj2                             : WJetsToLNu_HT800to1200_200PU      : 1.1*.33*1.
 Wj2                             : WJetsToLNu_HT1200to2500_200PU     : 1.1*.33*1.21*1329/nTot*if3(nEl>=2, 2.14, 1.14)       : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.31
 Wj2                             : WJetsToLNu_HT2500toInf_200PU      : 1.1*.33*1.21*32.16/nTot*if3(nEl>=2, 2.14, 1.14)      : 1. ; FillColor=ROOT.kCyan+1, Label="W+jets", NormSystematic=.31
 
-WW                              : WW_YR                             : 131./70.*12178/nTot*if3(nEl>=2, 1.15, 1.01)                   : 1. ; FillColor=10, Label="WW", NormSystematic=.05
+WW                              : WW_YR                             : 131./70.*12178/nTot*if3(nEl>=2, 1.15, 1.01)                   : 1. ; FillColor=10, Label="W^{+}W^{-}", NormSystematic=.05
 
 ##TTbar_Delphes                     : TTbar_200PU                       : 864400/nTot           : 1. ; FillColor=ROOT.kMagenta+4, Label="ttbar incl. (Delphes)", NormSystematic=.3
 
