@@ -1,0 +1,21 @@
+## Datacard for cut file  susy-upgrade/bins/binning_5met_4mll_3slep_realMET//lep2met0mll2slep2.txt
+##----------------------------------
+bin          lep2met0mll2slep2
+observation  29.2019061506
+##----------------------------------
+##----------------------------------
+bin                    lep2met0mll2slep2            lep2met0mll2slep2            lep2met0mll2slep2            lep2met0mll2slep2            lep2met0mll2slep2 
+process       N2C1_550_515_Delphes_14TeV                           tt                          DY2                          Wj2                           WW 
+process                                0                            1                            2                            3                            4 
+rate                               0.076                       11.235                       13.206                        1.818                        2.867 
+##----------------------------------
+tt_flat                    lnN                           -                         1.05                            -                            -                            - 
+sig_flat                   lnN                        1.05                            -                            -                            -                            - 
+WW_flat                    lnN                           -                            -                            -                            -                         1.05 
+Wj2_flat                   lnN                           -                            -                            -                         1.30                            - 
+DY2_flat                   lnN                           -                            -                         1.05                            -                            - 
+lep2met0mll2slep2_sg_mc lnN 3.96174 - - - -
+lep2met0mll2slep2_tt_mc lnN - 1.24359 - - -
+lep2met0mll2slep2_dy_mc lnN - - 1.22468 - -
+lep2met0mll2slep2_wj_mc lnN - - - 1.60556 -
+lep2met0mll2slep2_ww_mc lnN - - - - 1.48221
