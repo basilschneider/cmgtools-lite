@@ -173,18 +173,18 @@ nSoftLep-equal-2: nSoftLep == 2
 lep-pts: lep1_pt > 5 && lep2_pt > 5 && lep1_pt < 30 && lep2_pt < 30
 lep-etas: fabs(lep1_eta) < 2.4 && fabs(lep2_eta) < 2.4
 SFOS: hasSFOS && hasSoftSFOS
-mhlt-larger-250: mhlt40 >= 250 && met >= 100
+met-larger-250: met >= 250 && met >= 100
 nbjet: nBJet <= 2
 mllMin-in-5-40: mllMin>5 && mllMin<40
-dPhi-VecSum-Jet1-larger-2: fabs(deltaPhi(mhlt40_phi, jet1_phi)) > 2.
+dPhi-VecSum-Jet1-larger-2: fabs(deltaPhi(met_phi, jet1_phi)) > 2.
 jet1-pt-larger-200: jet1_pt > 200 && fabs(jet1_eta) < 2.4
 nJet40-in-1-4: nJet40 >= 1 && nJet40 <= 4
-#jet1pt-over-mhlt40-in-0.5-1.5: jet1_pt/mhlt40 > 0.5 && jet1_pt/mhlt40 < 1.5
+#jet1pt-over-met-in-0.5-1.5: jet1_pt/met > 0.5 && jet1_pt/met < 1.5
 #MET-over-HT-above-0.4: met/ht25 >= 0.4
 dR-Lep1-Lep2-smaller-2: deltaR(lep1_eta, lep1_phi, lep2_eta, lep2_phi) < 2
 #mllMin in [5, 10]: mllMin>5 && mllMin<10
 #lep2-pt-bin: lep2_pt > 21 && lep2_pt <= 30
-#mhlt-bin: mhlt40 >= 500
+#met-bin: met >= 500
 #mTauTau not in [0, 160]: mTauTau <=0 || mTauTau >= 160
 
 # 2L with old VecSum definition (different sign)
