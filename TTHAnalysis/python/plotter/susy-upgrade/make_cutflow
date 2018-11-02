@@ -6,6 +6,8 @@
 
 lumi=3000.
 #lumi=.1
+#lumi=38.89322
+#lumi=25.92881
 echo "LUMI SET TO ${lumi}!"
 
 mca=susy-upgrade/mca_2LSOS.txt
