@@ -509,7 +509,7 @@ mllMin_fine_log_bins: mllMin: [0, 5, 10, 20, 30, 40]; XTitle="m_{l_{1}l_{2}} [Ge
 ##mhlt40_log: mhlt40: 11, 250, 800; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
 #mhlt40_log_bins: mhlt40: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
 #met_log: met: 11, 250, 800; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
-met_log_bins: met: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss}", Logy, YMin=.2, YMax=2e6
+met_log_bins: met: [250, 300, 350, 400, 500, 800]; XTitle="p_{T}^{miss} [GeV]", Logy, YMin=.2, YMax=2e6
 
 ## Lepton control plots
 #el1_pt: el1_pt: 70, 0, 70; XTitle="p_{T} (e_{1})", IncludeOverflows=False
