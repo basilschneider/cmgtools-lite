@@ -266,7 +266,6 @@ N2C1_650_640_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.40*1.*(mN2
 N2C1_650_643_Delphes_14TeV+    : TChiWZ_Delphes_13TeV             : 1.40*1.*(mN2==300 && mN1==293)*   4.02*.1/ 95808*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="(\#chi_{2}^{0}/\#chi_{1}^{0}) = (550/542.5)", SkipMe=True,
 N2C1_650_645_Delphes_14TeV+    : TChiWZ_Delphes_14TeV             : 1.40*1.*(mN2==550 && mN1==545)*   4.02*.1/196786*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="(\#chi_{2}^{0}/\#chi_{1}^{0}) = (550/545)", SkipMe=True,
 
-
 ### TChiWZ (13 TeV)
 N2C1_100_60_Delphes_13TeV+       : TChiWZ_Delphes_13TeV               : 1.*(mN2==100 && mN1== 60)*5873.10*.1/ 92294*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(100/60)", SkipMe=True,
 N2C1_100_70_Delphes_13TeV+       : TChiWZ_Delphes_13TeV               : 1.*(mN2==100 && mN1== 70)*5873.10*.1/ 96688*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="N2C1(100/70)", SkipMe=True,
@@ -372,3 +371,61 @@ N2N1_240_220_Delphes_13TeV+      : TN2N1_Delphes_13TeV                : 1.*(mN2=
 N2N1_240_225_Delphes_13TeV+      : TN2N1_Delphes_13TeV                : 1.*(mN2==240 && mN1==225  )* 145.00*.1/ 97798*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="N2N1(240/225)", SkipMe=True,
 N2N1_240_230_Delphes_13TeV+      : TN2N1_Delphes_13TeV                : 1.*(mN2==240 && mN1==230  )* 145.00*.1/105732*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="N2N1(240/230)", SkipMe=True,
 N2N1_240_233_Delphes_13TeV+      : TN2N1_Delphes_13TeV                : 1.*(mN2==240 && mN1==232.5)* 145.00*.1/ 96444*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="N2N1(240/232.5)", SkipMe=True,
+
+# pMSSM Higgsino
+MSSM-higgsino_13TeV_100_300+     : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==300  )*16300.0*.1/ 99627*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/300)", SkipMe=True
+MSSM-higgsino_13TeV_100_400+     : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==400  )*15630.0*.1/105059*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/400)", SkipMe=True
+MSSM-higgsino_13TeV_100_500+     : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==500  )*15304.0*.1/101726*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/500)", SkipMe=True
+MSSM-higgsino_13TeV_100_600+     : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==600  )*15112.0*.1/ 98141*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/600)", SkipMe=True
+MSSM-higgsino_13TeV_100_800+     : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==800  )*14881.0*.1/ 97389*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/800)", SkipMe=True
+MSSM-higgsino_13TeV_100_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==1000 )*14750.0*.1/106559*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/1000)", SkipMe=True
+MSSM-higgsino_13TeV_100_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==100 &&  M1==1200 )*14680.0*.1/ 80991*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(100/1200)", SkipMe=True
+MSSM-higgsino_13TeV_120_300+     : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==300  )* 8364.0*.1/ 97635*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/300)", SkipMe=True
+MSSM-higgsino_13TeV_120_400+     : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==400  )* 8035.0*.1/105409*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/400)", SkipMe=True
+MSSM-higgsino_13TeV_120_500+     : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==500  )* 7893.0*.1/ 98989*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/500)", SkipMe=True
+MSSM-higgsino_13TeV_120_600+     : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==600  )* 7788.0*.1/ 88759*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/600)", SkipMe=True
+MSSM-higgsino_13TeV_120_800+     : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==800  )* 7679.0*.1/100779*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/800)", SkipMe=True
+MSSM-higgsino_13TeV_120_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==1000 )* 7634.0*.1/101337*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/1000)", SkipMe=True
+MSSM-higgsino_13TeV_120_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==120 &&  M1==1200 )* 7586.0*.1/ 95261*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(120/1200)", SkipMe=True
+MSSM-higgsino_13TeV_140_300+     : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==300  )* 4784.0*.1/107132*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/300)", SkipMe=True
+MSSM-higgsino_13TeV_140_400+     : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==400  )* 4612.0*.1/ 95647*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/400)", SkipMe=True
+MSSM-higgsino_13TeV_140_500+     : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==500  )* 4525.0*.1/101737*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/500)", SkipMe=True
+MSSM-higgsino_13TeV_140_600+     : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==600  )* 4463.0*.1/ 95356*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/600)", SkipMe=True
+MSSM-higgsino_13TeV_140_800+     : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==800  )* 4405.0*.1/101559*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/800)", SkipMe=True
+MSSM-higgsino_13TeV_140_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==1000 )* 4375.0*.1/ 93680*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/1000)", SkipMe=True
+MSSM-higgsino_13TeV_140_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==140 &&  M1==1200 )* 4359.0*.1/104828*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(140/1200)", SkipMe=True
+MSSM-higgsino_13TeV_160_300+     : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==300  )* 2967.0*.1/101844*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/300)", SkipMe=True
+MSSM-higgsino_13TeV_160_400+     : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==400  )* 2848.0*.1/103657*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/400)", SkipMe=True
+MSSM-higgsino_13TeV_160_500+     : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==500  )* 2791.0*.1/ 97174*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/500)", SkipMe=True
+MSSM-higgsino_13TeV_160_600+     : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==600  )* 2765.0*.1/102884*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/600)", SkipMe=True
+MSSM-higgsino_13TeV_160_800+     : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==800  )* 2717.0*.1/100934*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/800)", SkipMe=True
+MSSM-higgsino_13TeV_160_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==1000 )* 2706.0*.1/ 95890*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/1000)", SkipMe=True
+MSSM-higgsino_13TeV_160_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==160 &&  M1==1200 )* 2698.0*.1/ 95996*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(160/1200)", SkipMe=True
+MSSM-higgsino_13TeV_180_300+     : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==300  )* 1937.0*.1/ 95339*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/300)", SkipMe=True
+MSSM-higgsino_13TeV_180_400+     : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==400  )* 1857.0*.1/ 97855*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/400)", SkipMe=True
+MSSM-higgsino_13TeV_180_500+     : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==500  )* 1820.0*.1/ 90636*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/500)", SkipMe=True
+MSSM-higgsino_13TeV_180_600+     : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==600  )* 1796.0*.1/ 91898*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/600)", SkipMe=True
+MSSM-higgsino_13TeV_180_800+     : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==800  )* 1777.0*.1/ 99291*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/800)", SkipMe=True
+MSSM-higgsino_13TeV_180_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==1000 )* 1771.0*.1/ 98823*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/1000)", SkipMe=True
+MSSM-higgsino_13TeV_180_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==180 &&  M1==1200 )* 1761.0*.1/ 97366*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(180/1200)", SkipMe=True
+MSSM-higgsino_13TeV_200_300+     : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==300  )* 1324.0*.1/ 94961*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/300)", SkipMe=True
+MSSM-higgsino_13TeV_200_400+     : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==400  )* 1262.0*.1/ 96640*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/400)", SkipMe=True
+MSSM-higgsino_13TeV_200_500+     : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==500  )* 1237.0*.1/ 97672*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/500)", SkipMe=True
+MSSM-higgsino_13TeV_200_600+     : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==600  )* 1224.0*.1/ 95962*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/600)", SkipMe=True
+MSSM-higgsino_13TeV_200_800+     : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==800  )* 1210.0*.1/ 97508*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/800)", SkipMe=True
+MSSM-higgsino_13TeV_200_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==1000 )* 1205.0*.1/106327*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/1000)", SkipMe=True
+MSSM-higgsino_13TeV_200_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==200 &&  M1==1200 )* 1203.0*.1/ 98672*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(200/1200)", SkipMe=True
+MSSM-higgsino_13TeV_220_300+     : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==300  )*  936.0*.1/101878*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/300)", SkipMe=True
+MSSM-higgsino_13TeV_220_400+     : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==400  )*  888.0*.1/ 94898*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/400)", SkipMe=True
+MSSM-higgsino_13TeV_220_500+     : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==500  )*  866.0*.1/104621*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/500)", SkipMe=True
+MSSM-higgsino_13TeV_220_600+     : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==600  )*  862.0*.1/100951*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/600)", SkipMe=True
+MSSM-higgsino_13TeV_220_800+     : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==800  )*  847.0*.1/103331*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/800)", SkipMe=True
+MSSM-higgsino_13TeV_220_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==1000 )*  840.0*.1/ 94345*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/1000)", SkipMe=True
+MSSM-higgsino_13TeV_220_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==220 &&  M1==1200 )*  836.0*.1/102317*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(220/1200)", SkipMe=True
+MSSM-higgsino_13TeV_240_300+     : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==300  )*  683.0*.1/105463*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/300)", SkipMe=True
+MSSM-higgsino_13TeV_240_400+     : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==400  )*  643.0*.1/ 96710*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/400)", SkipMe=True
+MSSM-higgsino_13TeV_240_500+     : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==500  )*  627.0*.1/100608*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/500)", SkipMe=True
+MSSM-higgsino_13TeV_240_600+     : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==600  )*  622.0*.1/ 99224*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/600)", SkipMe=True
+MSSM-higgsino_13TeV_240_800+     : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==800  )*  613.0*.1/101464*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/800)", SkipMe=True
+MSSM-higgsino_13TeV_240_1000+    : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==1000 )*  612.0*.1/ 98973*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/1000)", SkipMe=True
+MSSM-higgsino_13TeV_240_1200+    : MSSM-higgsino_13TeV                : 1.*( mu==240 &&  M1==1200 )*  609.0*.1/103719*if3(nEl>=2, 1.15, 1.01) ; FillColor=ROOT.kMagenta, Label="pMSSM(240/1200)", SkipMe=True

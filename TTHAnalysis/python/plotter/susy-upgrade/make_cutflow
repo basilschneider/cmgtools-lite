@@ -4,8 +4,8 @@
 # This needs to be called from $CMSSW_BASE/src/CMGTools/TTHAnalysis/python/plotter
 # You need to have a symbolic link called "trees" pointing to your trees
 
-#lumi=3000.
-lumi=.1
+lumi=3000.
+#lumi=.1
 #lumi=38.89322
 #lumi=25.92881
 echo "LUMI SET TO ${lumi}!"
