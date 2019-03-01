@@ -35,11 +35,13 @@ def checkDset(dset):
     gROOT.LoadMacro("myClassT.C+")
     from ROOT import myClassT
     m_t = myClassT()
-    for i in range(n_t,100):
+    for i in range(0,n_t,100):
         m_t.GetEntry(i)
     f_t.Close()
 
-if name == "__main__":
+if __name__ == "__main__":
     import sys
-    dset = read_args()
+    print sys.argv
+    if len(sys.argv) is not 3: print "Can check only one dataset at the time. Please provide only one dataset name."
+    dset = sys.argv[2]
     sys.exit(checkDset(dset))
