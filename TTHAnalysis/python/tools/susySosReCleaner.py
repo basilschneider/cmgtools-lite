@@ -2,6 +2,8 @@ from CMGTools.TTHAnalysis.treeReAnalyzer import Collection, deltaR
 from CMGTools.TTHAnalysis.tools.collectionSkimmer import CollectionSkimmer
 import ROOT, os
 
+run2016=False
+run2017=True
 
 class SOSLepCleaner:
     def __init__(self,label=""):
@@ -147,7 +149,9 @@ class SOSJetCleaner:
         self.floats = [ ]
         self.ints = [ ]
         self.branches = []
-        for postfix in "", "_jecUp", "_jecDown":
+##switching off syst shifts for MET check
+#        for postfix in "", "_jecUp", "_jecDown":
+        for postfix in [""]:
             self.branches +=  [ ("nJetSel"+self.label+postfix, "I") ]
             self.branches += [ ("iJSel"+self.label+postfix, "I", 20, "nJetSel"+self.label+postfix) ]
             self.branches += [ ("JetSel"+self.label+postfix+"_"+V, "F", 20, "nJetSel"+self.label+postfix) for V in ["pt","eta","phi"]+self.floats]
@@ -163,7 +167,9 @@ class SOSJetCleaner:
         self._ttreereaderversion = tree._ttreereaderversion
         for B in "nLepGood",: setattr(self, B, tree.valueReader(B))
         for B in "pt", "eta", "phi": setattr(self,"LepGood_"+B, tree.arrayReader("LepGood_"+B))
-        for postfix in "", "_jecUp", "_jecDown":
+##switching off syst shifts for MET check
+#        for postfix in "", "_jecUp", "_jecDown":
+        for postfix in [""]:
             for J in "Jet"+postfix,"DiscJet"+postfix:
                 for B in "n"+J,: setattr(self, B, tree.valueReader(B))
                 for B in "pt", "eta", "phi","btagCSV","id", "mass": setattr(self,J+"_"+B, tree.arrayReader(J+"_"+B))
@@ -181,7 +187,9 @@ class SOSJetCleaner:
         iLepSel = getattr(event, "i"+self.leptons)
         leps = [ (self.LepGood_pt.At(i),self.LepGood_eta.At(i),self.LepGood_phi.At(i)) for i in iLepSel ]
         ret = {}
-        for postfix in "", "_jecUp", "_jecDown":
+##switching off syst shifts for MET check
+#        for postfix in "", "_jecUp", "_jecDown":
+        for postfix in [""]:
             jets = [];
             for J in "Jet"+postfix,"DiscJet"+postfix:
                 nJ = getattr(self, "n"+J).Get()[0]
@@ -208,10 +216,20 @@ class SOSJetCleaner:
             ret["nJetSel"+self.label+postfix] = len(jets) 
             ret["htJet25Sel"+self.label+postfix] = sum(l[0] for l in leps) + sum(J[0] for J in jets)
             ret["mhtJet25Sel"+self.label+postfix] = self.negSumP4Pt(jets)
-            ret["nBJetLoose25Sel"+self.label+postfix]  =  sum((J[4]>0.5426) for J in jets)
-            ret["nBJetMedium25Sel"+self.label+postfix] =  sum((J[4]>0.8484) for J in jets)
-            ret["nBJetLoose40Sel"+self.label+postfix]  =  sum((J[4]>0.5426 and J[0]>40) for J in jets)
-            ret["nBJetMedium40Sel"+self.label+postfix] =  sum((J[4]>0.8484 and J[0]>40) for J in jets)
+            
+            if run2016:
+                ##2016 WPs
+                ret["nBJetLoose25Sel"+self.label+postfix]  =  sum((J[4]>0.5426) for J in jets)
+                ret["nBJetMedium25Sel"+self.label+postfix] =  sum((J[4]>0.8484) for J in jets)
+                ret["nBJetLoose40Sel"+self.label+postfix]  =  sum((J[4]>0.5426 and J[0]>40) for J in jets)
+                ret["nBJetMedium40Sel"+self.label+postfix] =  sum((J[4]>0.8484 and J[0]>40) for J in jets)
+            if run2017:
+                ##2017 WPs
+                ret["nBJetLoose25Sel"+self.label+postfix]  =  sum((J[4]>0.5803) for J in jets)
+                ret["nBJetMedium25Sel"+self.label+postfix] =  sum((J[4]>0.8838) for J in jets)
+                ret["nBJetLoose40Sel"+self.label+postfix]  =  sum((J[4]>0.5803 and J[0]>40) for J in jets)
+                ret["nBJetMedium40Sel"+self.label+postfix] =  sum((J[4]>0.8838 and J[0]>40) for J in jets)
+
             ret["JetSel"+self.label+postfix+"_pt"] = [ J[0] for J in jets ]
             ret["JetSel"+self.label+postfix+"_eta"] = [ J[1] for J in jets ]
             ret["JetSel"+self.label+postfix+"_phi"] = [ J[2] for J in jets ]
@@ -236,22 +254,37 @@ MODULES = [
 
 utility_files_dir = os.path.join(os.environ["CMSSW_BASE"], "src/CMGTools/TTHAnalysis/data/")
 from CMGTools.TTHAnalysis.tools.bTagWeightAnalyzer import bTagWeightAnalyzer
-btagsf_payload_fullsim  = os.path.join(utility_files_dir, "btag", "CSVv2_Moriond17_B_H.csv"                )
-btagsf_payload_fastsim  = os.path.join(utility_files_dir, "btag", "fastsim_csvv2_ttbar_26_1_2017_fixed.csv"          )
-btag_efficiency_fullsim = os.path.join(utility_files_dir, "btag", "btageff__ttbar_powheg_pythia8_25ns_Moriond17.root")
-btag_efficiency_fastsim = os.path.join(utility_files_dir, "btag", "btageff__SMS-T1bbbb-T1qqqq_25ns_Moriond17.root"   )
-bTagEventWeightFullSim   = lambda : bTagWeightAnalyzer(btagsf_payload_fullsim, btag_efficiency_fullsim, recllabel='')
-bTagEventWeightFastSim   = lambda : bTagWeightAnalyzer(btagsf_payload_fastsim, btag_efficiency_fastsim, recllabel='', isFastSim=True)
-MODULES.append( ('bTagEventWeightFullSim'  , bTagEventWeightFullSim ))
-MODULES.append( ('bTagEventWeightFastSim'  , bTagEventWeightFastSim ))
 
+if run2016:
+    ##for 2016
+    btagsf_payload_fullsim  = os.path.join(utility_files_dir, "btag", "CSVv2_Moriond17_B_H.csv"                )
+    btagsf_payload_fastsim  = os.path.join(utility_files_dir, "btag", "fastsim_csvv2_ttbar_26_1_2017_fixed.csv"          )
+    btag_efficiency_fullsim = os.path.join(utility_files_dir, "btag", "btageff__ttbar_powheg_pythia8_25ns_Moriond17.root")
+    btag_efficiency_fastsim = os.path.join(utility_files_dir, "btag", "btageff__SMS-T1bbbb-T1qqqq_25ns_Moriond17.root"   )
+    bTagEventWeightFullSim   = lambda : bTagWeightAnalyzer(btagsf_payload_fullsim, btag_efficiency_fullsim, recllabel='')
+    bTagEventWeightFastSim   = lambda : bTagWeightAnalyzer(btagsf_payload_fastsim, btag_efficiency_fastsim, recllabel='', isFastSim=True)
+    MODULES.append( ('bTagEventWeightFullSim'  , bTagEventWeightFullSim ))
+    MODULES.append( ('bTagEventWeightFastSim'  , bTagEventWeightFastSim ))
+
+if run2017:
+    ##for 2017
+    btagsf_payload_fullsim  = os.path.join(utility_files_dir, "btag", "CSVv2_94XSF_V2_B_F.csv"                )
+    btag_efficiency_fullsim = os.path.join(utility_files_dir, "btag", "bTagEff_2017_incl.root")
+    bTagEventWeightFullSim   = lambda : bTagWeightAnalyzer(btagsf_payload_fullsim, btag_efficiency_fullsim, recllabel='')
+    MODULES.append( ('bTagEventWeightFullSim'  , bTagEventWeightFullSim ))
 
 from CMGTools.TTHAnalysis.tools.bTagEventWeightsCSVFullShape import BTagEventWeightFriend
-MODULES.append( ('eventBTagWeight'  , lambda : BTagEventWeightFriend(csvfile=os.environ["CMSSW_BASE"]+"/src/CMGTools/TTHAnalysis/data/btag/CSVv2_Moriond17_B_H.csv",
-                                                                   recllabel="")))
-MODULES.append( ('eventBTagWeightFS', lambda : BTagEventWeightFriend(csvfile=os.environ["CMSSW_BASE"]+"/src/CMGTools/TTHAnalysis/data/btag/fastsim_csvv2_ttbar_26_1_2017_fixed.csv",
-                                                                   recllabel="",label='eventBTagSFFS')))
 
+if run2016:
+    #for2016
+    MODULES.append( ('eventBTagWeight'  , lambda : BTagEventWeightFriend(csvfile=os.environ["CMSSW_BASE"]+"/src/CMGTools/TTHAnalysis/data/btag/CSVv2_Moriond17_B_H.csv",
+                                                                         recllabel="")))
+    MODULES.append( ('eventBTagWeightFS', lambda : BTagEventWeightFriend(csvfile=os.environ["CMSSW_BASE"]+"/src/CMGTools/TTHAnalysis/data/btag/fastsim_csvv2_ttbar_26_1_2017_fixed.csv",
+                                                                         recllabel="",label='eventBTagSFFS')))
+if run2017:
+    #for 2017
+    MODULES.append( ('eventBTagWeight', lambda : BTagEventWeightFriend(csvfile=os.environ["CMSSW_BASE"]+"/src/CMGTools/TTHAnalysis/data/btag/CSVv2_94XSF_V2_B_F.csv",
+                                                                       recllabel="")))
 
 def bestZ1TL(lepsl,lepst,cut=lambda lep:True):
       pairs = []
