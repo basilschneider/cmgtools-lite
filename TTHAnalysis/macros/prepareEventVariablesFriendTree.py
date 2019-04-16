@@ -335,7 +335,8 @@ def _runIt(myargs):
 if options.jobs > 0:
     from multiprocessing import Pool
     pool = Pool(options.jobs)
-    ret  = dict(pool.map(_runIt, jobs)) if options.jobs > 0 else dict([_runIt(j) for j in jobs])
+##    ret  = dict(pool.map(_runIt, jobs)) if options.jobs > 0 else dict([_runIt(j) for j in jobs])
+    ret  = dict([_runIt(j) for j in jobs])
 else:
     ret = dict(map(_runIt, jobs))
 fulltime = maintimer.RealTime()
