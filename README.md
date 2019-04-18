@@ -36,7 +36,6 @@ git push -u origin heppy_80X
 #### Now get the CMGTools subsystem from the cmgtools-lite repository for the SUSY SOS analysis
 
 ```
-git remote add vtavolar https://github.com/vtavolar/cmg-cmssw.git
 git clone -o vtavolar https://github.com/vtavolar/cmgtools-lite.git -b  80X_25_Local  CMGTools
 cd CMGTools
 ```
