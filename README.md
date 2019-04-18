@@ -33,10 +33,11 @@ git remote add origin git@github.com:YOUR_GITHUB_REPOSITORY/cmg-cmssw.git
 git push -u origin heppy_80X
 ```
 
-#### Now get the CMGTools subsystem from the cmgtools-lite repository
+#### Now get the CMGTools subsystem from the cmgtools-lite repository for the SUSY SOS analysis
 
 ```
-git clone -o cmg-central https://github.com/CERN-PH-CMG/cmgtools-lite.git -b 80X CMGTools
+git remote add vtavolar https://github.com/vtavolar/cmg-cmssw.git
+git clone -o vtavolar https://github.com/vtavolar/cmgtools-lite.git -b  80X_25_Local  CMGTools
 cd CMGTools
 ```
 
@@ -44,7 +45,7 @@ cd CMGTools
 
 ```
 git remote add origin  git@github.com:YOUR_GITHUB_REPOSITORY/cmgtools-lite.git
-git push -u origin 80X
+git push -u origin 80X_25_Local 
 ```
 
 #### Compile
